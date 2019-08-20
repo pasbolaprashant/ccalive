@@ -1,0 +1,77 @@
+D:\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+D:\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+D:\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+D:\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+D:\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojResolveAssemblyReference.cache
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojAssemblyReference.cache
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csproj.CoreCompileInputs.cache
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojAssemblyReference.cache
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csproj.CoreCompileInputs.cache
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\bin\Debug\CCAPPBLL.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csprojAssemblyReference.cache
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.csproj.CoreCompileInputs.cache
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPBLL\obj\Debug\CCAPPBLL.pdb

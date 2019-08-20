@@ -1,0 +1,711 @@
+﻿<!-- MAIN PANEL -->
+<style>
+    #bar-chart1 > svg {
+        width: auto !important;
+        overflow-x: scroll !important;
+    }
+</style>
+<div id="main" role="main">
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <!--<span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>-->
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Dashboard</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+
+
+    <div id="content">
+
+        <section class="content" style=" padding: 0 15px">
+
+
+            <div class="row">
+
+                <div class="col-lg-3 col-xs-6 width20">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner" style="padding: 5px 10px;">
+                            <h3 style="font-size: 30px;">
+                                {{TotalRequest}}
+                            </h3>
+                         <p style="font-size: 13px;margin-top: -43px;margin-left: 51px;">
+                            <!--<p style="margin-top: -43px;margin-left: 51px;">-->
+                                Total Request
+                            </p>
+                        </div>
+
+                        <div class="icon">
+                            <i class="ion ion-lightbulb"></i>
+                        </div>
+                        <a href="#/CCR/" class="small-box-footer" style="font-size: 10px;">
+                            Click for Details <br />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-xs-6 width20">
+                    <!-- small box -->
+                    <div class="small-box bg-yellow">
+                        <div class="inner" style="padding: 5px 10px;">
+                            <h3 style="font-size: 30px;">
+                                {{InProcess}}
+                            </h3>
+                            <p style="font-size: 13px;margin-top: -43px;margin-left: 51px;">
+                                In Process
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-forward"></i>
+                        </div>
+                        <a href="#/ipr/" class="small-box-footer" style="font-size: 10px;">
+                            Click for Details <br />
+                        </a>
+                    </div>
+
+                </div><!-- ./col -->
+
+
+                <div class="col-lg-3 col-xs-6 width20">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner" style="padding: 5px 10px;">
+                            <h3 style="font-size: 30px;">
+                                {{Approved}}
+                            </h3>
+                            <p style="font-size: 13px;margin-top: -43px;margin-left: 51px;">
+                                Approved
+                            </p>
+                        </div>
+
+
+                        <div class="icon">
+                            <i class="ion ion-thumbsup"></i>
+                        </div>
+                        <a href="#/cr/" class="small-box-footer" style="font-size: 10px;">
+                            Click for Details <br />
+                        </a>
+                    </div>
+
+                </div>
+            
+
+                <div class="col-lg-3 col-xs-6 width20">
+                    <!-- small box -->
+                    <div class="small-box bg-yellow">
+                        <div class="inner" style="padding: 5px 10px;">
+                            <h3 style="font-size: 30px;">
+                                {{TotalPendingComplaints}}
+                            </h3>
+                            <p style="font-size: 13px;margin-top: -43px;margin-left: 51px;">
+                                Pending
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-forward"></i>
+                        </div>
+                        <a href="#/pr"class="small-box-footer" style="font-size: 10px;">
+                            Click for Details <br />
+                        </a>
+                    </div>
+
+                </div><!-- ./col -->
+
+
+                <div class="col-lg-3 col-xs-6 width20">
+                    <!-- small box -->
+                    <div class="small-box bg-red">
+                        <div class="inner" style="padding: 5px 10px;">
+                            <h3 style="font-size: 30px;">
+                               {{Reject}}
+                                <!--{{Rejected}}-->
+                                <!--{{TotalRCAReject}}-->
+
+                            </h3>
+                            <p style="font-size: 13px;margin-top: -43px;margin-left: 51px;">
+                                Rejected
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-minus-circled"></i>
+                        </div>
+                        <a href="#/rr/" class="small-box-footer" style="font-size: 10px;">
+                            Click for Details <br />
+                        </a>
+                    </div>
+
+
+                </div><!-- ./col -->
+            </div>
+
+
+
+            <div>
+                <div class="row dashboardeffect">    <!--style="border-bottom:1px solid black;"-->         <!--border-top:1px solid black;-->
+
+                    <!--<img style="opacity : 0.4"class="img-responsive" src="img/forso.png" />-->
+                    <!--boxes-one-line-->
+                    <div class="col-sm-6">  <!--style="border-right:1px solid black;"-->
+                        <div class="row" ng-if="TotalRCACompCount.length > 0">
+                          
+                            <ol style=" margin-left: 20px;list-style-type: none; margin-top:20px; text-align: center; -webkit-padding-start: 0; -moz-padding-start: 0; padding-left: 0;">
+                                <li style="margin-right:16px; float:left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #0EAEF3; margin-right: 3px;"></span><span style="font-size:13px;">Total Request</a></span></li>
+                                <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #224620; margin-right: 3px;"></span><span style="font-size:13px;">RCA</a></span></li>
+                                <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #FFC300; margin-right: 3px;"></span><span style="font-size:13px;">Compensation</a></span></li>
+                                <!--<li style="margin-right:16px;float:left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #d62728; margin-right: 3px;"></span><span style="font-size:13px;"><a href="#/rejectedEP">Rejected</a></span></li>-->
+                            </ol>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <canvas style="    margin: 20px 0;"id="line" class="chart chart-line" chart-data="commaTotalRCACompArray1"
+                                    chart-labels="labels" chart-series="series" chart-options="options"
+                                    chart-dataset-override="datasetOverride" chart-colors="colours" chart-click="onClick"></canvas>
+                     
+
+                        
+                        </div>
+
+               
+                        <!--<p>Total Complaints : {{TotalRequest}}</p>
+                        <div class="progress progress-striped active pos-rel" data-percent="{{TotalRequest}}">
+                            <div class="progress-bar progress-bar-warning" style="width:100%"> {{TotalRequest}}</div>
+                        </div>
+
+                        <p>In Process : {{InProcess}}</p>
+                        <div class="progress progress-striped active pos-rel magrinButton" data-percent=" {{InProcess}}">
+                            <div class="progress-bar progress-bar-danger" style="width: {{InProcess/TotalRequest| percentage:0}}">
+                                {{InProcess/TotalRequest| percentage:0}}
+                            </div>
+                        </div>
+
+                        <p>Approved : {{Approved}}</p>
+                        <div class="progress progress-striped active pos-rel" data-percent=" {{Approved}}">
+                            <div class="progress-bar progress-bar-success" style="width: {{Approved/TotalRequest|percentage:0}}">
+                                {{Approved/TotalRequest|percentage:0}}
+                            </div>
+                        </div>
+
+                        <p>Rejected: {{Reject}}</p>
+                        <div class="progress progress-striped active pos-rel" data-percent=" {{Reject}}">
+                            <div class="progress-bar progress-" style="width: {{Reject/TotalRequest| percentage:0}}">
+                                {{Reject/TotalRequest| percentage:0}}
+                            </div>
+                        </div>
+                        <p>Pending: {{TotalPendingComplaints}}</p>
+                        <div class="progress progress-striped active pos-rel" data-percent=" {{TotalPendingComplaints}}">
+                            <div class="progress-bar progress-striped" style="width: {{TotalPendingComplaints/TotalRequest| percentage:0}}">
+                                {{TotalPendingComplaints/TotalRequest| percentage:0}}
+                            </div>
+                        </div>-->
+
+                    </div>
+                    <div class="col-sm-6">
+                        <!--<p>Compensation Details:</p>-->
+                        <!---------pie-chart------------------->
+                        <!--<div style="height:250px;width:500px;">
+                    <canvas id="doughnut" class="chart chart-doughnut"
+                            chart-data="data" chart-labels="labels"></canvas>
+                    </div>-->
+
+
+
+                        <div class="col-sm-12">    <!--style="border-right:1px solid black;"-->
+                            <p> Total Complaints for Compensation : {{Approved}}</p>
+                            <div class="progress progress-striped active pos-rel magrinbottom0" data-percent="{{Approved}}">
+                                <div class="progress-bar progress-bar-info" style="width:100%"> {{Approved/Approved | percentage:0}}</div>
+                            </div>
+
+                            <p>InProcess: {{TotalInProcessComp}}</p>
+                            <div class="progress progress-striped active pos-rel magrinbottom0" data-percent=" {{TotalInProcessComp}}">
+                                <div class="progress-bar progress-bar-warning" style="width: {{TotalInProcessComp/Approved| percentage:0}}">
+                                    {{TotalInProcessComp/Approved| percentage:0}}
+                                </div>
+                            </div>
+
+
+                            <p>Approved : {{ApprovedComp}}</p>
+                            <div class="progress progress-striped active pos-rel magrinbottom0" data-percent=" {{ApprovedComp}}">
+                                <div class="progress-bar progress-bar-success" style="width: {{ApprovedComp/Approved|percentage:0}}">
+                                    {{ApprovedComp/Approved|percentage:0}}
+                                </div>
+                            </div>
+
+                            <p>Pending: {{TotalInProcessComp}}</p>
+                            <div class="progress progress-striped active pos-rel magrinbottom0" data-percent=" {{TotalInProcessComp}}">
+                                <div class="progress-bar progress-bar-warning" style="width: {{TotalInProcessComp/Approved| percentage:0}}">
+                                    {{TotalInProcessComp/Approved| percentage:0}}
+                                </div>
+                            </div>
+
+                            <p>Rejected : {{RejectedComp}}</p>
+                            <div class="progress progress-striped active pos-rel magrinbottom0" data-percent=" {{RejectedComp}}">
+                                <div class="progress-bar progress-bar-danger" style="width: {{RejectedComp/Approved|percentage:0}}">
+                                    {{RejectedComp/Approved|percentage:0}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<table width="100%" style="margin-top:3px">
+                    <tr>
+                        <td>
+                            Total Complaints for Compensation
+                        </td>
+
+                        <td>
+                            Approved
+                        </td>
+
+                        <td>
+                            Rejected
+                        </td>
+
+                        <td>
+                            In Process
+                        </td>
+
+                        <td>
+                            Pending
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{Approved}}
+                        </td>
+
+                        <td>
+                            {{ApprovedComp}}
+                        </td>
+
+                        <td>
+                            {{RejectedComp}}
+                        </td>
+
+                        <td>
+                            {{TotalInProcessComp}}
+                        </td>
+
+                        <td>
+                            {{TotalInProcessComp}}
+                        </td>
+                    </tr>
+                </table>-->
+                        
+
+                          <!-- ./col -->
+                        <!-- ./col -->
+                        <!-- ./col -->
+                        <!--for Table-->
+                        <!--./for Table-->
+                        <!--- for Calendar-->
+                        <!--./for Calendar-->
+
+
+
+
+
+                    </div>
+                    <!--./row-->
+                </div>
+
+
+
+                <!--------------------after approved rca approved--------------------------------->
+                <section class="content" style=" padding: 0 15px" ng-if="RoleName=='Admin' || RoleName=='_CM_Marketing' || RoleName=='_Plant' || RoleName=='_RD' || RoleName=='_BM' || RoleName=='_BH'">
+                    <div class="row">
+
+                        <div class="col-lg-2 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box" style="min-height: 67px;background-color: grey;">
+                                <div class="inner">
+                                    <h3 style="font-size: 25px;">
+                                        {{Approved}}
+                                    </h3>
+                                    <p style="font-size: 13px;margin-top: -42px;margin-left: 36px;">
+                                        RCA Initiate
+                                    </p>
+                                </div>
+
+                                <!--<div class="icon">
+                        <i class="ion ion-lightbulb"></i>
+                    </div>-->
+                                <!--<a href="#/CCR/" class="small-box-footer">
+                        Click for Details <br />
+                    </a>-->
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-2 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box" style="min-height: 67px;background-color: #259da2;">
+                                <div class="inner">
+                                    <h3 style="font-size: 25px;">
+                                        {{TotalPendingPlant}}
+                                    </h3>
+                                    <p style="font-size: 13px;margin-top: -42px;margin-left: 36px;">
+                                        Pending RCA-Plant
+                                    </p>
+                                </div>
+                                <!--<div class="icon">
+                        <i class="ion ion-forward"></i>
+                    </div>-->
+                                <!--<a href="#/ipr/" class="small-box-footer">
+                        Click for Details <br />
+                    </a>-->
+                            </div>
+
+                        </div><!-- ./col -->
+
+
+                        <div class="col-lg-2 col-xs-6 ">
+                            <div class="small-box" style="min-height: 67px;background-color: #5b6a9e;">
+                                <div class="inner">
+                                    <h3 style="font-size: 25px;">
+                                        {{TotalPendingRnD}}
+                                    </h3>
+                                    <p style="font-size: 13px;margin-top: -42px;margin-left: 36px;">
+                                        Pending RCA-R&D
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--<div class="col-lg-2 col-xs-6 ">
+               <div class="small-box" style="min-height: 67px;background-color: #5b6a9e;">
+                    <div class="inner">
+                        <h3 style="font-size: 25px;">
+                            {{TotalPendingRnDBM}}
+                        </h3>
+                        <p style="font-size: 13px;margin-top: -42px;margin-left: 36px;">
+                            Pending R&D -BM
+                        </p>
+                    </div>
+               </div>
+
+            </div>-->
+
+
+                        <div class="col-lg-2 col-xs-6">
+                            <div class="small-box" style="min-height: 67px;background-color: #a0778e;">
+                                <div class="inner">
+                                    <h3 style="font-size: 25px;">
+                                        {{TotalPendingQuarantine}}
+                                    </h3>
+                                    <p style="font-size: 13px;margin-top: -42px;margin-left: 36px;">
+                                        Pending Quarantine
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box" style="min-height: 67px;background-color: #79ab5a;">
+                                <div class="inner">
+                                    <h3 style="font-size: 25px;">
+                                        {{TotalPendingBusinessManager}}
+                                    </h3>
+
+                                    <p style="font-size: 11px;margin-top: -38px;margin-left: 36px;">
+                                        <!--<p style="margin-top: -34px;margin-left: 33px;font-size: 12px;">-->
+                                        Pending - Business Manager
+                                    </p>
+                                </div>
+
+
+                                <!--<div class="icon">
+                        <i class="ion ion-thumbsup"></i>
+                    </div>-->
+                                <!--<a href="#/cr/" class="small-box-footer">
+                        Click for Details <br />
+                    </a>-->
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-lg-2 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box" style="min-height: 67px;background-color: #fb6a6a;">
+                                <div class="inner">
+                                    <h3 style="font-size: 25px;">
+                                        {{TotalRCAReject}}
+                                    </h3>
+                                    <p style="font-size: 13px;margin-top: -28px;margin-left: 36px;">
+                                        <!--<p style="margin-top: -25px;margin-left: 35px;font-size: 16px;">-->
+                                        RCA-Rejected
+                                    </p>
+                                </div>
+                                <!--<div class="icon">
+                        <i class="ion ion-minus-circled"></i>
+                    </div>-->
+                                <!--<a href="#/rr/" class="small-box-footer">
+                        Click for Details <br />
+                    </a>-->
+                            </div>
+
+
+                        </div><!-- ./col -->
+                    </div>
+
+
+                </section>
+
+
+
+
+                <!-- MAIN PANEL -->
+
+
+
+            </div>
+
+
+            <div class="row dashboardeffect">
+
+                <div class="col-lg-6 col-xs-6" ng-if="pieData != null">
+                    <div class="box box-primary">
+                        <div class="box-header with-border" style=" padding-bottom: 0;">
+                            <h6 class="box-title">Complaint Status</h6>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+
+
+
+                            <div class="row">
+                                <!--<h4 style="-webkit-text-fill-color: green;"><b>Splitting by.....</b></h4>-->
+                                <div class="col-lg-7 col-xs-6" style="height:200px;width: 190px;">
+
+                                 
+                                    <canvas id="base" class="chart-base" chart-type="pieType"
+                                            chart-data="pieData" chart-labels="pieLabels" chart-colors="color"></canvas>   <!--chart-colors="color"-->
+                                </div>
+                                <div class="col-lg-4 col-xs-6" style="margin-top: -61px;">
+                                    <!-- small box -->
+
+                                    <br /><br /><br /><br /><br />
+                                    <ol style=" margin-left: 20px;list-style-type: none; margin-top: 5px; text-align: center; -webkit-padding-start: 0; -moz-padding-start: 0; padding-left: 0;">
+                                        <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #2ca02c; margin-right: 3px;"></span><span style="font-size:13px;">In Process</span></li>
+                                        <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #1f77b4 ; margin-right: 3px;"></span><span style="font-size:13px;">Approved</span></li>
+                                        <li style="margin-right:16px;float:left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #d62728; margin-right: 3px;"></span><span style="font-size:13px;">Rejected</span></li>
+                                    </ol>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div><!--./box-primary-->
+                </div>
+
+
+
+
+                <div class="col-lg-6 col-xs-6" ng-if="pieData1 != null">
+                    <div class="box box-primary">
+                        <div class="box-header with-border" style=" padding-bottom: 0;">
+                            <h6 class="box-title">Approval Status</h6>
+                        </div>
+                      
+                        <div class="box-body">
+                            <div class="row">
+                              
+                                <div class="col-lg-7 col-xs-6" style="height:200px;width: 190px;">
+
+                                    
+                                    <canvas id="base" class="chart-base" chart-type="pieType"
+                                            chart-data="pieData1" chart-labels="pieLabels1" chart-colors="color1"></canvas>  
+                                </div>
+                                <div class="col-lg-4 col-xs-6" style="margin-top: -61px;">
+                                   
+
+                                    <br /><br /><br /><br /><br />
+                                    <ol style=" margin-left: 20px;list-style-type: none; margin-top: 5px; text-align: center; -webkit-padding-start: 0; -moz-padding-start: 0; padding-left: 0;">
+                                        <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #1f77b4 ; margin-right: 3px;"></span><span style="font-size:13px;">Approved CH</span></li>
+                                        <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #d62728 ; margin-right: 3px;"></span><span style="font-size:13px;MARGIN-RIGHT: -2PX;">Approved By TSE</span></li>
+
+                                       <li style="margin-right: 16px; float: left"><span style="float: left; display: block; width: 16px; height: 16px; border-radius: 5px; background-color: #2ca02c; margin-right: 3px;"></span><span style="font-size:13px;MARGIN-RIGHT: -86PX;">Approved For Compensation</span></li>                                      </ol>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                
+            </div>
+
+
+            <div class="row dashboardeffect">
+
+                <div class="col-lg-6 col-xs-6" >
+                 
+                    <div class="box box-primary">
+                        <div class="box-header with-border" style="padding-bottom: 0;">
+                            <h6 class="box-title" >Manufacturing Plant - Product Streams</h6>
+                        </div>
+
+                       
+                       
+
+                     
+
+                      <div class="box-body">
+
+
+                          <div class"row">
+                              <div class="col-sm-12">
+                                  <!--<label class="label label-success">Bar Chart</label>
+                                  <div id="bar-chart"></div>-->
+
+                                  <!--<label class="label label-success">Bar Chart</label>-->
+                                  <div style="overflow-x: scroll; overflow-y: hidden;">
+                                      <div style="width: 800px !important;HEIGHT: 230PX;">
+                                          <div id="bar-chart"></div>
+                                      </div>
+                                  </div><!--./end-->
+
+                              </div>
+                          </div>
+
+
+                                  <!--<canvas class="chart chart-bar" chart-data="FinalArray11" chart-labels="StreamListArray.part1"
+                                  chart-options="optionsStacked" chart-series="StreamListArray.part2"></canvas>-->
+    <!--<div class="col-md-12">
+                              <div class="progress-group">
+
+                                    <br />
+                                  <div class="progress-group" ng-repeat="pt in GetManufacturing_productStream">
+                                      <span class="progress-text" style="float: left;margin-right: 10px;">
+                                          <b>{{pt.ManufacturingLocation}}</b></span>
+
+                                   
+                                      <div class="progress progress-striped active" >
+                                          <div ng-repeat="item in pt.Cplids | orderBy: $index">
+                                           <div class="progress-bar" title="{{item.strms}}" 
+                                                   ng-style="{background: doc_classes_colors[$index % doc_classes_colors.length]}"
+                                                   ng-attr-style="width:{{item.complaint_id}}%"><label style="color:white">
+                                                                                                    <b>{{item.complaint_id}}</b></label></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                           
+                          </div>-->
+                      
+                      </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 col-xs-6">
+
+                    <div class="box box-primary">
+                        <div class="box-header with-border" style=" padding-bottom: 0;">
+                            <h6 class="box-title">Segment - Product Streams </h6>
+                        </div>
+
+
+                        <div class="box-body">  <!--style="min-height:380px"-->
+
+                            <div class"row">
+                                <div class="col-sm-12">
+                                    <!--- text-center"> -->
+                                    <!--<label class="label label-success">Bar Chart</label>-->
+                                    <div style="overflow-x: scroll; overflow-y: hidden;">
+                                        <div style="width: 700px !important;HEIGHT: 230PX;">
+                                            <div id="bar-chart2"></div>
+                                        </div>
+                                    </div><!--./end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+
+
+
+                <div class="col-lg-12 col-xs-12 dashboardeffect">
+
+                    <div class="box box-primary">
+                        <div class="box-header with-border" style="padding-bottom: 0;">
+                            <h6 class="box-title">Brand - Product Stream</h6>
+                        </div>
+
+
+                        <div class="box-body" style="min-height:200px">
+
+                            <div class"row">
+                                <div class="col-sm-12">
+                                    <!--- text-center"> -->
+                                    <!--<label class="label label-success">Bar Chart</label>-->
+                                    <div style="overflow-x: scroll;overflow-y: hidden;">
+                                        <div style="width: 3500px !important; HEIGHT: 230PX;">
+                                            <div id="bar-chart1"></div>
+                                        </div>
+                                    </div><!--./end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <br />
+      
+
+
+      
+    </div>
+
+</div>

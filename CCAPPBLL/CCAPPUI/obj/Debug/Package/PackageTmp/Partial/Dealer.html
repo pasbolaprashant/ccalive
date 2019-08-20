@@ -1,0 +1,486 @@
+﻿		<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+	<!-- RIBBON -->
+	<div id="ribbon">
+
+		<!--<span class="ribbon-button-alignment">
+			<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip"
+				  data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning!
+                   This will reset all your widget settings." data-html="true">
+				<i class="fa fa-refresh"></i>
+			</span>
+		</span>-->
+
+		<!-- breadcrumb -->
+		<ol class="breadcrumb">
+			<li>Home</li>
+			<li>Dealer Master</li>
+		</ol>
+
+
+        <div class="input-group" style="width:250px; float:right;">
+            <input type="text" name="q" class="form-control" 
+                   placeholder="Search..." style="margin-top: 4px;">
+            <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat" style="margin-top: 5px;">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+
+      
+
+	</div>
+	<!-- END RIBBON -->
+	<!-- MAIN CONTENT -->
+	<div id="content">
+
+
+		<!-- widget grid -->
+		<section id="widget-grid" class="">
+			<div class="row">
+
+
+				<br />
+				<div ng-show="DealerLoad==true" >
+					<input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+						   file-model="File1" />
+					<br />
+					<button class="btn btn-primary btn-sm" ng-click="UploadExcel()">Upload Excel</button>
+					<button ng-click="init()" class="btn btn-sm btn-primary">Back</button><br/>
+					<p>Download Excel :<a href="../SampleExcel/Dealer.xlsx"> Sample Dealer Excel</a>
+
+            </div>
+
+			</div><br />
+
+			<div ng-show="DealerBulk==true">
+				<button ng-click="AddDealer()" class="btn btn-sm btn-primary">Add Dealer</button>
+				<button ng-click="BulkExcel()" class="btn btn-sm btn-primary">Bulk Upload</button>
+</div><br />
+
+
+			<div class="row">
+
+				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="Dealershow == true">
+                    <dir-pagination-controls max-size="20"
+                                             direction-links="true"
+                                             boundary-links="true">
+                    </dir-pagination-controls>
+					<div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+						<header role="heading">
+							<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+							<h2>Dealer</h2>
+							<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+						</header>
+
+						<!-- widget div-->
+
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body no-padding">
+
+								<div class="table-responsive">
+
+									<table class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<th>S.No</th>
+												<th>Dealer Name</th>
+												<th>Dealer Code </th>
+												<th>Dealer Address</th>
+                                                <th>Depot Code</th>                                              
+                                                <th>Territory </th>
+                                                <th>SO</th>
+                                                <th>Area</th>
+                                                <th>ASM</th>
+
+                                                <th>Region </th>
+                                                <th>RM</th>
+                                                <th>NH</th>
+                                                
+												<th >Action</th>
+											</tr>
+										</thead>
+										<tbody>
+                                            <tr dir-paginate="pt in  DealerArray|filter: serachText| itemsPerPage:20">
+                                                <!--<tr ng-repeat="pt in   DealerArray">-->
+
+												<td>{{ $index+1}}</td>
+												<td>{{ pt.DealerName}} </td>
+												<td>{{ pt.DealerCode }} </td>
+												<td>{{ pt.DealerAddress}} </td>
+                                                <td>{{pt.DepotCode}}</td>
+                                                <td>{{ pt.Territory}} </td>
+                                                <td>{{ pt.SO }} </td>
+                                                <td>{{ pt.Area}} </td>
+                                                <td>{{pt.ASM}}</td>
+
+                                                <td>{{ pt.Region}} </td>
+                                                <td>{{ pt.RM }} </td>
+                                                <td>{{ pt.NH}} </td>
+                                               
+												<td>
+                                            
+                                                <!--<button ng-click="Edit(pt.DealerID ,pt.DealerName,pt.DealerCode,pt.DealerAddress)" class="btn btn-sm btn-primary">Edit</button>-->
+                                             
+                                                    <button ng-click="Edit(pt)" class="btn btn-sm btn-primary">Edit</button>
+
+
+                                                <button ng-click="Delete(pt.DealerID)" class="btn btn-sm btn-danger">Delete</button>
+                                            
+                                                        </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="DealerSave==true">
+
+                       
+
+
+					<div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+						<header role="heading">
+							<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+							<h2>Dealer</h2>
+							<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+						</header>
+
+						<!-- widget div-->
+
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body no-padding">
+
+
+
+
+								<form id="checkout-form" class="smart-form" novalidate="novalidate">
+
+
+									<fieldset>
+										<div class="row">
+
+											<section class="col col-3">
+												<label class="label"><b>Dealer Name</b></label>
+												<label class="input">
+
+													<input type="text" class="form-control" ng-model="DealerName" placeholder="Enter Dealer Name">
+												</label>
+											</section>
+											<section class="col col-3">
+												<label class="label"><b>Dealer Code</b></label>
+												<label class="input">
+
+													<input type="text" class="form-control" ng-model="DealerCode" placeholder="Enter Dealer Code">
+												</label>
+											</section>
+
+											<section class="col col-3">
+												<label class="label"><b>Dealer Address </b></label>
+												<label class="input">
+
+													<input type="text" class="form-control" ng-model="DealerAddress" placeholder="Enter Dealer Address">
+												</label>
+											</section>
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>Depot Code</b></label>
+                                                <label class="input">
+
+                                                    <select class="form-control" value="item.DepotId"
+                                                            ng-options="item.DepotId as item.DepotCode for item in DepotArray" ng-model="DepotId" placeholder="DepotCode"></select>
+
+                                                </label>
+                                            </section>
+
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>Territory Name</b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="Territory" placeholder="Enter Territory Name">
+                                                </label>
+                                            </section>
+                
+                                            <section class="col col-3">
+                                                <label class="label"><b>SO  </b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="SO" placeholder="Enter SO Name">
+                                                </label>
+                                            </section>
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>Area </b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="Area" placeholder="Enter Area Name">
+                                                </label>
+                                            </section>
+
+
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>ASM  </b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="ASM" placeholder="Enter ASM Name">
+                                                </label>
+                                            </section>
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>Region </b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="Region" placeholder="Enter Region Name">
+                                                </label>
+                                            </section>
+
+
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>RM  </b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="RM" placeholder="Enter Regional Manager Name">
+                                                </label>
+                                            </section>
+
+                                            <section class="col col-3">
+                                                <label class="label"><b>NH </b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="NH" placeholder="Enter Nation Head Name">
+                                                </label>
+                                            </section>
+
+
+
+										</div>
+
+
+
+
+
+
+                                        <td>{{ pt.Territory}} </td>
+                                        <td>{{ pt.SO }} </td>
+                                        <td>{{ pt.Area}} </td>
+                                        <td>{{pt.ASM}}</td>
+
+                                        <td>{{ pt.Region}} </td>
+                                        <td>{{ pt.RM }} </td>
+                                        <td>{{ pt.NH}} </td>
+
+
+
+									</fieldset>
+
+
+
+									<footer>
+
+										<section style="text-align: center">
+
+											<button ng-click="update()" ng-show="UpdateDealer==true" class="btn btn-sm btn-primary">Update</button>
+
+											<button ng-show="Dealertotal==true" ng-click="Save()" href="javascript:void(0)" class="btn btn-sm btn-primary">Save</button>
+
+											<button ng-click="Back()" href="javascript:void(0)" class="btn btn-sm btn-warning">Back</button>
+										</section>
+
+									</footer>
+
+								</form>
+
+
+
+
+
+								<!-- end widget content -->
+
+							</div>
+							<!-- end widget div -->
+
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<!-- end row -->
+		</section>
+		<!-- end widget grid -->
+	</div>
+	<!-- END MAIN CONTENT -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="ribbon">
+
+	<span class="ribbon-button-alignment">
+		<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip"
+			  data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning!
+				   This will reset all your widget settings." data-html="true">
+			<i class="fa fa-refresh"></i>
+		</span>
+	</span>
+
+	<ol class="breadcrumb">
+		<li>Home</li>
+		<li>Dealer Master</li>
+	</ol>
+
+
+</div>
+<div id="content">
+	-->
+	<!-- widget grid -->
+	<!--<section id="widget-grid" class="">
+
+
+
+				<div class="row">
+					<div ng-show="DealerAdd == true">
+						<button ng-click="AddDealer()" class="btn btn-sm btn-primary">Add Dealer</button>
+					</div><br/>
+					<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+						<div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+							<header role="heading">
+								<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+								<h2>Dealer</h2>
+								<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+								<br />
+								<br />
+								<br />
+
+							</header>
+
+
+							<div role="content">
+
+
+								<div class="jarviswidget-editbox">
+
+
+								</div>
+
+								<div class="widget-body no-padding">
+
+									<div ng-show="Dealershow == true">
+										<div class="table-responsive">
+
+											<table class="table table-bordered table-hover">
+												<thead>
+													<tr>
+														<th>S.No</th>
+														<th>Dealer Name</th>
+														<th>Dealer Code </th>
+														<th>Dealer Address</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr ng-repeat="pt in   DealerArray">
+
+														<td>{{ $index+1}}</td>
+														<td>{{ pt.DealerName}} </td>
+														<td>{{ pt.DealerCode }} </td>
+														<td>{{ pt.DealerAddress}} </td>
+
+
+
+
+														<td>
+															<button ng-click="Edit(pt.DealerID ,pt.DealerName,pt.DealerCode,pt.DealerAddress)" class="btn btn-sm btn-primary">Edit</button>
+														<br/>
+															<button ng-click="Delete(pt.DealerID)" class="btn btn-sm btn-primary">Delete</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div ng-show="DealerSave==true">
+										<form role="form">
+											<div class="box-body">
+												<div class="form-group">
+													<label for="exampleInputEmail1">Dealer Name</label>
+													<input type="text" class="form-control" ng-model="DealerName" placeholder="Enter Dealer Name">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputEmail1">Dealer Code</label>
+													<input type="text" class="form-control" ng-model="DealerCode" placeholder="Enter Dealer Name">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputEmail1">Dealer Address</label>
+													<input type="text" class="form-control" ng-model="DealerAddress" placeholder="Enter Dealer Name">
+												</div>
+											</div>
+
+											<div class="box-footer">
+
+												<button ng-click="update()" ng-show="UpdateDealer==true" class="btn btn-sm btn-info btn-flat pull-left">Update</button>
+
+												<button ng-show="Dealertotal==true" ng-click="Save()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Save</button>
+
+												<button ng-click="Back()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Back</button>
+											</div>
+										</form>
+									</div>
+
+
+
+								</div>
+
+
+							</div>
+							</div>
+					</article>
+				</div>
+
+
+			</section>
+
+
+		</div>
+
+
+	</div>-->

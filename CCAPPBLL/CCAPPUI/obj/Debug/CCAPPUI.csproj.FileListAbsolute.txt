@@ -1,0 +1,1345 @@
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+D:\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+D:\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+D:\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+C:\Users\narayan\Desktop\OfficeWork\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+D:\CCAPP_Narayan\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+F:\Running Projects\CCAPP_Latest31Aug\CCAPP (2)\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+F:\Running Projects\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+D:\CCAPP (2)_8Sep\CCAPP\CCAPP\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+C:\Users\PhoenixTech\Source\Workspaces\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+C:\Users\Ankur\Downloads\CCApplictaionNippon_16Sep\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+F:\PROJECTS\PROJECT\CCA Application\CCA Latest\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+D:\CCApplictaionNippon1_11Nov\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EPPlus.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe.config
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Console.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.Process.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Compression.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Pipes.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.AccessControl.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Claims.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Principal.Windows.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Threading.Thread.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.ValueTuple.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XmlDocument.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.dll
+F:\PROJECTS\PROJECT\CCA Application\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Console.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.Process.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Compression.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Pipes.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.AccessControl.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Claims.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Principal.Windows.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Threading.Thread.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.ValueTuple.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XmlDocument.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojResolveAssemblyReference.cache
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+F:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Console.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.Process.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Compression.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Pipes.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.AccessControl.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Claims.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Threading.Thread.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.ValueTuple.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojAssemblyReference.cache
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csproj.CoreCompileInputs.cache
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csproj.CopyComplete
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+E:\PROJECTS\PROJECT\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Console.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.Process.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Compression.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Pipes.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.AccessControl.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Claims.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Threading.Thread.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.ValueTuple.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojAssemblyReference.cache
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csproj.CoreCompileInputs.cache
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csproj.CopyComplete
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+E:\phoenix project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\ApplicationInsights.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPUI.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.exe.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csc.rsp
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.exe.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\csi.rsp
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.AppContext.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Collections.Immutable.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Console.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.Process.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Compression.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.IO.Pipes.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.AccessControl.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Claims.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Threading.Thread.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.ValueTuple.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.exe.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\vbc.rsp
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\roslyn\VBCSCompiler.exe.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.Web.Infrastructure.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\WebGrease.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPDAL.dll.config
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\CCAPPBLL.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\EntityFramework.SqlServer.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Newtonsoft.Json.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Net.Http.Formatting.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Helpers.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Http.WebHost.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Mvc.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Optimization.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.Razor.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Deployment.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\System.Web.WebPages.Razor.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Antlr3.Runtime.pdb
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.ApplicationInsights.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.DependencyCollector.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.WindowsServer.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\bin\Microsoft.AI.Web.xml
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csprojAssemblyReference.cache
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csproj.CoreCompileInputs.cache
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.csproj.CopyComplete
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.dll
+E:\phoenix project\Nippon project\new CCA CHANGES\New folder\CCApplictaionNippon\CCAPPBLL\CCAPPUI\obj\Debug\CCAPPUI.pdb

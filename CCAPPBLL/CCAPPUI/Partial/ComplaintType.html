@@ -1,0 +1,219 @@
+﻿		<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+	<!-- RIBBON -->
+	<div id="ribbon">
+
+
+
+		<!-- breadcrumb -->
+		<ol class="breadcrumb">
+			<li>Home</li>
+			<li>Complaint Type</li>
+		</ol>
+
+
+	</div>
+	<!-- END RIBBON -->
+	<!-- MAIN CONTENT -->
+	<div id="content">
+
+
+		<!-- widget grid -->
+
+
+
+		<section id="widget-grid" class="">
+			<div ng-show="ShowBulkUpload == true">
+				<input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+					   file-model="File1" />
+				<br />
+				<button class="btn btn-primary btn-sm" ng-click="UploadExcel()">Upload Excel</button>
+			
+				<button ng-click="init()" class="btn btn-sm btn-primary">Back</button>
+				<p>Download Excel :<a href="../SampleExcel/Complaint Type.xlsx"> Sample Complaint Type</a>
+			</div><br />
+
+
+
+			<div ng-show="Categorytypeshow == true">
+				<button ng-click="AddComplainttype()" class="btn btn-sm btn-primary">Add Complaint Type </button>
+			
+				<button ng-click="BulkExcel()" class="btn btn-sm btn-primary">Bulk Upload</button>
+			</div><br />
+
+			<div class="row">
+
+				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="Complainttype == true">
+
+
+					<dir-pagination-controls max-size="20"
+											 direction-links="true"
+											 boundary-links="true">
+					</dir-pagination-controls>
+					<div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+						<header role="heading">
+							<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+							<h2>Complaint Type</h2>
+							<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+						</header>
+
+						<!-- widget div-->
+						<div>
+
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body no-padding">
+
+								<!--<div ng-show="Complainttype == true">-->
+								<div class="table-responsive">
+
+									<table class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<th>S.No</th>
+												<th>Complaint Category</th>
+												<th>Complaint type</th>
+
+												<th>Action</th>
+
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="pt in  ComplaintTypeArray">
+
+												<td>{{ $index+1}}</td>
+												<td>{{ pt.ComplaintCategory}} </td>
+												<td>{{ pt.ComplaintType}} </td>
+
+
+
+												<td>
+													<button ng-click="Edit(pt.ComplaintCategoryID, pt.ComplaintCategory, pt.ComplaintType,pt.ComplaintTypeID)" class="btn btn-sm btn-info btn-flat pull-left">Edit</button>
+													&nbsp;
+													<button ng-click="Delete(pt.ComplaintCategoryID)" class="btn btn-sm btn-danger">Delete</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="ComplainttypeSave==true">
+					<div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+						<header role="heading">
+							<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+							<h2>Complaint Type</h2>
+							<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+						</header>
+
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+
+							</div>
+							<div class="widget-body no-padding">
+								<!--<div ng-show="ComplaintSave==true">-->
+								<form id="checkout-form" class="smart-form" novalidate="novalidate">
+
+
+									<fieldset>
+										<div class="row">
+
+											<section class="col col-3">
+												<label class="label"><b>COMPLAINT CATEGORY</b></label>
+												<label class="input">
+
+													<select class="form-control" value="item.ComplaintCategoryID"
+															ng-options="item.ComplaintCategoryID as item.ComplaintCategory for item in ComplaintCategoryArray"
+															ng-model="ComplaintCategoryID"></select>
+
+												</label>
+											</section>
+											<section class="col col-3">
+												<label class="label"><b>COMPLAINT TYPE</b></label>
+												<label class="input">
+
+													<input type="text" class="form-control" ng-model="ComplaintType" placeholder="Complaint Type " maxlength="8">
+
+												</label>
+											</section>
+
+										</div>
+									</fieldset>
+
+									<footer>
+
+										<section style="text-align: center">
+
+											<button ng-click="update()" ng-show="ComplainttypeBrand==true" class="btn btn-sm btn-info btn-flat pull-left">Update</button>
+
+											<button ng-show="Complainttypetotal==true" ng-click="Save()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Save</button>
+
+											<button ng-click="Back()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Back</button>
+										</section>
+
+									</footer>
+								</form>
+							</div>
+							<!--<div ng-show="ComplainttypeSave==true">
+								<form role="form">
+									<div class="box-body">
+										<div class="box-body">
+											<p>COMPLAINT CATEGORY</p>
+											<select class="form-control" value="item.ComplaintCategoryID"
+													ng-options="item.ComplaintCategoryID as item.ComplaintCategory for item in ComplaintCategoryArray"
+													ng-model="ComplaintCategoryID"></select>
+
+											<h3>COMPLAIN TYPE</h3>
+											<input type="text" class="form-control" ng-model="ComplaintType" placeholder="Complaint Type " maxlength="8">
+
+
+										</div>
+
+
+									</div>
+
+
+									<div class="box-footer">
+
+										<button ng-click="update()" ng-show="ComplainttypeBrand==true" class="btn btn-sm btn-info btn-flat pull-left">Update</button>
+
+										<button ng-show="Complainttypetotal==true" ng-click="Save()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Save</button>
+
+										<button ng-click="Back()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Back</button>
+									</div>
+								</form>
+							</div>-->
+							<!-- end widget content -->
+
+						</div>
+						<!-- end widget div -->
+
+					</div>
+				</article>
+			</div>
+
+			<!-- end row -->
+
+		</section>
+		<!-- end widget grid -->
+
+	</div>
+	<!-- END MAIN CONTENT -->
+
+</div>
+<!-- END MAIN PANEL -->

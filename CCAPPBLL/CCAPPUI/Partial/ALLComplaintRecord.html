@@ -1,0 +1,159 @@
+﻿<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <!--<span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>-->
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>All Complaint Complaint </li>
+        </ol>
+
+        <div class="input-group" style="width:250px; float:right;">
+            <input type="text" name="q" class="form-control" ng-model="SearchComplaintNumber"
+                   placeholder="Search..." style="margin-top: 4px;">
+            <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat" style="margin-top: 5px;">
+                    <i class="fa fa-search" ></i>
+                </button>
+            </span>
+        </div>
+
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+        <section id="widget-grid" class="">
+            <!-- row -->
+            <div class="row">
+
+                
+              
+
+                <div class="row">
+                    <div class="col-xs-8">
+                        <dir-pagination-controls max-size="20"
+                                                 direction-links="true"
+                                                 boundary-links="true" style="margin-left: 14px;">
+                        </dir-pagination-controls>
+                    </div>
+
+
+                    <div class="col-xs-4">
+                        <button style="float:right;margin-right: 17px;margin-top: 21px;" ng-click="BulkDelete()" class="btn  btn-primary">Bulk Delete</button>
+                    </div>
+                    </div>
+
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Total Complaint</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+                        </header>
+
+                        <!-- widget div-->
+                        <div role="content">
+
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <!-- end widget edit box -->
+                            <!-- widget content -->
+                            <div class="widget-body no-padding">
+
+
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" ng-model="pt.IsSelected"  ng-click="selectAll(pt)"/></th>
+                                                <th>SNo.</th>
+                                                <th>Complaint Number</th>
+                                                <th>Complaint Date</th>
+                                                <!--<th>Customer Name</th>-->
+
+                                                <th>Product Name</th>
+                                                <th>Batch Number</th>
+                                                <th>Complaint Category</th>
+                                                <th>Dealer</th>
+                                                <!--<th>Manufacture Date</th>-->
+                                                <th>Status</th>
+                                                <th>Created BY</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr dir-paginate="pt in PendingRequest |filter :SearchComplaintNumber| itemsPerPage:20">
+                                                    <!--<tr ng-repeat="pt in PendingRequest |filter :SearchComplaintNumber">-->
+                                                
+                                                <td>
+                                                <!--<input type="checkbox" checklist-model="UserRegistrationDetail.SchemaId" checklist-value="pt.SchemaId"> {{pt.SchemaName}}-->
+
+
+
+                                                    <input type="checkbox" ng-model="pt.IsSelected" />
+
+
+                                                    <!--<input type="checkbox" ng-model="pt.SelectDeal" value="pt.DealId"
+        ng-change="SelectOrderProduct(pt)" />-->
+                                                </td>                                                
+                                                <th>{{$index+1}}</th>
+
+
+                                                <td>{{pt.ComplaintNumber}}</td>
+                                                <td>{{pt.CreationDate | date:'dd/MMM/yyyy'}}</td>
+                                                <!--<td>{{pt.CustomerName}}</td>-->
+                                                <td>{{pt.ProductName}}</td>
+                                                <td>{{pt.BatchNumber}}</td>
+                                                <td>{{pt.ComplaintCategory}}</td>
+                                                <td>{{pt.Dealer}}</td>
+                                                <!--<td>{{pt.ManufactureDate | date:'MM/dd/yyyy'}}</td>-->
+                                                <td style="text-align:center"><a class="btn btn-success btn-xs" ng-click="OpenStatus(pt.Complaint_ID)">{{pt.StatusName}}</a></td>
+                                                <td>{{pt.CreatedBy}}</td>
+                                                <td><a class="btn btn-primary btn-xs" ng-click="DeleteComplaint(pt.Complaint_ID)">Delete</a></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                  
+
+                                </div>
+                            </div>
+                            <!-- end widget content -->
+                        </div>
+                        <!-- end widget div -->
+                    </div>
+                </article>
+            </div>
+            <!-- end row -->
+        </section>
+        </div>
+    </div>
+

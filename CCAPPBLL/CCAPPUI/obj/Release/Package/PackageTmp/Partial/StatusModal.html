@@ -1,0 +1,63 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">Complaint Status Details</h3>
+</div>
+
+<div class="row">
+    <section class="col col-12">
+        <ul class="progress-indicator" style="overflow-x:auto" >
+            <li class="completed" ng-if="!$last" ng-repeat="item in PendingStatusData">
+                <span class="bubble"></span>
+                {{item.StatusName}} <br>{{item.CreationDate | date:'dd-MM-yyyy'}}
+            </li>
+            <li class="active" ng-if="item.seq==2"  ng-repeat="item in PendingStatusData">
+                <span class="bubble"></span>
+                {{item.StatusName}} <br>{{item.EmpName}}
+            </li>
+
+        </ul>
+        </section>
+
+
+</div>
+<hr />
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Role</th>
+                <th>Employee Details</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Remark</th>
+
+
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng:repeat="item in PendingStatusData|filter: serachText">
+                <td>{{item.RoleName}}</td>
+                <td>{{item.EmpName}} </td>
+                <td>{{item.StatusName}}</td>
+                <td>{{item.CreationDate | date:'dd-MM-yyyy'}}</td>
+                <td>{{item.Remarks}}</td>
+
+
+
+
+
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<div class="modal-footer">
+
+
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Back</button>
+</div>

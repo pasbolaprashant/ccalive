@@ -1,0 +1,248 @@
+﻿		<!-- MAIN PANEL -->
+<div>      <!--id="main" role="main"-->
+
+    <!-- RIBBON -->
+    <div>
+
+
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Product Batch Master</li>
+        </ol>
+
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <!-- widget div-->
+    <div id="content">
+        <!-- end widget edit box -->
+        <!-- widget content -->
+        <!-- widget grid -->
+        <section id="widget-grid" class="">
+
+
+
+
+
+            <div ng-show="ShowBulkBatchUpload == true">
+                <input type="file" accedt="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                       file-model="File1" /><br />
+
+                <button class="btn btn-primary btn-sm" ng-click="UploadExcelfunction1()">Upload Excel</button>
+                <button ng-click="Back()" class="btn btn-sm btn-primary">Back</button>
+                <p>Download Excel :<a href="../SampleExcel/Product.xlsx"> Sample Excel Product</a>
+            </div><br />
+
+
+            <div ng-show="ProductBatchView == true">
+                <button ng-click="AddProductBatch()" class="btn btn-sm btn-primary">Add Product</button>
+                <button ng-click="AddProductBatchExcel()" class="btn btn-sm btn-primary">Bulk Upload</button>
+            </div><br />
+
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="ProductBatchShow == true">   <!--ng-show="ProductShow == true"-->
+                    <dir-pagination-controls max-size="20"
+                                             direction-links="true"
+                                             boundary-links="true">
+                    </dir-pagination-controls>
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Product</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+                        </header>
+                        <div>
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <div class="widget-body no-padding">
+
+                                <!--<div ng-show="ProductShow == true">-->
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>BatchNumber</th>
+                                                <th>ManufactureDate</th>
+                                                <!--<th>ShelfLife</th>
+                                                <th>ShelfLifeDate</th>-->
+                                                
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr dir-paginate="dt in  ProductBatchArray|filter: serachText| itemsPerPage:5">
+                                                 <td>{{$index+1}}</td>
+                                                <td>{{dt.BatchNumber}} </td>
+                                                <td>{{dt.ManufactureDate | date : format : "MMMM , y"}} </td>
+                                                <!--<td>{{dt.ShelfLife}} </td>
+                                                <td>{{dt.ShelfLifeDate |date : format : "MMMM , y"}}</td>-->
+                                                
+                                                
+                                                <td>
+                                                    <button ng-click="EditBatch(dt)" class="btn btn-xs btn-primary">Edit</button>
+                                                    &nbsp;
+                                                    <button ng-click="deleteProductBatch(dt.ProductBatch_ID)" class="btn btn-xs btn-danger">Delete</button>
+                                                    <!--<button ng-click="BatchView( dt.ProductID)" class="btn btn-xs btn-danger">View Batch Detail</button>-->
+                                                  
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--</div>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="Batch==true">
+
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Product Batch Master</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+                        </header>
+                        <div>
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <div class="widget-body no-padding">
+                                <form id="checkout-form" class="smart-form" novalidate="novalidate">
+
+
+                                    <fieldset>
+                                        <div class="row">
+
+
+
+                                            <section class="col col-2">
+                                                <label class="label"><b>Batch Number</b></label>
+                                                <label class="input">
+                                                    <input type="text" class="form-control" ng-model="BatchNumber" placeholder="Batch Number" />
+                                                    
+                                                </label>
+                                            </section>
+
+                                            <section class="col col-3">
+                                                <label class="label">Manufacture Date</label>
+
+                                                <i class="icon-append fa fa-ellipsis-v"></i>
+                                                <label class="input">
+
+                                                    <!--<div class="datepicker" id="Div1" date-format="MMM/yyyy" datepicker-options="{minMode: 'month'}" datepicker-mode="'month'" button-prev="<i class=&quot;fa fa-arrow-circle-left&quot;></i>" button-next="<i class=&quot;fa fa-arrow-circle-right&quot;></i>">
+                                                        <input ng-required="true" class="form-control" placeholder="Manufacture Date" name="ManufactureDate"  ng-model="ManufactureDate" type="text" />
+
+                                                    </div>-->
+
+                                                    <div>
+                                                        
+                                                        <input type="text" class="form-control"  uib-datepicker-popup="{{format}}" ng-value="{{ManufactureDate}}" ng-model="ManufactureDate" is-open="popup1.opened" datepicker-options="{minMode: 'month'}" ng-required="true" close-text="Close"  />
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default" ng-click="open1()" style="margin: -30px 0px 0px 167px;"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </div>
+
+
+                                                </label>
+                                             </section>
+                                                                                     
+                                        
+
+                                            <!--<section class="col col-2">
+                                                <label class="label"><b>Shelf Life</b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" numbers-Only ng-model="ShelfLife" placeholder="Shelf Life " maxlength="8" />
+                                                </label>
+                                            </section>-->
+
+
+                                              <!--<section class="col col-3">
+                                                <label class="label"><b>Product Batch Shelf Life</b></label>
+
+                                                <i class="icon-append fa fa-ellipsis-v"></i>
+                                                <label class="input">
+
+                                                    <div>
+                                                      
+                                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-value="{{ShelfLifeDate}}" ng-model="ShelfLifeDate" is-open="popup2.opened" datepicker-options="{minMode: 'month'}" ng-required="true" close-text="Close" />
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default" ng-click="open2()" style="margin: -30px 0px 0px 167px;"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </div>
+
+                                                 
+
+                                                    <!--<input date-time placeholder="ShelfLifeDate" type="text" class="form-control" ng-model="ShelfLifeDate" id="ShelfLifeDate" view="month" min-view="month" format="MMM/YYYY" />-->
+
+
+                                                    <!--<div class="datepicker" id="Div1" date-format="dd/MMM/yyyy" button-prev="<i class=&quot;fa fa-arrow-circle-left&quot;></i>" button-next="<i class=&quot;fa fa-arrow-circle-right&quot;></i>">
+                                                        <input ng-required="true" class="form-control" placeholder="Shelf Life Date" name="ManufactureDate" ng-model="ShelfLifeDate" type="text" />
+
+                                                    </div>-->
+                                                <!--</label>
+                                            </section>-->
+                                         
+
+                                        </div>
+                                    </fieldset>
+
+
+
+                                    <footer>
+
+                                        <section style="text-align: center">
+
+                                            <button ng-show="ProductBatchSave==false" ng-click="UpdateBatch()" class="btn btn-sm btn-success btn-flat pull-left">Update</button>
+                                            <button ng-show="ProductBatchSave==true" ng-click="BatchSave()" href="javascridt:void(0)" class="btn btn-sm btn-success btn-flat pull-left">Save</button>
+
+                                            <button ng-click="Back1()" href="javascridt:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Back</button>
+                                        </section>
+
+                                    </footer>
+
+                                </form>
+
+                            </div>
+
+
+
+
+                            <!-- end widget content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- end row -->
+        </section>
+        <div class="modal-footer">
+
+
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+        <!-- end widget grid -->
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->

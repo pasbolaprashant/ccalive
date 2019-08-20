@@ -1,0 +1,427 @@
+﻿<div print-section>
+    <!--start Widget-->
+    <div class="header-printed row col-xs-12">
+
+        <img width="120" style="margin-bottom:5px;" class="img-responsive pull-right" src="../img/nippon-logo2.png" />
+    </div>
+    <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+    <h2 class="hidden-xs hidden-sm">Compensation Form </h2>
+    <form name="CustomerInformation" id="contact-form" class="smart-form" novalidate="novalidate">
+
+        <fieldset>
+
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label>  Complaint Number</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.ComplaintNumber" />
+
+                    </label>
+                </section>
+
+                <section class="col col-4">
+                    <label> Complainant Designation</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="Emp.Desg_Desc" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label> Complainant Name</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="Emp.Emp_First_name" />
+                    </label>
+                </section>
+
+                <section class="col col-4">
+                    <label>Date of Logging the Complaint</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.CreationDate" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label> Date of Complaint closure</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.ComplaintClousreDate" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Dealer Code</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.DealerCode" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label> Dealer Name</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.DealerName" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Sales Office</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.SalesOffice" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label> Customer Account Name</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.CustomerAccountName" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Phone no</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.CustomerPhone" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label>Email Id</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.CustomerEmail" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Address</label>
+                    <label class="input">
+                        <textarea readonly ng-model="CompForm.CustomerAddress"></textarea>
+                    </label>
+                </section>
+            </div>
+            <hr />
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label>Product Code</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.ProductCode" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Brand</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.BrandName" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label>Product Description</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.ProductDescription" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Batch Number</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.BatchNumber" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label>Date & Month of Manufacture</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.ManuFactureDate" />
+                    </label>
+
+                </section>
+
+                <section class="col col-4">
+                    <label>Qty of Complaint stock</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.QtyOfComplaintStock" />
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-4">
+                    <label>Shelf Life</label>
+                    <label class="input">
+                        <input type="text" readonly ng-model="CompForm.ShelfLife" />
+                    </label>
+
+                </section>
+
+            </div>
+            <hr />
+            <h2 class="hidden-xs hidden-sm">Compensation Details </h2>
+            <br />
+            <div class="row">
+
+
+
+                <section class="col col-2">
+                    <label>Compensation Type</label>
+
+                </section>
+
+                <section class="col col-2">
+
+                    <label class="radio-inline"><input type="radio" disabled name="CompensationType" ng-model="FormDetails.CompensationType" ng-value="1">&nbsp;Product</label>
+                </section>
+                <section ng-if="FormDetails.CompensationType==1" class="col col-2">
+                    <label class="input">
+                        <input type="text" numbers-only readonly ng-model="FormDetails.CompensationValue" />
+                        <input type="text" style="display:none" ng-model="FormDetails.Complaint_Id" />
+                        <input type="text" style="display:none" ng-model="FormDetails.Department_Id" />
+                        <input type="text" style="display:none" ng-model="FormDetails.CreatedBy" />
+                    </label>
+
+                </section>
+
+                <section ng-if="FormDetails.CompensationType==1" class="col col-2">
+
+                    <label class="input">
+
+                        <select name="state" readonly class="form-control selectpicker" ng-model="FormDetails.CompensationUnit">
+                            <option>INR</option>
+
+                        </select>
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-2">
+                    <label></label>
+
+                </section>
+
+                <section class="col col-2">
+
+                    <label class="radio-inline"><input disabled type="radio" name="CompensationType" ng-model="FormDetails.CompensationType" ng-value="2">&nbsp;Damage to surface applied</label>
+                </section>
+                <section ng-if="FormDetails.CompensationType==2" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly numbers-only ng-model="FormDetails.DamageValue" />
+                    </label>
+
+                </section>
+
+                <section ng-if="FormDetails.CompensationType==2" class="col col-2">
+
+                    <label class="input">
+
+                        <select name="state" readonly class="form-control selectpicker" ng-model="FormDetails.DamageUnit">
+                            <option>INR</option>
+
+                        </select>
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-2">
+                    <label></label>
+
+                </section>
+
+                <section class="col col-2">
+
+                    <label class="radio-inline"><input disabled type="radio" name="CompensationType" ng-model="FormDetails.CompensationType" ng-value="3">&nbsp;Customer Goodwill</label>
+                </section>
+                <section ng-if="FormDetails.CompensationType==3" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly numbers-only ng-model="FormDetails.GoodwillValue" />
+                    </label>
+
+                </section>
+
+                <section ng-if="FormDetails.CompensationType==3" class="col col-2">
+
+                    <label class="input">
+
+                        <select name="state" readonly class="form-control selectpicker" ng-model="FormDetails.GoodwillUnit">
+                            <option>INR</option>
+
+                        </select>
+                    </label>
+                </section>
+            </div>
+
+            <div class="row">
+
+
+
+                <section class="col col-2">
+                    <label>Settlement mode</label>
+
+                </section>
+
+                <section class="col col-2">
+
+                    <label class="radio-inline"><input type="radio" disabled name="SettlementMode" ng-model="FormDetails.SettlementMode" ng-value="1">&nbsp;Credit Note</label>
+                </section>
+
+                <section ng-if="FormDetails.SettlementMode==1" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly numbers-only ng-model="FormDetails.CreditNoteValue" />
+                    </label>
+
+                </section>
+
+
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-2">
+                    <label></label>
+
+                </section>
+
+                <section class="col col-2">
+
+                    <label class="radio-inline"><input type="radio" disabled name="SettlementMode" ng-model="FormDetails.SettlementMode" ng-value="2">&nbsp;FOC Material</label>
+                </section>
+                <section ng-if="FormDetails.SettlementMode==2" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly numbers-only ng-model="FormDetails.FOCValue" />
+                    </label>
+
+                </section>
+
+                <section ng-if="FormDetails.SettlementMode==2" class="col col-2">
+
+                    <label class="input">
+
+                        <select name="state" readonly class="form-control selectpicker"
+                                ng-options="pc.Product_ID  as pc.ProductCode for pc in ProductMaster"
+                                ng-model="FormDetails.FOCProduct_ID"></select>
+
+
+                    </label>
+                </section>
+                <section ng-if="FormDetails.SettlementMode==2" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly placeholder="QTY" numbers-only ng-model="FormDetails.FOCProductQty" />
+                    </label>
+
+                </section>
+                <section ng-if="FormDetails.SettlementMode==2" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly placeholder="Batch Number" numbers-only ng-model="FormDetails.FOCBatchNumber" />
+                    </label>
+
+                </section>
+            </div>
+            <div class="row">
+
+
+
+                <section class="col col-2">
+                    <label></label>
+
+                </section>
+
+                <section class="col col-2">
+
+                    <label class="radio-inline"><input disabled type="radio" name="SettlementMode" ng-model="FormDetails.SettlementMode" ng-value="3">&nbsp;Replacement of Material</label>
+                </section>
+                <section ng-if="FormDetails.SettlementMode==3" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly numbers-only ng-model="FormDetails.ReplacementValue" />
+                    </label>
+
+                </section>
+
+                <section ng-if="FormDetails.SettlementMode==3" class="col col-2">
+
+                    <label class="input">
+
+                        <select name="state" readonly class="form-control selectpicker"
+                                ng-options="pc.Product_ID  as pc.ProductCode for pc in ProductMaster"
+                                ng-model="FormDetails.ReplacementProduct_ID"></select>
+
+
+                    </label>
+                </section>
+                <section ng-if="FormDetails.SettlementMode==3" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly placeholder="QTY" numbers-only ng-model="FormDetails.ReplacementProductQty" />
+                    </label>
+
+                </section>
+                <section ng-if="FormDetails.SettlementMode==3" class="col col-2">
+                    <label class="input">
+                        <input type="text" readonly placeholder="Batch Number" numbers-only ng-model="FormDetails.ReplacementProductBatchNumber" />
+                    </label>
+
+                </section>
+            </div>
+
+
+
+
+
+            <hr>
+        </fieldset>
+    </form>
+    <footer print-remove>
+
+        <button class="btn btn-warning" onclick="window.print();">Print</button>
+        <button class="btn btn-warning" ng-click="UploadCompForm()">Upload</button>
+        <button class="btn btn-primary" ng-click="init()">Back</button>
+        <!--<button class="btn btn-success">Approve</button>-->
+
+    </footer>
+
+
+
+</div>

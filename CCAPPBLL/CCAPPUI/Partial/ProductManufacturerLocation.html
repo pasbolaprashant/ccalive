@@ -1,0 +1,177 @@
+﻿		<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Product Manufacturing Location Master</li>
+        </ol>
+
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <!-- widget div-->
+    <div id="content">
+        <!-- end widget edit box -->
+        <!-- widget content -->
+        <!-- widget grid -->
+        <section id="widget-grid" class="">
+
+
+
+
+
+            <!--<div ng-show="ShowBulkUpload == true">
+                <input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                       file-model="File1" /><br />
+
+                <button class="btn btn-primary btn-sm" ng-click="UploadExcelfunction()">Upload Excel</button>
+                <button ng-click="Back()" class="btn btn-sm btn-primary">Back</button>
+                <p>Download Excel :<a href="../SampleExcel/Product.xlsx"> Sample Excel Product</a>
+            </div><br />-->
+
+
+            <div ng-show="ProductView == true">
+                <button ng-click="AddProduct()" class="btn btn-sm btn-primary">Add Product</button>
+           
+            </div><br />
+
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="ProductShow == true">
+                    <dir-pagination-controls max-size="20"
+                                             direction-links="true"
+                                             boundary-links="true">
+                    </dir-pagination-controls>
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Product</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+                        </header>
+                        <div>
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <div class="widget-body no-padding">
+
+                                <!--<div ng-show="ProductShow == true">-->
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Product Manufacturing Location</th>
+                                               
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr dir-paginate="pt in  ProductLocationArray|filter: serachText| itemsPerPage:20">
+
+                                                <td>{{ $index+1}}</td>
+                                                <td>{{ pt.ManufacturingLocation}} </td>
+                                              
+                                                <td>
+                                                    <button ng-click="Edit(pt.Location_Id,pt.ManufacturingLocation)" class="btn btn-xs btn-primary">Edit</button>
+                                                    &nbsp;
+                                                    <button ng-click="Delete( pt.Location_Id)" class="btn btn-xs btn-danger">Delete</button>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--</div>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable" ng-show="Prduct==true">
+
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Product Manufacturing Location</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+
+                        </header>
+                        <div>
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <div class="widget-body no-padding">
+                                <form id="checkout-form" class="smart-form" novalidate="novalidate">
+
+
+                                    <fieldset>
+                                        <div class="row">
+
+                                         
+                                            <section class="col col-4">
+                                                <label class="label"><b>PRODUCT Manufacturing Location</b></label>
+                                                <label class="input">
+
+                                                    <input type="text" class="form-control" ng-model="ManufacturingLocation" placeholder="PRODUCT Manufacturing Location" />
+                                                </label>
+                                            </section>
+
+                                          
+
+                                        </div>
+                                    </fieldset>
+
+
+
+                                    <footer>
+
+                                        <section style="text-align: center">
+
+                                            <button ng-show="ProductSave==false" ng-click="Update()" class="btn btn-sm btn-success btn-flat pull-left">Update</button>
+                                            <button ng-show="ProductSave==true" ng-click="Save()" href="javascript:void(0)" class="btn btn-sm btn-success btn-flat pull-left">Save</button>
+
+                                            <button ng-click="Back()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Back</button>
+                                        </section>
+
+                                    </footer>
+
+                                </form>
+
+                            </div>
+
+
+
+
+                            <!-- end widget content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- end row -->
+        </section>
+
+        <!-- end widget grid -->
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->

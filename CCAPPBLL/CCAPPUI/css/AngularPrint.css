@@ -1,0 +1,80 @@
+﻿@media screen {
+    .printOnly {
+        display: none !important;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden !important;
+    }
+
+    body {
+        margin: 0mm !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .printOnly, .printOnly * {
+        visibility: visible !important;
+        display: initial !important;
+    }
+
+        .printOnly.printRemove {
+            display: none !important;
+        }
+
+    .printSection, .printSection * {
+        visibility: visible !important;
+    }
+
+    .printRemove, .printRemove * {
+        display: none !important;
+    }
+
+    .printHide, .printHide * {
+        visibility: hidden !important;
+    }
+
+        .printHide .printSection * {
+            visibility: visible !important;
+        }
+
+    .printRemove .printSection * {
+        visibility: visible !important;
+    }
+
+    .avoidPageBreak {
+        page-break-inside: avoid !important;
+    }
+
+    td div {
+        page-break-inside: avoid !important;
+    }
+
+    thead {
+        display: table-header-group !important;
+    }
+
+    .noPrintMargin {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    @page {
+        margin: 0cm
+    }
+
+    @page :first {
+        margin-top: 0cm !important;
+    }
+
+    @page :left {
+        margin-left: 0cm !important;
+        margin-right: 0cm !important;
+    }
+
+    @page :right {
+        margin-left: 0cm !important;
+        margin-right: 0cm !important;
+    }
+}

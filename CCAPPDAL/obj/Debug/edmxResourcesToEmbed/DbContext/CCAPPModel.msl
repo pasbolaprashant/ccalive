@@ -1,0 +1,1376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CustomerComplaintModelStoreContainer" CdmEntityContainer="CustomerComplaintEntities">
+    <EntitySetMapping Name="tblBrandMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblBrandMaster">
+        <MappingFragment StoreEntitySet="tblBrandMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintCategoryMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintCategoryMaster">
+        <MappingFragment StoreEntitySet="tblComplaintCategoryMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintTypeMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintTypeMaster">
+        <MappingFragment StoreEntitySet="tblComplaintTypeMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ComplaintType" ColumnName="ComplaintType" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+          <ScalarProperty Name="ComplaintType_ID" ColumnName="ComplaintType_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSubstrateMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblSubstrateMaster">
+        <MappingFragment StoreEntitySet="tblSubstrateMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SubstrateDesc" ColumnName="SubstrateDesc" />
+          <ScalarProperty Name="Substrate_ID" ColumnName="Substrate_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblComplaintRequestDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblComplaintRequestDtl">
+        <MappingFragment StoreEntitySet="TblComplaintRequestDtl">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ComplaintType_ID" ColumnName="ComplaintType_ID" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintDtl_ID" ColumnName="ComplaintDtl_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblRoleMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblRoleMaster">
+        <MappingFragment StoreEntitySet="TblRoleMaster">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleMaster_Id" ColumnName="RoleMaster_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStatusMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblStatusMaster">
+        <MappingFragment StoreEntitySet="tblStatusMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblApprovalDetails">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblApprovalDetail">
+        <MappingFragment StoreEntitySet="tblApprovalDetail">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Employee_Code" ColumnName="Employee_Code" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="ApprovalHeader_ID" ColumnName="ApprovalHeader_ID" />
+          <ScalarProperty Name="ApprovalDetail_ID" ColumnName="ApprovalDetail_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblComplaintReapplicationSystemInfoDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblComplaintReapplicationSystemInfoDtl">
+        <MappingFragment StoreEntitySet="TblComplaintReapplicationSystemInfoDtl">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Value8" ColumnName="Value8" />
+          <ScalarProperty Name="Value7" ColumnName="Value7" />
+          <ScalarProperty Name="Value6" ColumnName="Value6" />
+          <ScalarProperty Name="Value5" ColumnName="Value5" />
+          <ScalarProperty Name="Value4" ColumnName="Value4" />
+          <ScalarProperty Name="Value3" ColumnName="Value3" />
+          <ScalarProperty Name="ApplicationTypeValue" ColumnName="ApplicationTypeValue" />
+          <ScalarProperty Name="ApplicationType" ColumnName="ApplicationType" />
+          <ScalarProperty Name="CoatType_ID" ColumnName="CoatType_ID" />
+          <ScalarProperty Name="ComplaintHandler_Id" ColumnName="ComplaintHandler_Id" />
+          <ScalarProperty Name="Substrate_ID" ColumnName="Substrate_ID" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintSystemInfo_ID" ColumnName="ComplaintSystemInfo_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintReappPhotoDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintReappPhotoDtl">
+        <MappingFragment StoreEntitySet="tblComplaintReappPhotoDtl">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintHandler_Id" ColumnName="ComplaintHandler_Id" />
+          <ScalarProperty Name="ComplaintReappPhoto_Id" ColumnName="ComplaintReappPhoto_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintPlantReprocesses">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintPlantReprocess">
+        <MappingFragment StoreEntitySet="tblComplaintPlantReprocess">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ReproccessingComplete" ColumnName="ReproccessingComplete" />
+          <ScalarProperty Name="StockReceived" ColumnName="StockReceived" />
+          <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+          <ScalarProperty Name="Complaint_Id" ColumnName="Complaint_Id" />
+          <ScalarProperty Name="ComplaintReprocess_Id" ColumnName="ComplaintReprocess_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblApprovalHeaders">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblApprovalHeader">
+        <MappingFragment StoreEntitySet="tblApprovalHeader">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssignedRole_Id" ColumnName="AssignedRole_Id" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="AssignTo" ColumnName="AssignTo" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Compensation_Id" ColumnName="Compensation_Id" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ApprovalHeader_ID" ColumnName="ApprovalHeader_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFutureStatus">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblFutureStatu">
+        <MappingFragment StoreEntitySet="tblFutureStatus">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Compensation_Id" ColumnName="Compensation_Id" />
+          <ScalarProperty Name="Complaint_Id" ColumnName="Complaint_Id" />
+          <ScalarProperty Name="FutureStatus_ID" ColumnName="FutureStatus_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblComplaintRequestPhotoDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblComplaintRequestPhotoDtl">
+        <MappingFragment StoreEntitySet="TblComplaintRequestPhotoDtl">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintPhoto_ID" ColumnName="ComplaintPhoto_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCompensationDetailsTypeMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblCompensationDetailsTypeMaster">
+        <MappingFragment StoreEntitySet="tblCompensationDetailsTypeMaster">
+          <ScalarProperty Name="ModifedDate" ColumnName="ModifedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Compensation_TypeName" ColumnName="Compensation_TypeName" />
+          <ScalarProperty Name="Compensation_TypeID" ColumnName="Compensation_TypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CompensationDetailsType_ID" ColumnName="CompensationDetailsType_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintCompensationDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintCompensationDtl">
+        <MappingFragment StoreEntitySet="tblComplaintCompensationDtl">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="GoodwillUnit" ColumnName="GoodwillUnit" />
+          <ScalarProperty Name="GoodwillValue" ColumnName="GoodwillValue" />
+          <ScalarProperty Name="DamageUnit" ColumnName="DamageUnit" />
+          <ScalarProperty Name="DamageValue" ColumnName="DamageValue" />
+          <ScalarProperty Name="CompensationUnit" ColumnName="CompensationUnit" />
+          <ScalarProperty Name="CompensationValue" ColumnName="CompensationValue" />
+          <ScalarProperty Name="CompensationType" ColumnName="CompensationType" />
+          <ScalarProperty Name="CompensationDetailsType_ID" ColumnName="CompensationDetailsType_ID" />
+          <ScalarProperty Name="ComplaintCompensation_Id" ColumnName="ComplaintCompensation_Id" />
+          <ScalarProperty Name="ComplaintCompensationDtl_Id" ColumnName="ComplaintCompensationDtl_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdminMatrices">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblAdminMatrix">
+        <MappingFragment StoreEntitySet="tblAdminMatrix">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintSettlementDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintSettlementDtl">
+        <MappingFragment StoreEntitySet="tblComplaintSettlementDtl">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReplacementProductBatchNumber" ColumnName="ReplacementProductBatchNumber" />
+          <ScalarProperty Name="ReplacementProductQty" ColumnName="ReplacementProductQty" />
+          <ScalarProperty Name="ReplacementProduct_ID" ColumnName="ReplacementProduct_ID" />
+          <ScalarProperty Name="ReplacementValue" ColumnName="ReplacementValue" />
+          <ScalarProperty Name="FOCBatchNumber" ColumnName="FOCBatchNumber" />
+          <ScalarProperty Name="FOCProductQty" ColumnName="FOCProductQty" />
+          <ScalarProperty Name="FOCProduct_ID" ColumnName="FOCProduct_ID" />
+          <ScalarProperty Name="FOCValue" ColumnName="FOCValue" />
+          <ScalarProperty Name="CreditNoteUnit" ColumnName="CreditNoteUnit" />
+          <ScalarProperty Name="CreditNoteValue" ColumnName="CreditNoteValue" />
+          <ScalarProperty Name="SettlementModeId" ColumnName="SettlementModeId" />
+          <ScalarProperty Name="CompensationDetailsType_ID" ColumnName="CompensationDetailsType_ID" />
+          <ScalarProperty Name="ComplaintCompensation_Id" ColumnName="ComplaintCompensation_Id" />
+          <ScalarProperty Name="ComplaintSettlementDtl_Id" ColumnName="ComplaintSettlementDtl_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintCompensations">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintCompensation">
+        <MappingFragment StoreEntitySet="tblComplaintCompensation">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CompensationURL" ColumnName="CompensationURL" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CNIssuesDate" ColumnName="CNIssuesDate" />
+          <ScalarProperty Name="MaterialBillingDate" ColumnName="MaterialBillingDate" />
+          <ScalarProperty Name="SettlementEPNumber" ColumnName="SettlementEPNumber" />
+          <ScalarProperty Name="ReplacementProductBatchNumber" ColumnName="ReplacementProductBatchNumber" />
+          <ScalarProperty Name="ReplacementProductQty" ColumnName="ReplacementProductQty" />
+          <ScalarProperty Name="ReplacementProduct_ID" ColumnName="ReplacementProduct_ID" />
+          <ScalarProperty Name="ReplacementValue" ColumnName="ReplacementValue" />
+          <ScalarProperty Name="FOCBatchNumber" ColumnName="FOCBatchNumber" />
+          <ScalarProperty Name="FOCProductQty" ColumnName="FOCProductQty" />
+          <ScalarProperty Name="FOCProduct_ID" ColumnName="FOCProduct_ID" />
+          <ScalarProperty Name="FOCValue" ColumnName="FOCValue" />
+          <ScalarProperty Name="CreditNoteUnit" ColumnName="CreditNoteUnit" />
+          <ScalarProperty Name="CreditNoteValue" ColumnName="CreditNoteValue" />
+          <ScalarProperty Name="SettlementMode" ColumnName="SettlementMode" />
+          <ScalarProperty Name="GoodwillUnit" ColumnName="GoodwillUnit" />
+          <ScalarProperty Name="GoodwillValue" ColumnName="GoodwillValue" />
+          <ScalarProperty Name="DamageUnit" ColumnName="DamageUnit" />
+          <ScalarProperty Name="DamageValue" ColumnName="DamageValue" />
+          <ScalarProperty Name="CompensationUnit" ColumnName="CompensationUnit" />
+          <ScalarProperty Name="CompensationValue" ColumnName="CompensationValue" />
+          <ScalarProperty Name="CompensationType" ColumnName="CompensationType" />
+          <ScalarProperty Name="Complaint_Id" ColumnName="Complaint_Id" />
+          <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+          <ScalarProperty Name="ComplaintCompensation_Id" ColumnName="ComplaintCompensation_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblTemplateMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblTemplateMaster">
+        <MappingFragment StoreEntitySet="TblTemplateMaster">
+          <ScalarProperty Name="templete_For" ColumnName="templete_For" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Template_Subject" ColumnName="Template_Subject" />
+          <ScalarProperty Name="Templat_Body" ColumnName="Templat_Body" />
+          <ScalarProperty Name="Template_Id" ColumnName="Template_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTSEMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblTSEMaster">
+        <MappingFragment StoreEntitySet="tblTSEMaster">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="TSE_Id" ColumnName="TSE_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProductBatches">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblProductBatch">
+        <MappingFragment StoreEntitySet="tblProductBatch">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ShelfLifeDate" ColumnName="ShelfLifeDate" />
+          <ScalarProperty Name="ShelfLife" ColumnName="ShelfLife" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductBatch_ID" ColumnName="ProductBatch_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProductMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblProductMaster">
+        <MappingFragment StoreEntitySet="tblProductMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+          <ScalarProperty Name="Segment" ColumnName="Segment" />
+          <ScalarProperty Name="ProductShelfLife" ColumnName="ProductShelfLife" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProductManufacturerLocations">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblProductManufacturerLocation">
+        <MappingFragment StoreEntitySet="TblProductManufacturerLocation">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ManufacturingLocation" ColumnName="ManufacturingLocation" />
+          <ScalarProperty Name="Location_Id" ColumnName="Location_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblComplaintReapplications">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblComplaintReapplication">
+        <MappingFragment StoreEntitySet="TblComplaintReapplication">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RemarksForQuetsionaire" ColumnName="RemarksForQuetsionaire" />
+          <ScalarProperty Name="AvailableForFutureEvidence" ColumnName="AvailableForFutureEvidence" />
+          <ScalarProperty Name="SufficientEvidence" ColumnName="SufficientEvidence" />
+          <ScalarProperty Name="IsSelf" ColumnName="IsSelf" />
+          <ScalarProperty Name="VerifiedInSameBatch" ColumnName="VerifiedInSameBatch" />
+          <ScalarProperty Name="EvidenceAvailable" ColumnName="EvidenceAvailable" />
+          <ScalarProperty Name="CustomerComplaintClosed" ColumnName="CustomerComplaintClosed" />
+          <ScalarProperty Name="CourseOfAction" ColumnName="CourseOfAction" />
+          <ScalarProperty Name="TMApproved" ColumnName="TMApproved" />
+          <ScalarProperty Name="TMInformed" ColumnName="TMInformed" />
+          <ScalarProperty Name="ComplaintObserved" ColumnName="ComplaintObserved" />
+          <ScalarProperty Name="ApplicationComments" ColumnName="ApplicationComments" />
+          <ScalarProperty Name="SystemFollowed" ColumnName="SystemFollowed" />
+          <ScalarProperty Name="CustomerCommunication" ColumnName="CustomerCommunication" />
+          <ScalarProperty Name="ClosureRecomended" ColumnName="ClosureRecomended" />
+          <ScalarProperty Name="ReApplicationReqd" ColumnName="ReApplicationReqd" />
+          <ScalarProperty Name="ReApplicationDate" ColumnName="ReApplicationDate" />
+          <ScalarProperty Name="NonApplicationReason" ColumnName="NonApplicationReason" />
+          <ScalarProperty Name="ProcessReplicated" ColumnName="ProcessReplicated" />
+          <ScalarProperty Name="IsQCretailSample" ColumnName="IsQCretailSample" />
+          <ScalarProperty Name="IsQCretainAvailable" ColumnName="IsQCretainAvailable" />
+          <ScalarProperty Name="Location_Id" ColumnName="Location_Id" />
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintHandler_ID" ColumnName="ComplaintHandler_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintReapplicationInfoes">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintReapplicationInfo">
+        <MappingFragment StoreEntitySet="tblComplaintReapplicationInfo">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsComplaintValid" ColumnName="IsComplaintValid" />
+          <ScalarProperty Name="IsCompensationRequire" ColumnName="IsCompensationRequire" />
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintManager_ID" ColumnName="ComplaintManager_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintQuarantines">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintQuarantine">
+        <MappingFragment StoreEntitySet="tblComplaintQuarantine">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DisposalComplete" ColumnName="DisposalComplete" />
+          <ScalarProperty Name="StockReceived" ColumnName="StockReceived" />
+          <ScalarProperty Name="DateOfExpectedClosure" ColumnName="DateOfExpectedClosure" />
+          <ScalarProperty Name="ExpectedCostOfQuartineCurr" ColumnName="ExpectedCostOfQuartineCurr" />
+          <ScalarProperty Name="ExpectedCostOfQuartine" ColumnName="ExpectedCostOfQuartine" />
+          <ScalarProperty Name="AffectedBatchNumbers" ColumnName="AffectedBatchNumbers" />
+          <ScalarProperty Name="SysValueProductUnit" ColumnName="SysValueProductUnit" />
+          <ScalarProperty Name="SysValueProductVol" ColumnName="SysValueProductVol" />
+          <ScalarProperty Name="StockSAPProductUnit" ColumnName="StockSAPProductUnit" />
+          <ScalarProperty Name="StockSAPProductVol" ColumnName="StockSAPProductVol" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="Complaint_Id" ColumnName="Complaint_Id" />
+          <ScalarProperty Name="ComplaintQuartine_Id" ColumnName="ComplaintQuartine_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintStakeHolders">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintStakeHolder">
+        <MappingFragment StoreEntitySet="tblComplaintStakeHolders">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="LocalTechnical" ColumnName="LocalTechnical" />
+          <ScalarProperty Name="ComplaintManager" ColumnName="ComplaintManager" />
+          <ScalarProperty Name="ComplaintHandler" ColumnName="ComplaintHandler" />
+          <ScalarProperty Name="Catalyst" ColumnName="Catalyst" />
+          <ScalarProperty Name="SBU_Name" ColumnName="SBU_Name" />
+          <ScalarProperty Name="ComplaintStakeHolders_ID" ColumnName="ComplaintStakeHolders_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintSystemInfoDtls">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintSystemInfoDtl">
+        <MappingFragment StoreEntitySet="tblComplaintSystemInfoDtl">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Value10" ColumnName="Value10" />
+          <ScalarProperty Name="Value9" ColumnName="Value9" />
+          <ScalarProperty Name="Value8" ColumnName="Value8" />
+          <ScalarProperty Name="Value7" ColumnName="Value7" />
+          <ScalarProperty Name="Value6" ColumnName="Value6" />
+          <ScalarProperty Name="Value5" ColumnName="Value5" />
+          <ScalarProperty Name="Value4" ColumnName="Value4" />
+          <ScalarProperty Name="Value3" ColumnName="Value3" />
+          <ScalarProperty Name="ApplicationTypeValue" ColumnName="ApplicationTypeValue" />
+          <ScalarProperty Name="ApplicationType" ColumnName="ApplicationType" />
+          <ScalarProperty Name="CoatType_ID" ColumnName="CoatType_ID" />
+          <ScalarProperty Name="SubstrateRelated" ColumnName="SubstrateRelated" />
+          <ScalarProperty Name="Substrate_ID" ColumnName="Substrate_ID" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintSystemInfo_ID" ColumnName="ComplaintSystemInfo_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComplaintRCAs">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblComplaintRCA">
+        <MappingFragment StoreEntitySet="tblComplaintRCA">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="DateOfExpectedClosure" ColumnName="DateOfExpectedClosure" />
+          <ScalarProperty Name="ReprocessingCostCurrency" ColumnName="ReprocessingCostCurrency" />
+          <ScalarProperty Name="ReprocessingCost" ColumnName="ReprocessingCost" />
+          <ScalarProperty Name="SiteReprocessing" ColumnName="SiteReprocessing" />
+          <ScalarProperty Name="SysValueProductUnit" ColumnName="SysValueProductUnit" />
+          <ScalarProperty Name="SysValueProductVol" ColumnName="SysValueProductVol" />
+          <ScalarProperty Name="StockSAPProductUnit" ColumnName="StockSAPProductUnit" />
+          <ScalarProperty Name="StockSAPProductVol" ColumnName="StockSAPProductVol" />
+          <ScalarProperty Name="AffectedProductUnit" ColumnName="AffectedProductUnit" />
+          <ScalarProperty Name="AffectedProductVol" ColumnName="AffectedProductVol" />
+          <ScalarProperty Name="ClosureComments" ColumnName="ClosureComments" />
+          <ScalarProperty Name="ReprocessingComments" ColumnName="ReprocessingComments" />
+          <ScalarProperty Name="DocumentUpload" ColumnName="DocumentUpload" />
+          <ScalarProperty Name="PreventiveAction" ColumnName="PreventiveAction" />
+          <ScalarProperty Name="CorrectiveAction" ColumnName="CorrectiveAction" />
+          <ScalarProperty Name="ImmediateAction" ColumnName="ImmediateAction" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsRelated" ColumnName="IsRelated" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="Isconfirmed" ColumnName="Isconfirmed" />
+          <ScalarProperty Name="IsValidate" ColumnName="IsValidate" />
+          <ScalarProperty Name="IsReprocessing" ColumnName="IsReprocessing" />
+          <ScalarProperty Name="IsRectifiable" ColumnName="IsRectifiable" />
+          <ScalarProperty Name="RCAComments" ColumnName="RCAComments" />
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="RCA_Id" ColumnName="RCA_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDealerMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblDealerMaster">
+        <MappingFragment StoreEntitySet="tblDealerMaster">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DepotId" ColumnName="DepotId" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="RM" ColumnName="RM" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="ASM" ColumnName="ASM" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="SO" ColumnName="SO" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="DealerAddress" ColumnName="DealerAddress" />
+          <ScalarProperty Name="DealerName" ColumnName="DealerName" />
+          <ScalarProperty Name="DealerCode" ColumnName="DealerCode" />
+          <ScalarProperty Name="Dealer_ID" ColumnName="Dealer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDepotMasters">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblDepotMaster">
+        <MappingFragment StoreEntitySet="tblDepotMaster">
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ZLO" ColumnName="ZLO" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EmailAdress" ColumnName="EmailAdress" />
+          <ScalarProperty Name="DepotAddress" ColumnName="DepotAddress" />
+          <ScalarProperty Name="DepotCode" ColumnName="DepotCode" />
+          <ScalarProperty Name="DepotName" ColumnName="DepotName" />
+          <ScalarProperty Name="DepotId" ColumnName="DepotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFlowMatrices">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.tblFlowMatrix">
+        <MappingFragment StoreEntitySet="tblFlowMatrix">
+          <ScalarProperty Name="MOdifiedDate" ColumnName="MOdifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="BMLimit" ColumnName="BMLimit" />
+          <ScalarProperty Name="BM" ColumnName="BM" />
+          <ScalarProperty Name="R_And_D" ColumnName="R_And_D" />
+          <ScalarProperty Name="SCM" ColumnName="SCM" />
+          <ScalarProperty Name="Marketing" ColumnName="Marketing" />
+          <ScalarProperty Name="OutSourced" ColumnName="OutSourced" />
+          <ScalarProperty Name="Plant" ColumnName="Plant" />
+          <ScalarProperty Name="SBU_Name" ColumnName="SBU_Name" />
+          <ScalarProperty Name="FlowMatrix_ID" ColumnName="FlowMatrix_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblComplaintRequestHdrs">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblComplaintRequestHdr">
+        <MappingFragment StoreEntitySet="TblComplaintRequestHdr">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ShelfLife" ColumnName="ShelfLife" />
+          <ScalarProperty Name="ManifactureDate" ColumnName="ManifactureDate" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="Humidity" ColumnName="Humidity" />
+          <ScalarProperty Name="Tempreature" ColumnName="Tempreature" />
+          <ScalarProperty Name="RemarksForQuetsionaire" ColumnName="RemarksForQuetsionaire" />
+          <ScalarProperty Name="SufficientEvidence" ColumnName="SufficientEvidence" />
+          <ScalarProperty Name="AvailableForFutureEvidence" ColumnName="AvailableForFutureEvidence" />
+          <ScalarProperty Name="IsSelf" ColumnName="IsSelf" />
+          <ScalarProperty Name="VerifiedInSameBatch" ColumnName="VerifiedInSameBatch" />
+          <ScalarProperty Name="EvidenceAvailable" ColumnName="EvidenceAvailable" />
+          <ScalarProperty Name="RequestRCAOutType" ColumnName="RequestRCAOutType" />
+          <ScalarProperty Name="RequestRCA" ColumnName="RequestRCA" />
+          <ScalarProperty Name="ComplaintDesc" ColumnName="ComplaintDesc" />
+          <ScalarProperty Name="ComplaintQtyType" ColumnName="ComplaintQtyType" />
+          <ScalarProperty Name="ComplaintQty" ColumnName="ComplaintQty" />
+          <ScalarProperty Name="Batch_Id" ColumnName="Batch_Id" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="CatalystTicketNumber" ColumnName="CatalystTicketNumber" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="CustomerEmailID" ColumnName="CustomerEmailID" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerAccountName" ColumnName="CustomerAccountName" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Dealer_ID" ColumnName="Dealer_ID" />
+          <ScalarProperty Name="VehicleRepairDate" ColumnName="VehicleRepairDate" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Get_ProductBatchInfo" FunctionName="CustomerComplaintModel.Store.Get_ProductBatchInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Get_ProductBatchInfo_Result">
+          <ScalarProperty Name="ProductBatch_ID" ColumnName="ProductBatch_ID" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="ShelfLife" ColumnName="ShelfLife" />
+          <ScalarProperty Name="ShelfLifeDate" ColumnName="ShelfLifeDate" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductShelfLife" ColumnName="ProductShelfLife" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getCategoryList" FunctionName="CustomerComplaintModel.Store.getCategoryList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.getCategoryList_Result">
+          <ScalarProperty Name="ComplaintType_ID" ColumnName="ComplaintType_ID" />
+          <ScalarProperty Name="ComplaintType" ColumnName="ComplaintType" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetLFGUserDetails" FunctionName="CustomerComplaintModel.Store.GetLFGUserDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.GetLFGUserDetails_Result">
+          <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+          <ScalarProperty Name="Emp_First_name" ColumnName="Emp_First_name" />
+          <ScalarProperty Name="Emp_Middle_name" ColumnName="Emp_Middle_name" />
+          <ScalarProperty Name="Emp_Last_name" ColumnName="Emp_Last_name" />
+          <ScalarProperty Name="Desg_Desc" ColumnName="Desg_Desc" />
+          <ScalarProperty Name="Dept_name" ColumnName="Dept_name" />
+          <ScalarProperty Name="Region_Name" ColumnName="Region_Name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="Mobile_no" ColumnName="Mobile_no" />
+          <ScalarProperty Name="RM1" ColumnName="RM1" />
+          <ScalarProperty Name="RM2" ColumnName="RM2" />
+          <ScalarProperty Name="doj" ColumnName="doj" />
+          <ScalarProperty Name="SubDepartment_Name" ColumnName="SubDepartment_Name" />
+          <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+          <ScalarProperty Name="NewCost_Center" ColumnName="NewCost_Center" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Emp_Status" ColumnName="Emp_Status" />
+          <ScalarProperty Name="SBU_Name" ColumnName="SBU_Name" />
+          <ScalarProperty Name="Locn_desc" ColumnName="Locn_desc" />
+          <ScalarProperty Name="grade_name" ColumnName="grade_name" />
+          <ScalarProperty Name="Seg_Name" ColumnName="Seg_Name" />
+          <ScalarProperty Name="division" ColumnName="division" />
+          <ScalarProperty Name="DivHead" ColumnName="DivHead" />
+          <ScalarProperty Name="President_Code" ColumnName="President_Code" />
+          <ScalarProperty Name="Regional_Head" ColumnName="Regional_Head" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Marketing_Manager" ColumnName="Marketing_Manager" />
+          <ScalarProperty Name="Country_Head" ColumnName="Country_Head" />
+          <ScalarProperty Name="Group_Marketing" ColumnName="Group_Marketing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getProductList" FunctionName="CustomerComplaintModel.Store.getProductList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.getProductList_Result">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductShelfLife" ColumnName="ProductShelfLife" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+          <ScalarProperty Name="Segment" ColumnName="Segment" />
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ComplaintCompensationDtl" FunctionName="CustomerComplaintModel.Store.SP_ComplaintCompensationDtl">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_ComplaintCompensationDtl_Result">
+          <ScalarProperty Name="ComplaintCompensationDtl_Id" ColumnName="ComplaintCompensationDtl_Id" />
+          <ScalarProperty Name="ComplaintCompensation_Id" ColumnName="ComplaintCompensation_Id" />
+          <ScalarProperty Name="CompensationDetailsType_ID" ColumnName="CompensationDetailsType_ID" />
+          <ScalarProperty Name="CompensationType" ColumnName="CompensationType" />
+          <ScalarProperty Name="CompensationValue" ColumnName="CompensationValue" />
+          <ScalarProperty Name="CompensationUnit" ColumnName="CompensationUnit" />
+          <ScalarProperty Name="DamageValue" ColumnName="DamageValue" />
+          <ScalarProperty Name="DamageUnit" ColumnName="DamageUnit" />
+          <ScalarProperty Name="GoodwillValue" ColumnName="GoodwillValue" />
+          <ScalarProperty Name="GoodwillUnit" ColumnName="GoodwillUnit" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ComplaintSettlementDtl" FunctionName="CustomerComplaintModel.Store.SP_ComplaintSettlementDtl">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_ComplaintSettlementDtl_Result">
+          <ScalarProperty Name="ComplaintSettlementDtl_Id" ColumnName="ComplaintSettlementDtl_Id" />
+          <ScalarProperty Name="ComplaintCompensation_Id" ColumnName="ComplaintCompensation_Id" />
+          <ScalarProperty Name="CompensationDetailsType_ID" ColumnName="CompensationDetailsType_ID" />
+          <ScalarProperty Name="SettlementModeId" ColumnName="SettlementModeId" />
+          <ScalarProperty Name="CreditNoteValue" ColumnName="CreditNoteValue" />
+          <ScalarProperty Name="CreditNoteUnit" ColumnName="CreditNoteUnit" />
+          <ScalarProperty Name="FOCValue" ColumnName="FOCValue" />
+          <ScalarProperty Name="FOCProduct_ID" ColumnName="FOCProduct_ID" />
+          <ScalarProperty Name="FOCProductQty" ColumnName="FOCProductQty" />
+          <ScalarProperty Name="FOCBatchNumber" ColumnName="FOCBatchNumber" />
+          <ScalarProperty Name="ReplacementValue" ColumnName="ReplacementValue" />
+          <ScalarProperty Name="ReplacementProduct_ID" ColumnName="ReplacementProduct_ID" />
+          <ScalarProperty Name="ReplacementProductQty" ColumnName="ReplacementProductQty" />
+          <ScalarProperty Name="ReplacementProductBatchNumber" ColumnName="ReplacementProductBatchNumber" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetALLComplaintRecord" FunctionName="CustomerComplaintModel.Store.Sp_GetALLComplaintRecord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GetALLComplaintRecord_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+          <ScalarProperty Name="FutStatusId" ColumnName="FutStatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetApprovedCompRequest" FunctionName="CustomerComplaintModel.Store.SP_GetApprovedCompRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetApprovedCompRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CompensationURL" ColumnName="CompensationURL" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetApproveProcessCountRCA" FunctionName="CustomerComplaintModel.Store.SP_GetApproveProcessCountRCA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetApproveProcessCountRCA_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetBU_type" FunctionName="CustomerComplaintModel.Store.Sp_GetBU_type">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GetBU_type_Result">
+          <ScalarProperty Name="SBU_Name" ColumnName="SBU_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetBusinessManager" FunctionName="CustomerComplaintModel.Store.SP_GetBusinessManager" />
+    <FunctionImportMapping FunctionImportName="SP_GetBusinessManagerForUser" FunctionName="CustomerComplaintModel.Store.SP_GetBusinessManagerForUser" />
+    <FunctionImportMapping FunctionImportName="SP_GetCompensationFutureStatusDetails" FunctionName="CustomerComplaintModel.Store.SP_GetCompensationFutureStatusDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetCompensationFutureStatusDetails_Result">
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetCompensationRequestStatusDetails" FunctionName="CustomerComplaintModel.Store.SP_GetCompensationRequestStatusDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetCompensationRequestStatusDetails_Result">
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetComplaintDetailForEmail" FunctionName="CustomerComplaintModel.Store.Sp_GetComplaintDetailForEmail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GetComplaintDetailForEmail_Result">
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="BatchNumber1" ColumnName="BatchNumber1" />
+          <ScalarProperty Name="DealerName" ColumnName="DealerName" />
+          <ScalarProperty Name="DealerCode" ColumnName="DealerCode" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ComplaintQty" ColumnName="ComplaintQty" />
+          <ScalarProperty Name="ComplaintQtyType" ColumnName="ComplaintQtyType" />
+          <ScalarProperty Name="ComplaintDesc" ColumnName="ComplaintDesc" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintType_ID" ColumnName="ComplaintType_ID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetDealerList" FunctionName="CustomerComplaintModel.Store.SP_GetDealerList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetDealerList_Result">
+          <ScalarProperty Name="Dealer_ID" ColumnName="Dealer_ID" />
+          <ScalarProperty Name="DealerCode" ColumnName="DealerCode" />
+          <ScalarProperty Name="DealerName" ColumnName="DealerName" />
+          <ScalarProperty Name="DepotCode" ColumnName="DepotCode" />
+          <ScalarProperty Name="DepotAddress" ColumnName="DepotAddress" />
+          <ScalarProperty Name="DepotId" ColumnName="DepotId" />
+          <ScalarProperty Name="DepotName" ColumnName="DepotName" />
+          <ScalarProperty Name="DealerAddress" ColumnName="DealerAddress" />
+          <ScalarProperty Name="Territory" ColumnName="Territory" />
+          <ScalarProperty Name="SO" ColumnName="SO" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="ASM" ColumnName="ASM" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="RM" ColumnName="RM" />
+          <ScalarProperty Name="NH" ColumnName="NH" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetEmployeeRequestDetails" FunctionName="CustomerComplaintModel.Store.SP_GetEmployeeRequestDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetEmployeeRequestDetails_Result">
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+          <ScalarProperty Name="Emp_First_name" ColumnName="Emp_First_name" />
+          <ScalarProperty Name="Dept_name" ColumnName="Dept_name" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="SBU_Name" ColumnName="SBU_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetInProcessCompRequest" FunctionName="CustomerComplaintModel.Store.SP_GetInProcessCompRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetInProcessCompRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAccountName" ColumnName="CustomerAccountName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CurrentStatusId" ColumnName="CurrentStatusId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CompensationURL" ColumnName="CompensationURL" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GETName" FunctionName="CustomerComplaintModel.Store.Sp_GETName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GETName_Result">
+          <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+          <ScalarProperty Name="Emp_First_name" ColumnName="Emp_First_name" />
+          <ScalarProperty Name="Emp_Middle_name" ColumnName="Emp_Middle_name" />
+          <ScalarProperty Name="Emp_Last_name" ColumnName="Emp_Last_name" />
+          <ScalarProperty Name="Desg_Desc" ColumnName="Desg_Desc" />
+          <ScalarProperty Name="Dept_name" ColumnName="Dept_name" />
+          <ScalarProperty Name="Region_Name" ColumnName="Region_Name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="Mobile_no" ColumnName="Mobile_no" />
+          <ScalarProperty Name="RM1" ColumnName="RM1" />
+          <ScalarProperty Name="RM2" ColumnName="RM2" />
+          <ScalarProperty Name="doj" ColumnName="doj" />
+          <ScalarProperty Name="SubDepartment_Name" ColumnName="SubDepartment_Name" />
+          <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+          <ScalarProperty Name="NewCost_Center" ColumnName="NewCost_Center" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Emp_Status" ColumnName="Emp_Status" />
+          <ScalarProperty Name="SBU_Name" ColumnName="SBU_Name" />
+          <ScalarProperty Name="Locn_desc" ColumnName="Locn_desc" />
+          <ScalarProperty Name="grade_name" ColumnName="grade_name" />
+          <ScalarProperty Name="Seg_Name" ColumnName="Seg_Name" />
+          <ScalarProperty Name="division" ColumnName="division" />
+          <ScalarProperty Name="DivHead" ColumnName="DivHead" />
+          <ScalarProperty Name="President_Code" ColumnName="President_Code" />
+          <ScalarProperty Name="Regional_Head" ColumnName="Regional_Head" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Marketing_Manager" ColumnName="Marketing_Manager" />
+          <ScalarProperty Name="Country_Head" ColumnName="Country_Head" />
+          <ScalarProperty Name="Group_Marketing" ColumnName="Group_Marketing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetPendingCompRequest" FunctionName="CustomerComplaintModel.Store.SP_GetPendingCompRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetPendingCompRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAccountName" ColumnName="CustomerAccountName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="IsCompensationRequire" ColumnName="IsCompensationRequire" />
+          <ScalarProperty Name="IsComplaintValid" ColumnName="IsComplaintValid" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetPendingCompRequestForApproval" FunctionName="CustomerComplaintModel.Store.SP_GetPendingCompRequestForApproval">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetPendingCompRequestForApproval_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAccountName" ColumnName="CustomerAccountName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetPendingRequest" FunctionName="CustomerComplaintModel.Store.SP_GetPendingRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetPendingRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+          <ScalarProperty Name="FutStatusId" ColumnName="FutStatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetPendingRequestForApproval" FunctionName="CustomerComplaintModel.Store.SP_GetPendingRequestForApproval">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetPendingRequestForApproval_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRejectedCompRequest" FunctionName="CustomerComplaintModel.Store.SP_GetRejectedCompRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetRejectedCompRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRequesterDetails" FunctionName="CustomerComplaintModel.Store.SP_GetRequesterDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetRequesterDetails_Result">
+          <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+          <ScalarProperty Name="Emp_First_name" ColumnName="Emp_First_name" />
+          <ScalarProperty Name="Emp_Last_name" ColumnName="Emp_Last_name" />
+          <ScalarProperty Name="Desg_Desc" ColumnName="Desg_Desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRequestFutureStatusDetails" FunctionName="CustomerComplaintModel.Store.SP_GetRequestFutureStatusDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetRequestFutureStatusDetails_Result">
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRequestStatusDetails" FunctionName="CustomerComplaintModel.Store.SP_GetRequestStatusDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetRequestStatusDetails_Result">
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetTotalRCACompCount" FunctionName="CustomerComplaintModel.Store.Sp_GetTotalRCACompCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GetTotalRCACompCount_Result">
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+          <ScalarProperty Name="RCACount" ColumnName="RCACount" />
+          <ScalarProperty Name="CompCount" ColumnName="CompCount" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="monthName" ColumnName="monthName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetTSE" FunctionName="CustomerComplaintModel.Store.SP_GetTSE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetTSE_Result">
+          <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetUserClosedRequest" FunctionName="CustomerComplaintModel.Store.SP_GetUserClosedRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetUserClosedRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="IsCompensationRequire" ColumnName="IsCompensationRequire" />
+          <ScalarProperty Name="IsComplaintValid" ColumnName="IsComplaintValid" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+          <ScalarProperty Name="Res" ColumnName="Res" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetUserRejectedRequest" FunctionName="CustomerComplaintModel.Store.SP_GetUserRejectedRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GetUserRejectedRequest_Result">
+          <ScalarProperty Name="Complaint_ID" ColumnName="Complaint_ID" />
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Dealer" ColumnName="Dealer" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintCategory_ID" ColumnName="ComplaintCategory_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TotalApprovedCompRequest" FunctionName="CustomerComplaintModel.Store.SP_TotalApprovedCompRequest" />
+    <FunctionImportMapping FunctionImportName="SP_TotalInProcessCompRequest" FunctionName="CustomerComplaintModel.Store.SP_TotalInProcessCompRequest" />
+    <FunctionImportMapping FunctionImportName="SP_TotalPendingRequestForApproval" FunctionName="CustomerComplaintModel.Store.SP_TotalPendingRequestForApproval" />
+    <FunctionImportMapping FunctionImportName="SP_TotalRCARjectCount" FunctionName="CustomerComplaintModel.Store.SP_TotalRCARjectCount" />
+    <FunctionImportMapping FunctionImportName="SP_TotalRejectedCompRequest" FunctionName="CustomerComplaintModel.Store.SP_TotalRejectedCompRequest" />
+    <FunctionImportMapping FunctionImportName="SP_TotalRequestApproved" FunctionName="CustomerComplaintModel.Store.SP_TotalRequestApproved">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_TotalRequestApproved_Result">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TotalRequestCount" FunctionName="CustomerComplaintModel.Store.SP_TotalRequestCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_TotalRequestCount_Result">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TotalRequestInProcess" FunctionName="CustomerComplaintModel.Store.SP_TotalRequestInProcess">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_TotalRequestInProcess_Result">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TotalRequestRejected" FunctionName="CustomerComplaintModel.Store.SP_TotalRequestRejected">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_TotalRequestRejected_Result">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ValidateBusinessManager" FunctionName="CustomerComplaintModel.Store.SP_ValidateBusinessManager" />
+    <FunctionImportMapping FunctionImportName="spSelectComplaintType" FunctionName="CustomerComplaintModel.Store.spSelectComplaintType" />
+    <FunctionImportMapping FunctionImportName="SP_GenerateCCReport" FunctionName="CustomerComplaintModel.Store.SP_GenerateCCReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_GenerateCCReport_Result">
+          <ScalarProperty Name="ComplaintNumber" ColumnName="ComplaintNumber" />
+          <ScalarProperty Name="DealerCode" ColumnName="DealerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Segment" ColumnName="Segment" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Location_Id" ColumnName="Location_Id" />
+          <ScalarProperty Name="ManufacturingLocation" ColumnName="ManufacturingLocation" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="DepotName" ColumnName="DepotName" />
+          <ScalarProperty Name="ComplaintDesc" ColumnName="ComplaintDesc" />
+          <ScalarProperty Name="IsQCretainAvailable" ColumnName="IsQCretainAvailable" />
+          <ScalarProperty Name="IsQCretailSample" ColumnName="IsQCretailSample" />
+          <ScalarProperty Name="IsComplaintValid" ColumnName="IsComplaintValid" />
+          <ScalarProperty Name="RequestRCA" ColumnName="RequestRCA" />
+          <ScalarProperty Name="RequestRCAOutType" ColumnName="RequestRCAOutType" />
+          <ScalarProperty Name="TSE_Avalable" ColumnName="TSE_Avalable" />
+          <ScalarProperty Name="TSE_Remarks" ColumnName="TSE_Remarks" />
+          <ScalarProperty Name="Re_Qua_Sell_Close" ColumnName="Re/Qua/Sell/Close" />
+          <ScalarProperty Name="Re_Qua_Sell_Close_creationDate" ColumnName="Re/Qua/Sell/Close_creationDate" />
+          <ScalarProperty Name="RCApprovalForCM" ColumnName="RCApprovalForCM" />
+          <ScalarProperty Name="RCApprovalForCM_SubmittedDate" ColumnName="RCApprovalForCM_SubmittedDate" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="CaomplaintCategory" ColumnName="CaomplaintCategory" />
+          <ScalarProperty Name="ComplaintQty" ColumnName="ComplaintQty" />
+          <ScalarProperty Name="ComplaintQtyType" ColumnName="ComplaintQtyType" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="CReationDate" ColumnName="CReationDate" />
+          <ScalarProperty Name="Approved_Reject" ColumnName="Approved_Reject" />
+          <ScalarProperty Name="Approval_rejectionDate" ColumnName="Approval/rejectionDate" />
+          <ScalarProperty Name="PlantRemarks" ColumnName="PlantRemarks" />
+          <ScalarProperty Name="RCAPlantDate" ColumnName="RCAPlantDate" />
+          <ScalarProperty Name="RDRemarks" ColumnName="RDRemarks" />
+          <ScalarProperty Name="RCARDRemarks" ColumnName="RCARDRemarks" />
+          <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+          <ScalarProperty Name="QUARRemarks" ColumnName="QUARRemarks" />
+          <ScalarProperty Name="Reprocess_Quar" ColumnName="Reprocess_Quar" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="Analysis_Details" ColumnName="Analysis_Details" />
+          <ScalarProperty Name="Analysis_Date" ColumnName="Analysis_Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TotalRequestApproved_CH" FunctionName="CustomerComplaintModel.Store.SP_TotalRequestApproved_CH">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_TotalRequestApproved_CH_Result">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_TotalRequestApproved_TSE" FunctionName="CustomerComplaintModel.Store.SP_TotalRequestApproved_TSE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.SP_TotalRequestApproved_TSE_Result">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Manufacturing_productStream_ApprovedComplaint" FunctionName="CustomerComplaintModel.Store.Sp_Manufacturing_productStream_ApprovedComplaint">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_Manufacturing_productStream_ApprovedComplaint_Result">
+          <ScalarProperty Name="ManufacturingLocation" ColumnName="ManufacturingLocation" />
+          <ScalarProperty Name="Concate" ColumnName="Concate" />
+          <ScalarProperty Name="complaint_Count" ColumnName="complaint_Count" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Brand_productStream_ApprovedComplaint" FunctionName="CustomerComplaintModel.Store.Sp_Brand_productStream_ApprovedComplaint">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_Brand_productStream_ApprovedComplaint_Result">
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="Complaint_Count" ColumnName="Complaint_Count" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Segment_productStream_ApprovedComplaint" FunctionName="CustomerComplaintModel.Store.Sp_Segment_productStream_ApprovedComplaint">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_Segment_productStream_ApprovedComplaint_Result">
+          <ScalarProperty Name="Segment" ColumnName="Segment" />
+          <ScalarProperty Name="Complaint_Count" ColumnName="Complaint_Count" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Get_Responsive_deatil" FunctionName="CustomerComplaintModel.Store.Sp_Get_Responsive_deatil">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_Get_Responsive_deatil_Result">
+          <ScalarProperty Name="DetailID" ColumnName="DetailID" />
+          <ScalarProperty Name="CompliantId" ColumnName="CompliantId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Get_AllEmp_Details" FunctionName="CustomerComplaintModel.Store.Sp_Get_AllEmp_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_Get_AllEmp_Details_Result">
+          <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+          <ScalarProperty Name="Emp_First_name" ColumnName="Emp_First_name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetEmployess_Avrg_Response" FunctionName="CustomerComplaintModel.Store.Sp_GetEmployess_Avrg_Response">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GetEmployess_Avrg_Response_Result">
+          <ScalarProperty Name="TotalComplaint" ColumnName="TotalComplaint" />
+          <ScalarProperty Name="TotalResponseTime_Indays" ColumnName="TotalResponseTime_Indays" />
+          <ScalarProperty Name="avrg" ColumnName="avrg" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetEmployess_Avrg_Response_DETAIL" FunctionName="CustomerComplaintModel.Store.Sp_GetEmployess_Avrg_Response_DETAIL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_GetEmployess_Avrg_Response_DETAIL_Result">
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="Complaint" ColumnName="Complaint" />
+          <ScalarProperty Name="ResponseTime_Indays" ColumnName="ResponseTime_Indays" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TblResponses">
+      <EntityTypeMapping TypeName="CustomerComplaintModel.TblResponse">
+        <MappingFragment StoreEntitySet="TblResponse">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="ResponseMonth" ColumnName="ResponseMonth" />
+          <ScalarProperty Name="ResponseTime_InDay" ColumnName="ResponseTime_InDay" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="ComplaintId" ColumnName="ComplaintId" />
+          <ScalarProperty Name="ResponsiveId" ColumnName="ResponsiveId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Get_all_Request_Response_avrg" FunctionName="CustomerComplaintModel.Store.Sp_Get_all_Request_Response_avrg">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.Sp_Get_all_Request_Response_avrg_Result">
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Total_No_Complaint" ColumnName="Total_No_Complaint" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month_Name" ColumnName="Month_Name" />
+          <ScalarProperty Name="Avrage" ColumnName="Avrage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetValidateAccess" FunctionName="CustomerComplaintModel.Store.GetValidateAccess">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerComplaintModel.GetValidateAccess_Result">
+          <ScalarProperty Name="AccessManagement_Id" ColumnName="AccessManagement_Id" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="Project_Id" ColumnName="Project_Id" />
+          <ScalarProperty Name="ProjectStatus" ColumnName="ProjectStatus" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

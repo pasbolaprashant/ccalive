@@ -1,0 +1,150 @@
+﻿		<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip"
+                  data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning!
+                   This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Complaint Category</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+
+        <!-- widget grid -->
+        <section id="widget-grid" class="">
+
+
+            <!-- row -->
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Complaint Category</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+                            <br />
+                            <br />
+                            <br />
+                            <div ng-show="Categoryshow == true">
+                                <button ng-click="AddComplaint()" class="btn btn-sm btn-info btn-flat pull-left">Add Complaint </button>
+                            </div>
+                        </header>
+
+                        <!-- widget div-->
+                        <div role="content">
+
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <!-- end widget edit box -->
+                            <!-- widget content -->
+                            <div class="widget-body no-padding">
+
+                                <div ng-show="Complaintshow == true">
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Complaint Category</th>
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="pt in  ComplaintCategoryArray">
+
+                                                    <td>{{ $index+1}}</td>
+
+                                                    <td>{{ pt.ComplaintCategory}} </td>
+
+
+
+                                                    <td>
+                                                        <button ng-click="Edit(pt.ComplaintCategoryID, pt.ComplaintCategory)" class="btn btn-sm btn-info btn-flat pull-left">Edit</button>
+                                                        </br>
+                                                        </br>
+                                                        <button ng-click="Delete(pt.ComplaintCategoryID)" class="btn btn-sm btn-info btn-flat pull-left">Delete</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div ng-show="ComplaintSave==true">
+                                    <form role="form">
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Complaint Category</label>
+                                                <input type="text" class="form-control" ng-model="ComplaintCategory" placeholder="Enter Complaint Category">
+                                            </div>
+
+
+                                        </div>
+                                        <!-- /.box-body -->
+
+                                        <div class="box-footer">
+
+                                            <button ng-click="update()" ng-show="ComplaintBrand==true" class="btn btn-sm btn-info btn-flat pull-left">Update</button>
+
+                                            <button ng-show="Complainttotal==true" ng-click="Save()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Save</button>
+
+                                            <button ng-click="Back()" href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Back</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+
+
+                                <!-- end widget content -->
+
+                            </div>
+                            <!-- end widget div -->
+
+                        </div>
+                </article>
+            </div>
+
+            <!-- end row -->
+
+        </section>
+        <!-- end widget grid -->
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+</div>
+<!-- END MAIN PANEL -->

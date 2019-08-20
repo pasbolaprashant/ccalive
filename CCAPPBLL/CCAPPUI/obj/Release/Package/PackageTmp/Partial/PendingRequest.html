@@ -1,0 +1,2265 @@
+﻿<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <!--<span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>-->
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Pending Request</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+        <section id="widget-grid" class="" ng-show="ShowGrid==true">
+
+
+            <!-- row -->
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Pending Approval</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+                        </header>
+
+                        <!-- widget div-->
+                        <div role="content">
+
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <!-- end widget edit box -->
+                            <!-- widget content -->
+                            <div class="widget-body no-padding">
+
+
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Complaint Number</th>
+                                                <th>Complaint Date</th>                                                                                               
+                                                <th>Customer Name</th>
+                                                <th>Customer Account</th>
+                                                <th>Product Name</th>
+                                                <th>Batch Number</th>
+                                                <th>Manufacture Date</th>
+                                                <th>Status</th>
+                                                <th>Created BY</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="pt in PendingRequest">
+                                                <td>{{pt.ComplaintNumber}}</td>
+                                                <td>{{pt.CreationDate}}</td>
+                                                <td>{{pt.CustomerName}}</td>
+                                                <td>{{pt.CustomerAccountName}}</td>
+                                                <td>{{pt.ProductName}}</td>
+                                                <td>{{pt.BatchNumber}}</td>
+                                                <td>{{pt.ManufactureDate}}</td>
+                                                <td><a class="btn btn-success btn-xs" ng-click="OpenStatus(pt.Complaint_ID)">{{pt.StatusName}}</a></td>
+                                                <td>{{pt.CreatedBy}}</td>
+                                                <td><a class="btn btn-primary btn-xs" ng-click="GetComplaintDetails(pt.Complaint_ID,pt.StatusName)" >View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end widget content -->
+                        </div>
+                        <!-- end widget div -->
+                    </div>
+                </article>
+            </div>
+            <!-- end row -->
+        </section>
+
+        <section id="widget-grid" class="" ng-show="ShowDetails==true">
+
+
+            <!-- row -->
+
+            <div class="row">
+                <article class="col-lg-12">
+                    <div class="jarviswidget jarviswidget-sortable" data-widget-togglebutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false" role="widget" style="">
+
+                        <header role="heading">
+                            <!--<span class="widget-icon"> <i class="fa fa-edit txt-color-darken"></i> </span>
+                        <h2 class="hidden-xs hidden-sm">Request Details</h2>-->
+
+                            <ul class="nav nav-tabs pull-right in" id="myTab">
+
+                                <li class="active">
+                                    <a data-toggle="tab" ng-click="GetCurrentWindow('S1')" aria-expanded="true"><i class="fa fa-new"></i> <span class="hidden-mobile hidden-tablet">Complaint Request</span></a>
+                                </li>
+                                <li ng-show="ComplaintHandler==true">
+                                    <a data-toggle="tab" ng-click="GetCurrentWindow('S2')" aria-expanded="true"><i class="fa fa-new"></i> <span class="hidden-mobile hidden-tablet">Complaint Handlers</span></a>
+                                </li>
+                                <li ng-show="ComplaintManager==true">
+                                    <a data-toggle="tab" ng-click="GetCurrentWindow('S3')" aria-expanded="true"><i class="fa fa-new"></i> <span class="hidden-mobile hidden-tablet">Complaint Manager</span></a>
+                                </li>
+                                <li ng-show="TSEManager==true">
+                                    <a data-toggle="tab" ng-click="GetCurrentWindow('S4')" aria-expanded="true"><i class="fa fa-new"></i> <span class="hidden-mobile hidden-tablet">TSE</span></a>
+                                </li>
+                                <li ng-show="RCAPlant==true">
+                                    <a data-toggle="tab" ng-click="GetCurrentWindow('S5')" aria-expanded="true"><i class="fa fa-new"></i> <span class="hidden-mobile hidden-tablet">Plant</span></a>
+                                </li>
+
+
+                            </ul>
+
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+                        </header>
+
+                        <!-- widget div-->
+                        <div role="content">
+                            <!-- widget edit box -->
+
+                            <div class="widget-body">
+                                <!-- content -->
+                                <div id="myTabContent" class="tab-content">
+
+                                    <!-- new tab: API interface -->
+                                    <div class="tab-pane fade clearfix active in" ng-show="S1==true" id="s1">
+
+
+                                        <!--start Widget-->
+                                        <!----------------------------------------------------Section A- customer information----------------------------------------------------------------------------------------------->
+
+                                        <form name="CustomerInformation" id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <p>
+                                                            <label class="label">Customer Name</label>
+                                                            <label class="input">
+                                                                <i class="icon-append fa fa-ellipsis-v"></i>
+                                                                <input v="SML" type="text" disabled name="CustomerName" id="named" maxlength="100" ng-model="Request.CustomerName">
+                                                                <!--<span ng-show="CustomerInformation.CustomerName.$touched && CustomerInformation.CustomerName.$invalid">*</span>-->
+                                                            </label>
+                                                        </p>
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <label class="label">Contact No.</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="9876543210" type="text" disabled  name="ContactNo" maxlength="10" id="named" ng-model="Request.CustomerNo">
+                                                        </label>
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <label class="label">Customer Address</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <textarea ng-model="Request.CustomerAddress" disabled  rows="3" cols="20"></textarea>
+
+                                                        </label>
+                                                    </section>
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Email</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="CNG Green" type="email" disabled  name="CustomerEmail" id="emaild" ng-model="Request.CustomerEmail">
+                                                        </label>
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <label class="label">Dealer Code</label>
+                                                        <label class="input">
+
+                                                            <select name="DealerCode" disabled  class="form-control selectpicker" value="DealerDetails.Dealer_ID"
+                                                                    ng-options=" DC.Dealer_ID as DC.DealerCode for DC in DealerDetails"
+                                                                    ng-change="DealerName()" ng-model="Request.DealerID"></select>
+                                                            <!--ng-options="pt.ComplaintCategory_ID as pt.CaomplaintCategory for pt in item.ComplaintCategory"-->
+                                                        </label>
+                                                    </section>
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Dealer Name</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="Raja Paints House" type="text" disabled  name="DealerName" id="named" value="DealerDetails.DealerName" ng-model="Request.DealerName" readonly>
+                                                        </label>
+                                                    </section>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Customer Account Name</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="221B Baker Street" type="text" disabled  name="CustomerAccountName" id="named" ng-model="Request.CustomerAccountName">
+                                                        </label>
+                                                    </section>
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Sales Office</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="Raja Paints House" type="text" name="named" id="named" ng-model="Request.SalesOffice" readonly>
+                                                        </label>
+                                                    </section>
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Date of vehicle repair</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v=""  type="text" name="DateOfVehicleRepair"  disabled  id="emaild" ng-model="Request.DateOfvehicleRepair">
+                                                        </label>
+                                                    </section>
+                                                </div>
+
+
+                                                <hr style="margin-bottom: 10px;">
+
+                                                <div class="row">
+
+                                                </div>
+                                            </fieldset>
+
+
+
+
+
+                                            <!--<div class="message">
+                                                <i class="fa fa-thumbs-up"></i>
+                                                <p>Your message was successfully sent!</p>
+                                            </div>-->
+                                        </form>
+                                        <!--./end widget-->
+                                        <!----------------------------------Complaint Information----------------------------------------->
+
+                                        <h2 class="hidden-xs hidden-sm">Complaint Information</h2>
+                                        <form id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Product Code</label>
+                                                        <label class="input">
+
+                                                            <select name="state"  disabled  class="form-control selectpicker"
+                                                                    ng-options="pc.Product_ID  as pc.ProductCode for pc in ProductMaster"
+                                                                    ng-change="BrandName()" ng-model="Complaint.ProductCode"></select>
+
+                                                        </label>
+                                                    </section>
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Brand</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="221B Baker Street"  disabled  type="text" name="named" id="named" ng-model="Complaint.BrandName" readonly>
+                                                        </label>
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <label class="label">Product Description</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="221B Baker Street"   disabled type="text" name="named" id="named" ng-model="ProductDescription" readonly>
+                                                        </label>
+                                                    </section>
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Batch Number</label>
+                                                        <label class="input">
+
+                                                            <select name="state"  disabled  class="form-control selectpicker" ng-change="GetManufactureDate(Complaint.BatchNumber)"
+                                                                    ng-options="pc.ProductBatch_ID  as pc.BatchNumber for pc in Batch"
+                                                                    ng-model="Complaint.BatchNumber"></select>
+                                                        </label>
+                                                    </section>
+
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Date & Month of Manufacture</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="221B Baker Street"  disabled  type="text" name="named" id="named" ng-model="Complaint.ManuFactureDate" readonly>
+                                                        </label>
+                                                    </section>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Qty of Complaint stock (L/KG/EA)</label>
+                                                        <label class="input">
+
+                                                            <select name="state"  disabled  class="form-control selectpicker" ng-model="Complaint.QtyOfComplaintStock">
+                                                                <option>L</option>
+                                                                <option>KG</option>
+                                                                <option>EA</option>
+                                                            </select>
+                                                        </label>
+                                                    </section>
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Quantity</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="221B Baker Street"  disabled  type="text" name="named" id="named" ng-model="Complaint.Quantity">
+                                                        </label>
+                                                    </section>
+
+                                                </div>
+
+                                                <hr style="margin-bottom: 10px;">
+
+                                                <div class="row">
+
+                                                </div>
+                                            </fieldset>
+
+
+                                            <div class="message">
+                                                <i class="fa fa-thumbs-up"></i>
+                                                <p>Your message was successfully sent!</p>
+                                            </div>
+                                        </form>
+
+
+
+                                        <!----------------------------------------------------------------Section B: Complaint Type-------------------------------------------------------->
+
+
+                                        <h2 class="hidden-xs hidden-sm">Section B: Complaint Type </h2>
+                                        <form id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <input type="button"   disabled  value="Add Complaint" class="btn btn-success pull-left" ng-click="AddRow()" />
+                                                    </section>
+                                                </div>
+
+                                                <div class="row" ng-repeat="item in AddRowArray">
+                                                    <div class="row">
+                                                        <section class="col col-2">
+
+                                                            <label class="input">
+                                                                <select name="state"  disabled  class="form-control selectpicker"
+                                                                        value="pt.ComplaintCategory_ID" ng-model="item.ComplaintCategory_ID"
+                                                                        ng-options="pt.ComplaintCategory_ID as pt.CaomplaintCategory for pt in item.ComplaintCategory"
+                                                                        ng-change="GetComplaintList(item)"></select>
+                                                            </label>
+                                                        </section>
+                                                        <section class="col col-10">
+                                                            <div class="row">
+                                                                <section class="col col-2"    ng-repeat="ct in item.ComplaintLst">
+
+
+                                                                    <input type="checkbox" disabled ng-model="ct.IsSelected" ng-change="SelectComplaints(item,ct.ComplaintType_ID)"
+                                                                         ng-checked="ct.IsSelected==true"  />{{ct.ComplaintType}}
+
+                                                                </section>
+                                                                <section class="col col-1"><input type="button" disabled class="btn btn-warning" value="[-]" ng-click="DeleteRow()" /></section>
+
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <hr />
+
+                                                </div>
+                                                <hr style="margin-bottom: 10px;">
+
+                                                <div class="row">
+
+                                                </div>
+
+
+                                            </fieldset>
+                                        </form>
+
+                                        <!-----------------------------------------------------------System Info Panel----------------------------------------------------------------------------------------------->
+
+                                        <h2 class="hidden-xs hidden-sm">Section C: System Info </h2>
+                                        <form id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Substrate</label>
+                                                        <label class="input">
+                                                            <select name="state" disabled class="form-control selectpicker"
+                                                                    ng-options="op.Substrate_ID as op.SubstrateDesc for op in SubstrateMaster"
+                                                                    ng-model="Substrate"></select>
+                                                        </label>
+                                                    </section>
+                                                    <hr style="margin-bottom: 10px;">
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Underbody</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="Underbody.UnderbodySelect">
+                                                            <option value="Bodyfiller">Bodyfiller</option>
+                                                            <option value="Putty">Putty</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Underbody.UnderbodySelect == 'Bodyfiller'">
+                                                            <label>Bodyfiller</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Underbody.BodyFillerInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="Underbody.UnderbodySelect == 'Putty'">
+                                                            <label>Putty</label>
+                                                            <select name="state" disabled class="form-control selectpicker" ng-model="Underbody.UnderbodySelectChild">
+                                                                <option>Polyester putty</option>
+                                                                <option>NC Putty</option>
+                                                                <option>Spot Putty</option>
+                                                            </select>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Underbody.UnderbodySelectChild=='Polyester putty'||Underbody.UnderbodySelectChild=='NC Putty'||Underbody.UnderbodySelectChild=='Spot Putty'">
+                                                            <label>Putty Details</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Underbody.UnderbodySelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!------------------------------------------Undercoat--------------------------------------->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Undercoat</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="Undercoat.UndercoatSelect">
+                                                            <option value="NC Primer White">NC Primer White</option>
+                                                            <option value="NC Primer Grey">NC Primer Grey</option>
+                                                            <option value="PU Primer White">PU Primer White</option>
+                                                            <option value="PU Primer Grey">PU Primer Grey</option>
+                                                            <option value="Epoxy Primer">Epoxy Primer</option>
+                                                            <option value="Oil Primer">Oil Primer</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Undercoat.UndercoatSelect == 'NC Primer White'||Undercoat.UndercoatSelect == 'NC Primer Grey'||Undercoat.UndercoatSelect == 'Oil Primer'">
+                                                            <label>Primer</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Undercoat.UndercoatSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="Undercoat.UndercoatSelect == 'PU Primer White'||Undercoat.UndercoatSelect =='PU Primer Grey'||Undercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Undercoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Undercoat.UndercoatSelect == 'PU Primer White'||Undercoat.UndercoatSelect =='PU Primer Grey'||Undercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Undercoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Basecoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Basecoat</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="Basecoat.BasecoatSelect">
+                                                            <option value="Metallic basecoat system">Metallic basecoat system</option>
+                                                            <option value="Solid basecoat system">Solid basecoat system</option>
+                                                            <option value="Epoxy">Epoxy</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Basecoat.BasecoatSelect == 'Metallic basecoat system'">
+                                                            <label>Metallic Basecoat</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="Basecoat.MetallicBasecoat" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="Basecoat.BasecoatSelect == 'Solid basecoat system'||Basecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="Basecoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Basecoat.BasecoatSelect == 'Solid basecoat system'||Basecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" disabled ng-model="Basecoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+
+                                                <!--Clearcoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Clearcoat</label>
+                                                        <select name="state" class="form-control selectpicker" disabled ng-model="Clearcoat.ClearcoatSelect">
+                                                            <option value="NC Clear">NC Clear</option>
+                                                            <option value="PU Clear">PU Clear</option>
+                                                            <option value="Alkyd Clear">Alkyd Clear</option>
+                                                            <option value="Polyester Clear">Polyester Clear</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Clearcoat.ClearcoatSelect =='NC Clear'||Clearcoat.ClearcoatSelect =='PU Clear'||Clearcoat.ClearcoatSelect =='Alkyd Clear'||Clearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>No. of coats</label>
+                                                            <select name="state" disabled class="form-control selectpicker" ng-model="Clearcoat.ClearcoatSelectNoOfCost">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Clearcoat.ClearcoatSelect =='PU Clear'||Clearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Clearcoat.Hardener" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Clearcoat.ClearcoatSelect =='PU Clear'||Clearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="Clearcoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Thinner-->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Thinner</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="Thinner.ThinnerSelect">
+                                                            <option value="NC Thinner">NC Thinner</option>
+                                                            <option value="PU Thinner">PU Thinner</option>
+                                                            <option value="Epoxy Thinner">Epoxy Thinner</option>
+                                                        </select>
+                                                    </section>
+
+                                                    <section class="col col-2">
+                                                        <div ng-show="Thinner.ThinnerSelect =='NC Thinner'||Thinner.ThinnerSelect =='PU Thinner'||Thinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label>Thinner Details</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Thinner.ThinnerSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="Thinner.ThinnerSelect =='NC Thinner'||Thinner.ThinnerSelect =='PU Thinner'||Thinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label> Mixing Ratio:</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Thinner.MixingRatio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+
+
+                                            </fieldset>
+                                        </form>
+
+                                        <br /><br />
+
+                                        <form>
+                                            <fieldset>
+
+                                                <P>Problem Description:</P>
+                                                <textarea rows="3" cols="50" disabled ng-model="ProblemDescription"></textarea>
+
+                                            </fieldset>
+                                        </form>
+
+                                        <form>
+                                            <h2 class="hidden-xs hidden-sm">Photos Uploaded</h2>
+                                            <fieldset>
+                                                <section class="col col-2" ng-repeat="item in PhotoURL">
+                                                    <div>
+                                                        <a href="{{item.PhotoUrl}}"  target="_blank">{{item.PhotoUrl}}</a>
+                                                    </div>
+                                                </section>
+                                            </fieldset>
+                                        </form>
+
+                                        <br /><br />
+
+                                     
+
+
+                                    </div>
+                                    <!-- end s1 tab pane -->
+                                    <!-- new tab: Default -->
+                                    <div class="tab-pane clearfix fade active in" ng-show="S2==true" id="s2">
+                                        <!--start Widget-->
+                                        <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                        <form name="CustomerInformation" id="contact-form" class="smart-form" novalidate="novalidate">
+
+                                            <fieldset>
+
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Is the application process replicated by technical person?</label>
+                                                        <div class="row">
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline"><input type="radio"  name="reapplication" ng-model="Thead.ProcessReplicated" ng-value="true" >&nbsp;Yes</label>
+                                                                <input type="text" style="display:none" ng-model="Thead.CreatedBy" />
+                                                                <input type="text" style="display:none" ng-model="Thead.Complaint_ID" />
+                                                             
+                                                            </section>
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline"><input type="radio" name="reapplication" ng-model="Thead.ProcessReplicated" ng-value="false" >&nbsp;No</label>
+                                                            </section>
+                                                        </div>
+
+
+                                                    </section>
+                                                </div>
+                                                <hr >
+                                            </fieldset>
+                                        </form>
+                                        <!------------------------------------------------------->
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="Thead.ProcessReplicated==false">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>    Reason for non application</label>
+                                                        <textarea rows="3" cols="45" ng-model="Thead.NonApplicationReason"></textarea>
+                                                    </section>
+                                                    <!--<section class="col col-4"></section>-->
+                                                    <section class="col col-4">
+                                                        <label class="label">Reapplication Date</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="" type="date" name="DateOfVehicleRepair" id="emaild"
+                                                                   ng-model="Thead.ReApplicationDate">
+                                                        </label>
+                                                    </section>
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <!--<label class="label">Reapplication not required</label>-->
+                                                        <label class="label"> Reapplication not required ?</label>
+
+                                                        <input type="checkbox" id="1" ng-model="Thead.ReApplicationReqd" ng-value="true">
+
+                                                    </section>
+
+
+                                                </div>
+                                                <div class="row">
+
+
+                                                    <section class="col col-4" ng-show="Thead.ReApplicationReqd==true">
+                                                        <label class="label">Recommended for Closure</label>
+
+                                                        <label class="radio-inline"><input type="radio" ng-model="Thead.ClosureRecomended" ng-value="true">&nbsp;Yes</label>
+
+                                                        <br>
+
+                                                        <label class="radio-inline"><input type="radio" ng-model="Thead.ClosureRecomended" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+
+                                                        <label class="label">Customer Communication :</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <!--<input v="SML" type="text" name="CustomerName" id="named" ng-model="">-->
+                                                            <textarea rows="3" cols="45" ng-model="Thead.CustomerCommunication"></textarea>
+                                                            <!--<span ng-show="CustomerInformation.CustomerName.$touched && CustomerInformation.CustomerName.$invalid">*</span>-->
+                                                        </label>
+
+                                                    </section>
+                                               
+                                                </div>
+                                            </fieldset>
+                                            <hr />
+                                        </form>
+                                        {{Thead}}
+                                        <h2 ng-show="Thead.ProcessReplicated==true" class="hidden-xs hidden-sm">Report on Reapplication</h2>
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate" ng-show="Thead.ProcessReplicated==true">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+
+                                                        <label>  System Followed ?</label>
+                                                       
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="SystemFollowed" ng-model="Thead.SystemFollowed" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="SystemFollowed" ng ng-model="Thead.SystemFollowed" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+                                                </div>
+                                            </fieldset>
+                                            <hr />
+                                        </form>
+                                        <!---------------------------On System followed option 'No'-------------------------------------->
+
+
+
+
+                                        <h2 ng-show="Thead.SystemFollowed==false" class="hidden-xs hidden-sm">System Info </h2>
+                                        <form ng-show="Thead.SystemFollowed==false" id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Substrate</label>
+                                                        <label class="input">
+                                                            <select name="state" class="form-control selectpicker"
+                                                                    ng-options="op.Substrate_ID as op.SubstrateDesc for op in SubstrateMaster"
+                                                                    ng-model="ReappSubstrate"></select>
+                                                        </label>
+                                                    </section>
+                                                    <hr style="margin-bottom: 10px;">
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Underbody</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappUnderbody.UnderbodySelect">
+                                                            <option value="Bodyfiller">Bodyfiller</option>
+                                                            <option value="Putty">Putty</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUnderbody.UnderbodySelect == 'Bodyfiller'">
+                                                            <label>Bodyfiller</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUnderbody.BodyFillerInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappUnderbody.UnderbodySelect == 'Putty'">
+                                                            <label>Putty</label>
+                                                            <select name="state" class="form-control selectpicker" ng-model="ReappUnderbody.UnderbodySelectChild">
+                                                                <option>Polyester putty</option>
+                                                                <option>NC Putty</option>
+                                                                <option>Spot Putty</option>
+                                                            </select>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUnderbody.UnderbodySelectChild=='Polyester putty'||ReappUnderbody.UnderbodySelectChild=='NC Putty'||ReappUnderbody.UnderbodySelectChild=='Spot Putty'">
+                                                            <label>Putty Details</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUnderbody.UnderbodySelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!------------------------------------------Undercoat--------------------------------------->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Undercoat</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappUndercoat.UndercoatSelect">
+                                                            <option value="NC Primer White">NC Primer White</option>
+                                                            <option value="NC Primer Grey">NC Primer Grey</option>
+                                                            <option value="PU Primer White">PU Primer White</option>
+                                                            <option value="PU Primer Grey">PU Primer Grey</option>
+                                                            <option value="Epoxy Primer">Epoxy Primer</option>
+                                                            <option value="Oil Primer">Oil Primer</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'NC Primer White'||ReappUndercoat.UndercoatSelect == 'NC Primer Grey'||ReappUndercoat.UndercoatSelect == 'Oil Primer'">
+                                                            <label>Primer</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="Undercoat.UndercoatSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUndercoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUndercoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Basecoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Basecoat</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappBasecoat.BasecoatSelect">
+                                                            <option value="Metallic basecoat system">Metallic basecoat system</option>
+                                                            <option value="Solid basecoat system">Solid basecoat system</option>
+                                                            <option value="Epoxy">Epoxy</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Metallic basecoat system'">
+                                                            <label>Metallic Basecoat</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappBasecoat.MetallicBasecoat" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappBasecoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappBasecoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+
+                                                <!--Clearcoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Clearcoat</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelect">
+                                                            <option value="NC Clear">NC Clear</option>
+                                                            <option value="PU Clear">PU Clear</option>
+                                                            <option value="Alkyd Clear">Alkyd Clear</option>
+                                                            <option value="Polyester Clear">Polyester Clear</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='NC Clear'||ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Alkyd Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>No. of coats</label>
+                                                            <select name="state" class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelectNoOfCost">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappClearcoat.Hardener" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappClearcoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Thinner-->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Thinner</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappThinner.ThinnerSelect">
+                                                            <option value="NC Thinner">NC Thinner</option>
+                                                            <option value="PU Thinner">PU Thinner</option>
+                                                            <option value="Epoxy Thinner">Epoxy Thinner</option>
+                                                        </select>
+                                                    </section>
+
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label>Thinner Details</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappThinner.ThinnerSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label> Mixing Ratio:</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappThinner.MixingRatio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <div class="row" ng-show="Thead.SystemFollowed==false">
+                                                    <section class="col col-4">
+                                                        <label class="label">Application Comments</label>
+                                                        <textarea rows="3" cols="45" ng-model="Thead.ApplicationComments"></textarea>
+                                                    </section>
+                                             
+                                                </div>
+
+
+                                            </fieldset>
+                                            <hr style="margin-bottom: 10px;">
+                                        </form>
+
+
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="Thead.ProcessReplicated==true">
+                                            <h3 class="hidden-xs hidden-sm">Upload Photos</h3>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img1" file-model="Reappimg1" />
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img2" file-model="Reappimg2" />
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img3" file-model="Reappimg3" />
+                                                    </section>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                </div>
+                                            </fieldset>
+                                            <hr style="margin-bottom: 10px;">
+                                        </form>
+
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="Thead.ProcessReplicated==true">
+                                            <h2 class="hidden-xs hidden-sm"></h2>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>Does the product exhibit the complaint observed?</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="ComplaintObserved" ng-model="Thead.ComplaintObserved" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="ComplaintObserved" ng ng-model="Thead.ComplaintObserved" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+                                                </div>
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label>
+                                                            Is the technical manager informed of the product complaint?
+                                                        </label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="TMInformed" ng-model="Thead.TMInformed" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="TMInformed" ng ng-model="Thead.TMInformed" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Thead.TMInformed==true">
+                                                    <section class="col col-4">
+                                                        <label>Approved complaint by technical manager</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="TMApproved" ng-model="Thead.TMApproved" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="TMApproved" ng ng-model="Thead.TMApproved" ng-value="false">&nbsp;No</label>
+
+                                                        
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Thead.TMInformed==true">
+                                                    <section class="col col-4" ng-show="Thead.TMInformed==true">
+                                                        <label>Informed customer of course of action</label>
+
+                                                    </section>
+                                                    <section class="col col-2" ng-show="Thead.TMInformed==true">
+
+
+
+                                                        <label class="radio-inline"><input type="radio" name="CourseOfAction" ng-model="Thead.CourseOfAction" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2" ng-show="Thead.TMInformed==true">
+
+                                                        <label class="radio-inline"><input type="radio" name="CourseOfAction" ng ng-model="Thead.CourseOfAction" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Thead.CourseOfAction==true">
+                                                    <section class="col col-4">
+                                                        <label>
+                                                            Is customer complaint closed with customer?
+                                                        </label>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="CustomerComplaintClosed" ng-model="Thead.CustomerComplaintClosed" ng-value="true">&nbsp;Yes</label>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="CustomerComplaintClosed" ng ng-model="Thead.CustomerComplaintClosed" ng-value="false">&nbsp;No</label>
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Thead.ProcessReplicated==true">
+                                                    <section class="col col-4" >
+                                                        <label class="label">Customer communication </label>
+                                                        <textarea rows="3" cols="45" ng-model="Thead.ProblemDescription"></textarea>
+                                                    </section>
+
+                                                </div>
+</fieldset>
+                                        </form>
+
+                                    
+                                        <footer>
+
+                                            <button class="btn btn-warning" ng-disabled="Thead.ProcessReplicated=='No'" ng-click="RecommendForClosure()">Assign to Complaint Manager</button>
+                                         
+                                   
+                                            <button class="btn btn-primary" ng-click="Init()">Back</button>
+                                            <!--<button class="btn btn-success">Approve</button>-->
+
+                                        </footer>
+
+                                    </div>
+
+                                    <div class="tab-pane clearfix fade active in" ng-show="S3==true" id="s3">
+                                        <!--start Widget-->
+                                        <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                        <form name="CustomerInformation" id="contact-form" class="smart-form" novalidate="novalidate">
+
+                                            <fieldset>
+
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Is the application process replicated by technical person?</label>
+                                                        <div class="row">
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline"><input type="radio" disabled name="reapplication" ng-model="Thead.ProcessReplicated" ng-value="true">&nbsp;Yes</label>
+                                                                <input type="text" style="display:none" ng-model="Thead.CreatedBy" />
+                                                                <input type="text" style="display:none" ng-model="Thead.Complaint_ID" />
+                                                             
+                                                            </section>
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline"><input type="radio" disabled name="reapplication" ng-model="Thead.ProcessReplicated" ng-value="false">&nbsp;No</label>
+                                                            </section>
+                                                        </div>
+
+
+                                                    </section>
+                                                </div>
+                                                <hr>
+                                            </fieldset>
+                                        </form>
+                                        <!------------------------------------------------------->
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="Thead.ProcessReplicated==false">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>    Reason for non application</label>
+                                                        <textarea rows="3" disabled cols="45" ng-model="Thead.NonApplicationReason"></textarea>
+                                                    </section>
+                                                    <!--<section class="col col-4"></section>-->
+                                                    <section class="col col-4">
+                                                        <label class="label">Reapplication Date</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="" type="date" disabled name="DateOfVehicleRepair" id="emaild"
+                                                                   ng-model="Thead.ReApplicationDate">
+                                                        </label>
+                                                    </section>
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <!--<label class="label">Reapplication not required</label>-->
+                                                        <label class="label"> Reapplication not required ?</label>
+
+                                                        <input type="checkbox" disabled id="1" ng-model="Thead.ReApplicationReqd" ng-value="true">
+
+                                                    </section>
+
+
+                                                </div>
+                                                <div class="row">
+
+
+                                                    <section class="col col-4" ng-show="Thead.ReApplicationReqd==true">
+                                                        <label class="label">Recommended for Closure</label>
+
+                                                        <label class="radio-inline"><input type="radio" disabled ng-model="Thead.ClosureRecomended" ng-value="true">&nbsp;Yes</label>
+
+                                                        <br>
+
+                                                        <label class="radio-inline"><input type="radio" disabled ng-model="Thead.ClosureRecomended" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+
+                                                        <label class="label">Customer Communication :</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <!--<input v="SML" type="text" name="CustomerName" id="named" ng-model="">-->
+                                                            <textarea rows="3" cols="45" disabled ng-model="Thead.CustomerCommunication"></textarea>
+                                                            <!--<span ng-show="CustomerInformation.CustomerName.$touched && CustomerInformation.CustomerName.$invalid">*</span>-->
+                                                        </label>
+
+                                                    </section>
+
+                                                </div>
+                                            </fieldset>
+                                            <hr />
+                                        </form>
+                                      
+                                        <h2 ng-show="Thead.ProcessReplicated==true" class="hidden-xs hidden-sm">Report on Reapplication</h2>
+                                        <form name="Reapplication" id="contact-form"  class="smart-form" novalidate="novalidate" ng-show="Thead.ProcessReplicated==true">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+
+                                                        <label>  System Followed ?</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" disabled name="SystemFollowed" ng-model="Thead.SystemFollowed" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" disabled name="SystemFollowed" ng ng-model="Thead.SystemFollowed" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+                                                </div>
+                                            </fieldset>
+                                            <hr />
+                                        </form>
+                                        <!---------------------------On System followed option 'No'-------------------------------------->
+
+
+
+
+                                        <h2 ng-show="Thead.SystemFollowed==false" class="hidden-xs hidden-sm">System Info </h2>
+                                        <form ng-show="Thead.SystemFollowed==false" id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Substrate</label>
+                                                        <label class="input">
+                                                            <select name="state" class="form-control selectpicker" disabled
+                                                                    ng-options="op.Substrate_ID as op.SubstrateDesc for op in SubstrateMaster"
+                                                                    ng-model="ReappSubstrate"></select>
+                                                        </label>
+                                                    </section>
+                                                    <hr style="margin-bottom: 10px;">
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Underbody</label>
+                                                        <select name="state" class="form-control selectpicker" disabled ng-model="ReappUnderbody.UnderbodySelect">
+                                                            <option value="Bodyfiller">Bodyfiller</option>
+                                                            <option value="Putty">Putty</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUnderbody.UnderbodySelect == 'Bodyfiller'">
+                                                            <label>Bodyfiller</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappUnderbody.BodyFillerInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappUnderbody.UnderbodySelect == 'Putty'">
+                                                            <label>Putty</label>
+                                                            <select name="state" disabled class="form-control selectpicker" ng-model="ReappUnderbody.UnderbodySelectChild">
+                                                                <option>Polyester putty</option>
+                                                                <option>NC Putty</option>
+                                                                <option>Spot Putty</option>
+                                                            </select>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUnderbody.UnderbodySelectChild=='Polyester putty'||ReappUnderbody.UnderbodySelectChild=='NC Putty'||ReappUnderbody.UnderbodySelectChild=='Spot Putty'">
+                                                            <label>Putty Details</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappUnderbody.UnderbodySelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!------------------------------------------Undercoat--------------------------------------->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Undercoat</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="ReappUndercoat.UndercoatSelect">
+                                                            <option value="NC Primer White">NC Primer White</option>
+                                                            <option value="NC Primer Grey">NC Primer Grey</option>
+                                                            <option value="PU Primer White">PU Primer White</option>
+                                                            <option value="PU Primer Grey">PU Primer Grey</option>
+                                                            <option value="Epoxy Primer">Epoxy Primer</option>
+                                                            <option value="Oil Primer">Oil Primer</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'NC Primer White'||ReappUndercoat.UndercoatSelect == 'NC Primer Grey'||ReappUndercoat.UndercoatSelect == 'Oil Primer'">
+                                                            <label>Primer</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="Undercoat.UndercoatSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappUndercoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappUndercoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Basecoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Basecoat</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="ReappBasecoat.BasecoatSelect">
+                                                            <option value="Metallic basecoat system">Metallic basecoat system</option>
+                                                            <option value="Solid basecoat system">Solid basecoat system</option>
+                                                            <option value="Epoxy">Epoxy</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Metallic basecoat system'">
+                                                            <label>Metallic Basecoat</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="ReappBasecoat.MetallicBasecoat" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="ReappBasecoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="ReappBasecoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+
+                                                <!--Clearcoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Clearcoat</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelect">
+                                                            <option value="NC Clear">NC Clear</option>
+                                                            <option value="PU Clear">PU Clear</option>
+                                                            <option value="Alkyd Clear">Alkyd Clear</option>
+                                                            <option value="Polyester Clear">Polyester Clear</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='NC Clear'||ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Alkyd Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>No. of coats</label>
+                                                            <select name="state" disabled class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelectNoOfCost">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div  ng-show="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappClearcoat.Hardener" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled width="50" ng-model="ReappClearcoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Thinner-->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Thinner</label>
+                                                        <select name="state" disabled class="form-control selectpicker" ng-model="ReappThinner.ThinnerSelect">
+                                                            <option value="NC Thinner">NC Thinner</option>
+                                                            <option value="PU Thinner">PU Thinner</option>
+                                                            <option value="Epoxy Thinner">Epoxy Thinner</option>
+                                                        </select>
+                                                    </section>
+
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label>Thinner Details</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappThinner.ThinnerSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label> Mixing Ratio:</label>
+                                                            <label class="input">
+                                                                <input type="text" disabled ng-model="ReappThinner.MixingRatio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <div class="row" ng-show="Thead.SystemFollowed==false">
+                                                    <section class="col col-4">
+                                                        <label class="label">Application Comments</label>
+                                                        <textarea rows="3" cols="45" disabled ng-model="Thead.ApplicationComments"></textarea>
+                                                    </section>
+
+                                                </div>
+
+
+                                            </fieldset>
+                                            <hr style="margin-bottom: 10px;">
+                                        </form>
+
+
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="Thead.ProcessReplicated==true">
+                                            <h3 class="hidden-xs hidden-sm">Upload Photos</h3>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img1" file-model="Reappimg1" />
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img2" file-model="Reappimg2" />
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img3" file-model="Reappimg3" />
+                                                    </section>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                </div>
+                                            </fieldset>
+                                            <hr style="margin-bottom: 10px;">
+                                        </form>
+
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="Thead.ProcessReplicated==true">
+                                            <h2 class="hidden-xs hidden-sm"></h2>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>Does the product exhibit the complaint observed?</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input disabled type="radio" name="ComplaintObserved" ng-model="Thead.ComplaintObserved" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input disabled type="radio" name="ComplaintObserved" ng ng-model="Thead.ComplaintObserved" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+                                                </div>
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label>
+                                                            Is the technical manager informed of the product complaint?
+                                                        </label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input disabled type="radio" name="TMInformed" ng-model="Thead.TMInformed" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input disabled type="radio" name="TMInformed" ng ng-model="Thead.TMInformed" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Thead.TMInformed==true">
+                                                    <section class="col col-4">
+                                                        <label>Approved complaint by technical manager</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input disabled type="radio" name="TMApproved" ng-model="Thead.TMApproved" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input disabled type="radio" name="TMApproved" ng ng-model="Thead.TMApproved" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Thead.TMInformed==true">
+                                                    <section class="col col-4" ng-show="Thead.TMInformed==true">
+                                                        <label>Informed customer of course of action</label>
+
+                                                    </section>
+                                                    <section class="col col-2" ng-show="Thead.TMInformed==true">
+
+
+
+                                                        <label class="radio-inline"><input type="radio" disabled name="CourseOfAction" ng-model="Thead.CourseOfAction" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2" ng-show="Thead.TMInformed==true">
+
+                                                        <label class="radio-inline"><input type="radio" disabled  name="CourseOfAction" ng ng-model="Thead.CourseOfAction" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Thead.CourseOfAction==true">
+                                                    <section class="col col-4">
+                                                        <label>
+                                                            Is customer complaint closed with customer?
+                                                        </label>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" disabled name="CustomerComplaintClosed" ng-model="Thead.CustomerComplaintClosed" ng-value="true">&nbsp;Yes</label>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" disabled name="CustomerComplaintClosed" ng ng-model="Thead.CustomerComplaintClosed" ng-value="false">&nbsp;No</label>
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Thead.ProcessReplicated==true">
+                                                    <section class="col col-4">
+                                                        <label class="label">Customer communication </label>
+                                                        <textarea rows="3" cols="45" ng-model="Thead.ProblemDescription" disabled></textarea>
+                                                    </section>
+
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <h2 class="hidden-xs hidden-sm"></h2>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>Assign TSE </label>
+                                                        <select name="TSEInfo" class="form-control selectpicker"
+                                                                ng-model="TSECode"
+                                                                ng-options="pt.EMP_CODE as pt.EmpName for pt in TSEList"
+                                                                ></select>
+                                                    </section>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+
+                                                    <footer>
+
+                                                        <button class="btn btn-warning"  ng-click="AssignTSE()">Assign TSE</button>
+                                                        <button class="btn btn-primary"  ng-click="CMCloseRequest()" >Close Request</button>
+                                                        <button class="btn btn-primary" >Reconsider Request</button>
+                                                        <button class="btn btn-primary" ng-click="init()">Back</button>
+                                                        <!--<button class="btn btn-success">Approve</button>-->
+
+                                                    </footer>
+
+                                                </div>
+                                                <!-- end s1 tab pane -->
+                                    <div class="tab-pane clearfix fade active in" ng-show="S4==true" id="s4">
+                                        <!--start Widget-->
+                                        <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                        <form name="CustomerInformation" id="contact-form" class="smart-form" novalidate="novalidate">
+
+                                            <fieldset>
+
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label class="label">Is the application process replicated by technical person?</label>
+                                                        <div class="row">
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline"><input type="radio" name="reapplication" ng-model="TSE.ProcessReplicated" ng-value="true">&nbsp;Yes</label>
+                                                                <input type="text" style="display:none" ng-model="TSE.CreatedBy" />
+                                                                <input type="text" style="display:none" ng-model="TSE.Complaint_ID" />
+                                                              
+                                                            </section>
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline"><input type="radio" disabled name="reapplication" ng-model="TSE.ProcessReplicated" ng-value="false">&nbsp;No</label>
+                                                            </section>
+                                                        </div>
+
+
+                                                    </section>
+                                                </div>
+                                                <hr>
+                                            </fieldset>
+                                        </form>
+                                        <!------------------------------------------------------->
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="TSE.ProcessReplicated==false">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>    Reason for non application</label>
+                                                        <textarea rows="3" cols="45" ng-model="TSE.NonApplicationReason"></textarea>
+                                                    </section>
+                                                    <!--<section class="col col-4"></section>-->
+                                                    <section class="col col-4">
+                                                        <label class="label">Reapplication Date</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="" type="date" name="DateOfVehicleRepair" id="emaild"
+                                                                   ng-model="TSE.ReApplicationDate">
+                                                        </label>
+                                                    </section>
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <!--<label class="label">Reapplication not required</label>-->
+                                                        <label class="label"> Reapplication not required ?</label>
+
+                                                        <input type="checkbox" id="1" ng-model="TSE.ReApplicationReqd" ng-value="true">
+
+                                                    </section>
+
+
+                                                </div>
+                                                <div class="row">
+
+
+                                                    <section class="col col-4" ng-show="TSE.ReApplicationReqd==true">
+                                                        <label class="label">Recommended for Closure</label>
+
+                                                        <label class="radio-inline"><input type="radio" ng-model="TSE.ClosureRecomended" ng-value="true">&nbsp;Yes</label>
+
+                                                        <br>
+
+                                                        <label class="radio-inline"><input type="radio" ng-model="TSE.ClosureRecomended" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+
+                                                        <label class="label">Customer Communication :</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <!--<input v="SML" type="text" name="CustomerName" id="named" ng-model="">-->
+                                                            <textarea rows="3" cols="45" ng-model="TSE.CustomerCommunication"></textarea>
+                                                            <!--<span ng-show="CustomerInformation.CustomerName.$touched && CustomerInformation.CustomerName.$invalid">*</span>-->
+                                                        </label>
+
+                                                    </section>
+
+                                                </div>
+                                            </fieldset>
+                                            <hr />
+                                        </form>
+                                       
+                                        <h2 ng-show="TSE.ProcessReplicated==true" class="hidden-xs hidden-sm">Report on Reapplication</h2>
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate" ng-show="TSE.ProcessReplicated==true">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+
+                                                        <label>  System Followed ?</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="SystemFollowed" ng-model="TSE.SystemFollowed" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="SystemFollowed" ng ng-model="TSE.SystemFollowed" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+                                                </div>
+                                            </fieldset>
+                                            <hr />
+                                        </form>
+                                        <!---------------------------On System followed option 'No'-------------------------------------->
+
+
+
+
+                                        <h2 ng-show="TSE.SystemFollowed==false" class="hidden-xs hidden-sm">System Info </h2>
+                                        <form ng-show="TSE.SystemFollowed==false" id="contact-form" class="smart-form" novalidate="novalidate">
+                                            <fieldset>
+
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="label">Substrate</label>
+                                                        <label class="input">
+                                                            <select name="state" class="form-control selectpicker"
+                                                                    ng-options="op.Substrate_ID as op.SubstrateDesc for op in SubstrateMaster"
+                                                                    ng-model="ReappSubstrate"></select>
+                                                        </label>
+                                                    </section>
+                                                    <hr style="margin-bottom: 10px;">
+                                                </div>
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Underbody</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappUnderbody.UnderbodySelect">
+                                                            <option value="Bodyfiller">Bodyfiller</option>
+                                                            <option value="Putty">Putty</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUnderbody.UnderbodySelect == 'Bodyfiller'">
+                                                            <label>Bodyfiller</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUnderbody.BodyFillerInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappUnderbody.UnderbodySelect == 'Putty'">
+                                                            <label>Putty</label>
+                                                            <select name="state" class="form-control selectpicker" ng-model="ReappUnderbody.UnderbodySelectChild">
+                                                                <option>Polyester putty</option>
+                                                                <option>NC Putty</option>
+                                                                <option>Spot Putty</option>
+                                                            </select>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUnderbody.UnderbodySelectChild=='Polyester putty'||ReappUnderbody.UnderbodySelectChild=='NC Putty'||ReappUnderbody.UnderbodySelectChild=='Spot Putty'">
+                                                            <label>Putty Details</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUnderbody.UnderbodySelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!------------------------------------------Undercoat--------------------------------------->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Undercoat</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappUndercoat.UndercoatSelect">
+                                                            <option value="NC Primer White">NC Primer White</option>
+                                                            <option value="NC Primer Grey">NC Primer Grey</option>
+                                                            <option value="PU Primer White">PU Primer White</option>
+                                                            <option value="PU Primer Grey">PU Primer Grey</option>
+                                                            <option value="Epoxy Primer">Epoxy Primer</option>
+                                                            <option value="Oil Primer">Oil Primer</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'NC Primer White'||ReappUndercoat.UndercoatSelect == 'NC Primer Grey'||ReappUndercoat.UndercoatSelect == 'Oil Primer'">
+                                                            <label>Primer</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="Undercoat.UndercoatSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUndercoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappUndercoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Basecoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Basecoat</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappBasecoat.BasecoatSelect">
+                                                            <option value="Metallic basecoat system">Metallic basecoat system</option>
+                                                            <option value="Solid basecoat system">Solid basecoat system</option>
+                                                            <option value="Epoxy">Epoxy</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Metallic basecoat system'">
+                                                            <label>Metallic Basecoat</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappBasecoat.MetallicBasecoat" />
+                                                            </label>
+                                                        </div>
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappBasecoat.Hardener" />
+                                                            </label>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappBasecoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+
+                                                <!--Clearcoat-->
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Clearcoat</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelect">
+                                                            <option value="NC Clear">NC Clear</option>
+                                                            <option value="PU Clear">PU Clear</option>
+                                                            <option value="Alkyd Clear">Alkyd Clear</option>
+                                                            <option value="Polyester Clear">Polyester Clear</option>
+                                                        </select>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='NC Clear'||ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Alkyd Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>No. of coats</label>
+                                                            <select name="state" class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelectNoOfCost">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Hardener</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappClearcoat.Hardener" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                            <label>Ratio</label>
+                                                            <label class="input">
+                                                                <input type="text" width="50" ng-model="ReappClearcoat.Ratio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <!--Thinner-->
+
+                                                <div class="row">
+                                                    <section class="col col-2">
+                                                        <label>Thinner</label>
+                                                        <select name="state" class="form-control selectpicker" ng-model="ReappThinner.ThinnerSelect">
+                                                            <option value="NC Thinner">NC Thinner</option>
+                                                            <option value="PU Thinner">PU Thinner</option>
+                                                            <option value="Epoxy Thinner">Epoxy Thinner</option>
+                                                        </select>
+                                                    </section>
+
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label>Thinner Details</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappThinner.ThinnerSelectChildInput" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <div ng-show="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                            <label> Mixing Ratio:</label>
+                                                            <label class="input">
+                                                                <input type="text" ng-model="ReappThinner.MixingRatio" />
+                                                            </label>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <div class="row" ng-show="TSE.SystemFollowed==false">
+                                                    <section class="col col-4">
+                                                        <label class="label">Application Comments</label>
+                                                        <textarea rows="3" cols="45" ng-model="TSE.ApplicationComments"></textarea>
+                                                    </section>
+
+                                                </div>
+
+
+                                            </fieldset>
+                                            <hr style="margin-bottom: 10px;">
+                                        </form>
+
+
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="TSE.ProcessReplicated==true">
+                                            <h3 class="hidden-xs hidden-sm">Upload Photos</h3>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img1" file-model="TSEimg1" />
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img2" file-model="TSEimg2" />
+                                                    </section>
+                                                    <section class="col col-4">
+                                                        <input type="file" name="img3" file-model="TSEimg3" />
+                                                    </section>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                </div>
+                                            </fieldset>
+                                            <hr style="margin-bottom: 10px;">
+                                        </form>
+
+                                        <form name="Reapplication" id="contact-form" class="smart-form" novalidate="novalidate"
+                                              ng-show="TSE.ProcessReplicated==true">
+                                            <h2 class="hidden-xs hidden-sm"></h2>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label>Does the product exhibit the complaint observed?</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="ComplaintObserved" ng-model="TSE.ComplaintObserved" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="ComplaintObserved" ng ng-model="TSE.ComplaintObserved" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+                                                </div>
+                                                <div class="row">
+
+                                                    <section class="col col-4">
+                                                        <label>
+                                                            Is the technical manager informed of the product complaint?
+                                                        </label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="TMInformed" ng-model="TSE.TMInformed" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="TMInformed" ng ng-model="TSE.TMInformed" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="TSE.TMInformed==true">
+                                                    <section class="col col-4">
+                                                        <label>Approved complaint by technical manager</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="TMApproved" ng-model="TSE.TMApproved" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+
+                                                        <label class="radio-inline"><input type="radio" name="TMApproved" ng ng-model="TSE.TMApproved" ng-value="false">&nbsp;No</label>
+
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="TSE.TMInformed==true">
+                                                    <section class="col col-4" ng-show="TSE.TMInformed==true">
+                                                        <label>Informed customer of course of action</label>
+
+                                                    </section>
+                                                    <section class="col col-2" ng-show="TSE.TMInformed==true">
+
+
+
+                                                        <label class="radio-inline"><input type="radio" name="CourseOfAction" ng-model="TSE.CourseOfAction" ng-value="true">&nbsp;Yes</label>
+
+                                                    </section>
+                                                    <section class="col col-2" ng-show="TSE.TMInformed==true">
+
+                                                        <label class="radio-inline"><input type="radio" name="CourseOfAction" ng ng-model="TSE.CourseOfAction" ng-value="false">&nbsp;No</label>
+
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="TSE.CourseOfAction==true">
+                                                    <section class="col col-4">
+                                                        <label>
+                                                            Is customer complaint closed with customer?
+                                                        </label>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="CustomerComplaintClosed" ng-model="TSE.CustomerComplaintClosed" ng-value="true">&nbsp;Yes</label>
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="CustomerComplaintClosed" ng ng-model="TSE.CustomerComplaintClosed" ng-value="false">&nbsp;No</label>
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="TSE.ProcessReplicated==true">
+                                                    <section class="col col-4">
+                                                        <label class="label">Customer communication </label>
+                                                        <textarea rows="3" cols="45" ng-model="TSE.ProblemDescription"></textarea>
+                                                    </section>
+
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                       
+                                            
+                                            <form name="Reapplication" id="contact-form" ng-show="PedingApprovalCH==true" class="smart-form" novalidate="novalidate">
+                                                <h2 class="hidden-xs hidden-sm"></h2>
+                                                <fieldset>
+                                                    <div class="row" >
+                                                        <section class="col col-4" >
+                                                            <label>RCA to be done at:</label>
+
+                                                        </section>
+                                                        <section class="col col-2" >
+                                                    <label class="radio-inline"><input type="radio" name="RCAtoBeDone" ng-model="RCAtoBeDone" value="Local">&nbsp;Local</label>
+
+                                                        </section>
+                                                        <section class="col col-2">
+
+                                                            <label class="radio-inline"><input type="radio" name="RCAtoBeDone" ng ng-model="RCAtoBeDone" value="GroupAR">&nbsp;Group AR</label>
+
+                                                        </section>
+
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+
+                                            <footer ng-show="PedingApprovalCH==false">
+
+                                                <button class="btn btn-warning" ng-click="AssignCH()">Assign To Complaint Handler</button>
+                                                <button class="btn btn-primary">Hold Complaint</button>
+                                                <button class="btn btn-primary" ng-click="init()">Back</button>
+                                                <!--<button class="btn btn-success">Approve</button>-->
+
+                                            </footer>
+                                            <footer ng-show="PedingApprovalCH==true">
+
+                                                <button class="btn btn-warning" ng-click="ApproveComplaintForRCA()">Approve Complaint for RCA</button>
+                                                <button class="btn btn-primary">Reject Complaint</button>
+                                                <button class="btn btn-primary" ng-click="init()">Back</button>
+                                                <!--<button class="btn btn-success">Approve</button>-->
+
+                                            </footer>
+
+</div>
+
+                                    <div class="tab-pane clearfix fade active in" ng-show="S5==true" id="s5">
+                                        <!--start Widget-->
+                                        <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                        <form name="CustomerInformation" id="contact-form" class="smart-form" novalidate="novalidate">
+
+                                            <fieldset>
+
+                                                <div class="row">
+
+                                                
+                                                        
+                                                            <section class="col col-4">
+                                                                <label>  RCA Comments</label>
+                                                                <textarea rows="3" cols="45" ng-model="Plnt.RCAComments"></textarea>
+                                                            </section>
+                                                            </div>
+                                                        <div class="row">
+                                                            <section class="col col-4">
+                                                                <label class="radio-inline">Is the problem rectifiable?</label>
+                                                               
+                                                            </section>
+                                                            <section class="col col-2">
+                                                                <label class="radio-inline"><input type="radio" name="IsRectifiable" ng-model="Plnt.IsRectifiable" ng-value="true">&nbsp;Yes</label>
+                                                                <input type="text" style="display:none" ng-model="Plnt.CreatedBy" />
+                                                                <input type="text" style="display:none" ng-model="Plnt.Complaint_ID" />
+                                                                <input type="text" style="display:none" ng-model="Plnt.Department_ID" />
+
+                                                            </section>
+                                                            <section class="col col-2">
+                                                                <label class="radio-inline"><input type="radio" name="IsRectifiable" ng-model="Plnt.IsRectifiable" ng-value="false">&nbsp;No</label>
+                                                            </section>
+                                                        </div>
+                                                <div class="row">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Does it need reprocessing?</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" name="IsReprocessing" ng-model="Plnt.IsReprocessing" ng-value="true">&nbsp;Yes</label>
+                                                    
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="radio-inline"><input type="radio" disabled name="IsReprocessing" ng-model="Plnt.IsReprocessing" ng-value="false">&nbsp;No</label>
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label> Rectification/Reprocessing Method Plant</label>
+                                                        <textarea rows="3" cols="45" ng-model="Plnt.ReprocessingComments"></textarea>
+
+                                                    </section>
+                                                  
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==false">
+                                                    <section class="col col-4">
+                                                        <label> Closure comments Plant</label>
+                                                        <textarea rows="3" cols="45" ng-model="Plnt.ClosureComments"></textarea>
+
+                                                    </section>
+
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Total Vol of Affected Products</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.AffectedProductVol" />
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.AffectedProductUnit" />
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Stock from SAP in system</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.StockSAPProductVol" />
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.StockSAPProductUnit" />
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Value in system</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.SysValueProductVol" />
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.SysValueProductUnit" />
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Site of Reprocessing</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.SiteReprocessing" />
+
+                                                    </section>
+                                                  
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Expected cost of reprocessing</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.ReprocessingCost" />
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <input type="text" ng-model="Plnt.ReprocessingCostCurrency" />
+                                                    </section>
+                                                </div>
+                                                <div class="row" ng-show="Plnt.IsReprocessing==true">
+                                                    <section class="col col-4">
+                                                        <label class="radio-inline">Expected Date of Closure</label>
+
+                                                    </section>
+                                                    <section class="col col-2">
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-ellipsis-v"></i>
+                                                            <input v="" type="date" name="DateOfExpectedClosure" id="emaild" ng-model="Plnt.DateOfExpectedClosure">
+                                                        </label>
+                                                    </section>
+                                                  
+                                                </div>
+
+
+                                             
+                                            
+                                                <hr>
+                                            </fieldset>
+                                        </form>
+                                         <footer >
+
+                                            <button class="btn btn-warning" ng-click="PlntAssignBM()">Assign To Business Manager</button>
+                                            
+                                            <button class="btn btn-primary" ng-click="init()">Back</button>
+                                            <!--<button class="btn btn-success">Approve</button>-->
+
+                                        </footer>
+                                       
+
+                                    </div>
+
+                                    </div>
+
+                                <!-- end content -->
+                            </div>
+
+                        </div>
+                  
+                        <!-- end widget div -->
+
+                    </div>
+
+                </article>
+                <article class="col-sm-12 col-md-12"></article>
+            </div>
+
+            <!-- end row -->
+
+        </section>
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->

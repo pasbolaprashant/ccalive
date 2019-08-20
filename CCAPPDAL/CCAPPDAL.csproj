@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DD9F516-B844-49BB-A841-3E57097641BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCAPPDAL</RootNamespace>
+    <AssemblyName>CCAPPDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\CCAPPBLL\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\CCAPPBLL\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DALImpl\AdminDAL.cs" />
+    <Compile Include="DALImpl\BrandDAL.cs" />
+    <Compile Include="DALImpl\CompensationFormDAL.cs" />
+    <Compile Include="DALImpl\ComplaintCategoryDAL.cs" />
+    <Compile Include="DALImpl\ComplaintRCADAL.cs" />
+    <Compile Include="DALImpl\ComplaintStakeHoldersDAL.cs" />
+    <Compile Include="DALImpl\ComplaintSystemInfoDAL.cs" />
+    <Compile Include="DALImpl\BatchAndMfgDAL.cs" />
+    <Compile Include="DALImpl\ComplaintReappcationDAL.cs" />
+    <Compile Include="DALImpl\ComplaintTypeDAL.cs" />
+    <Compile Include="DALImpl\DealerDAL.cs" />
+    <Compile Include="DALImpl\DealerMasterDAL.cs" />
+    <Compile Include="DALImpl\Email.cs" />
+    <Compile Include="DALImpl\FlowMatrixDAL.cs" />
+    <Compile Include="DALImpl\PendingRequestDAL.cs" />
+    <Compile Include="DALImpl\PlantReprocessDAL.cs" />
+    <Compile Include="DALImpl\ProductDAL.cs" />
+    <Compile Include="DALImpl\ProductManufacturerLocationDAL.cs" />
+    <Compile Include="DALImpl\ProductMasterDAL.cs" />
+    <Compile Include="DALImpl\RequestCreationDAL.cs" />
+    <Compile Include="DALImpl\RequesterInfo.cs" />
+    <Compile Include="DALImpl\SubstrateDAL.cs" />
+    <Compile Include="DALImpl\TSEMasterDAL.cs" />
+    <Compile Include="DALImpl\UploadPhotoDAL.cs" />
+    <Compile Include="DALImpl\UserDAL.cs" />
+    <Compile Include="DbContext\CCAPPModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CCAPPModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\CCAPPModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\CCAPPModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CCAPPModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\getCategoryList_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\GetLFGUserDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\getProductList_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\GetValidateAccess_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Get_ProductBatchInfo_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_Brand_productStream_ApprovedComplaint_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_ComplaintCompensationDtl_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_ComplaintSettlementDtl_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GenerateCCReport_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GetALLComplaintRecord_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetApprovedCompRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetApproveProcessCountRCA_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GetBU_type_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetCompensationFutureStatusDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetCompensationRequestStatusDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GetComplaintDetailForEmail_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetDealerList_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetEmployeeRequestDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GetEmployess_Avrg_Response_DETAIL_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GetEmployess_Avrg_Response_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetInProcessCompRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GETName_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetPendingCompRequestForApproval_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetPendingCompRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetPendingRequestForApproval_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetPendingRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetRejectedCompRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetRequesterDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetRequestFutureStatusDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetRequestStatusDetails_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_GetTotalRCACompCount_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetTSE_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetUserClosedRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_GetUserRejectedRequest_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_Get_AllEmp_Details_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_Get_all_Request_Response_avrg_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_Get_Responsive_deatil_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_Manufacturing_productStream_ApprovedComplaint_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\Sp_Segment_productStream_ApprovedComplaint_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_TotalRequestApproved_CH_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_TotalRequestApproved_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_TotalRequestApproved_TSE_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_TotalRequestCount_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_TotalRequestInProcess_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\SP_TotalRequestRejected_Result.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblAdminMatrix.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblApprovalDetail.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblApprovalHeader.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblBrandMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblCompensationDetailsTypeMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintCategoryMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintCompensation.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintCompensationDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintPlantReprocess.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintQuarantine.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintRCA.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblComplaintReapplication.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintReapplicationInfo.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblComplaintReapplicationSystemInfoDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintReappPhotoDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblComplaintRequestDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblComplaintRequestHdr.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblComplaintRequestPhotoDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintSettlementDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintStakeHolder.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintSystemInfoDtl.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblComplaintTypeMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblDealerMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblDepotMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblFlowMatrix.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblFutureStatu.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblProductBatch.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblProductManufacturerLocation.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblProductMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblResponse.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblRoleMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblStatusMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblSubstrateMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\TblTemplateMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbContext\tblTSEMaster.cs">
+      <DependentUpon>CCAPPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DbContext\CCAPPModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CCAPPModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbContext\CCAPPModel.edmx.diagram">
+      <DependentUpon>CCAPPModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbContext\CCAPPModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CCAPPModel.Context.cs</LastGenOutput>
+      <DependentUpon>CCAPPModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DbContext\CCAPPModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CCAPPModel.edmx</DependentUpon>
+      <LastGenOutput>CCAPPModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCAPPBLL\CCAPPBLL\CCAPPBLL.csproj">
+      <Project>{63f57a73-17d8-498e-bf0f-b8eb3f2532c6}</Project>
+      <Name>CCAPPBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

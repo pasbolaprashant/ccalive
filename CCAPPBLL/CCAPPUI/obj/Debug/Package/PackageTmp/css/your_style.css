@@ -1,0 +1,400 @@
+﻿/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+.col-lg-Target {
+    width: 11.11%;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+    background-color: black;
+}
+
+.app-modal-window .modal-dialog {
+    width: 800px !important;
+}
+
+
+
+.sweet-alert {
+    width: 320px !important;
+    left: 66% !important;
+}
+
+    .sweet-alert h2 {
+        font-size: 14px !important;
+        text-transform: capitalize !important;
+        margin: 0 !important;
+        line-height: 1.5 !important;
+    }
+
+    .sweet-alert button {
+        background-color: #8CD4F5;
+        color: white;
+        border: none;
+        box-shadow: none;
+        font-size: 17px;
+        font-weight: 500;
+        -webkit-border-radius: 4px;
+        border-radius: 5px;
+        padding: 4px 15px !important;
+        margin: 15px 0px 0 0px !important;
+        cursor: pointer;
+    }
+
+div.image-manage {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.pending-purchase {
+    width: 100%;
+    float: left;
+    margin: 0 !important;
+}
+
+    div.pending-purchase p {
+        float: left;
+        width: 33%;
+    }
+
+
+.undericon-position {
+    position: absolute;
+    z-index: 1;
+    top: 9px;
+    left: 20px;
+    padding-right: 5px;
+    border-right: 1px solid #aaa;
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(SourceSansPro-Regular.ttf);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #0087C3;
+    text-decoration: none;
+}
+
+
+
+#logo {
+    float: left;
+    margin-top: 0;
+}
+
+    #logo img {
+        height: 50px;
+    }
+
+#company img {
+    height: 50px;
+}
+
+#company {
+    float: right;
+    text-align: right;
+}
+
+
+#details {
+    margin-bottom: 10px;
+}
+
+#client {
+    padding-left: 6px;
+    border-left: 6px solid #0087C3;
+    float: left;
+}
+
+    #client .to {
+        color: #777777;
+    }
+
+h2.name {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+}
+
+#invoice {
+    float: right;
+    text-align: right;
+}
+
+    #invoice h1 {
+        color: #0087C3;
+        font-size: 2.4em;
+        line-height: 1em;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+    }
+
+    #invoice .date {
+        font-size: 1.1em;
+        color: #777777;
+    }
+
+.quotation table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+    .quotation table th,
+    .quotation table td {
+        padding: 5px;
+        background: transparent;
+        text-align: center;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .quotation table th {
+        white-space: nowrap;
+        font-weight: normal;
+    }
+
+    .quotation table td {
+        text-align: right;
+    }
+
+        .quotation table td h3 {
+            color: #000;
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 0 0 0.2em 0;
+        }
+
+    .quotation table.quotation-table > thead > tr > th {
+        color: #000 !important;
+        font-weight: bold;
+        background: lightgrey !important;
+    }
+
+    .quotation table .no {
+        text-align: center;
+        color: grey;
+        font-size: 1.1em;
+    }
+
+    .quotation table .desc {
+        text-align: left;
+    }
+
+
+    .quotation table .total {
+        color: #000;
+    }
+
+    .quotation table td.unit,
+    .quotation table td.qty,
+    .quotation table td.total {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .quotation table tbody tr:last-child td {
+        border: none;
+    }
+
+    .quotation table tfoot td {
+        padding: 10px 20px;
+        background: #FFFFFF;
+        border-bottom: none;
+        font-size: 1.2em;
+        white-space: nowrap;
+        border-top: 1px solid #AAAAAA;
+    }
+
+    .quotation table tfoot tr:first-child td {
+        border-top: none;
+    }
+
+    .quotation table tfoot tr:last-child td {
+        color: #000;
+        font-size: 1.4em;
+        border-top: 1px solid #000;
+    }
+
+    .quotation table tfoot tr td:first-child {
+        border: none;
+    }
+
+#thanks {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#notices {
+    padding-left: 6px;
+    border-left: 6px solid #0087C3;
+}
+
+    #notices .notice {
+        font-size: 1.2em;
+    }
+
+/**Dashboard Info Boxes**/
+.small-box {
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+    .small-box > .inner {
+        padding: 10px;
+    }
+
+    .small-box h3 {
+        font-size: 38px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        white-space: nowrap;
+        padding: 0;
+    }
+
+    .small-box p {
+        font-size: 15px;
+    }
+
+    .small-box h3, .small-box p {
+        color: #fff;
+        z-index: 5;
+    }
+
+    .small-box:hover .icon {
+        font-size: 95px;
+    }
+
+    .small-box .icon {
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        z-index: 0;
+        font-size: 90px;
+        color: rgba(0,0,0,0.15);
+    }
+
+    .small-box > .small-box-footer {
+        position: relative;
+        text-align: center;
+        padding: 3px 0;
+        color: #fff;
+        color: rgba(255,255,255,0.8);
+        display: block;
+        z-index: 10;
+        background: rgba(0,0,0,0.1);
+        text-decoration: none;
+    }
+
+.bg-aqua {
+    background: #00c0ef !important;
+}
+
+.bg-green {
+    background: #00a65a !important;
+}
+
+.bg-yellow {
+    background: #f39c12 !important;
+}
+
+.bg-red {
+    background: #dd4b39 !important;
+}
+
+#CrossBox {
+    background: #f90;
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important
+}
+
+.app-modal-window .modal-dialog {
+    width: 750px;
+}
+
+/**./Small boxes for Dashboard**/
+.table-fixed thead {
+    width: 100% !important;
+}
+
+.table-fixed tbody {
+    height: 230px !important;
+    overflow-y: auto !important;
+    width: 100% !important;
+}
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block !important;
+}
+
+    .table-fixed tbody td, .table-fixed thead > tr > th {
+        float: left !important;
+        border-bottom-width: 0 !important;
+    }
+
+.table-fixed-col tr {
+    width: 100%;
+    float: left;
+}
+
+
+
+/****************************/
+.custom-bullet li:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
+
+.my-chart {
+    margin: 20px 5px 0px 0px !important;
+}
+
+.ContractorDetail-css-class {
+    background-color: red;
+}

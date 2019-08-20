@@ -1,0 +1,225 @@
+﻿		<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip"
+                  data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning!
+                   This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Response Report</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+
+        <!-- widget grid -->
+        <section id="widget-grid" class="">
+
+
+            <!-- row -->
+
+            <div class="row">
+
+                <!--{{EmployeeArray}}-->
+               
+
+
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Response Report</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+                            <br />
+                            <br />
+                            <br />
+
+                        </header>
+
+                        <div class="row" style="height: 55px;" ng-show="RoleName=='Admin'">
+                            <select ng-model="pt.EmpCode" style="height:30px;width: 150px;"
+                                    ng-options="pt.EmpCode for pt in EmployeeArray" ng-change="AvgDetail(pt.EmpCode)"></select>
+                        </div>
+                        <br /><br /><br />
+
+                        <!-- widget1 div-->
+                        <div role="content" ng-if="avg==true">
+
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <!-- end widget edit box -->
+                            <!-- widget content -->
+                            <div class="widget-body no-padding">
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Emp Code</th>
+                                                <th>Total Complaint</th>
+                                                <th>Avg. Response Time (In Days)</th>
+                                            </tr>
+
+                                        </thead>
+
+
+                                        <tr ng-repeat="pt in  CCResponsiveReport">
+
+                                            <td><center>{{pt.EmpCode}}</center></td>
+                                            <td><center>{{pt.TotalComplaint}}</center></td>
+                                            <td><center>{{pt.avrg}}</center></td>
+
+                                        </tr>
+
+                                        <!--<tbody>
+                                            <tr>
+
+                                            </tr>
+                                            <tr ng-repeat="pt in   FlowMatrixArray">
+
+                                                <td> LOCAL </td>
+                                                <td>
+                                                <input type="text" ng-model="pt.RandD_LOCAL" /></td>
+                                                <td><input type="text" ng-model="pt.Plant_LOCAL" /></td>
+                                                <td><input type="text" ng-model="pt.Marketing_LOCAL" /></td>
+                                                <td><input type="text" ng-model="pt.SCM_LOCAL" /></td>
+                                             </tr>
+
+
+                                            <tr ng-repeat="pt in  FlowMatrixArray" ng-if="pt.GroupAr_AR==1">
+
+
+                                                <td>GROUP AR</td>
+                                                <td><input type="text" ng-model="pt.RandD_AR" /></td>
+                                                <td><input type="text" ng-model="pt.Plant_AR" /></td>
+                                                <td><input type="text" ng-model="pt.Marketing_AR" /></td>
+                                                <td><input type="text" ng-model="pt.SCM_AR" /></td>
+
+                                            </tr>
+                                            </tbody>-->
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--<button ng-click="Update()" class="btn btn-sm btn-info btn-flat pull-left">update</button>-->
+                            <!--<button ng-click="Update()" class="btn btn-sm btn-info btn-flat pull-left" ng-show="ShowSave == false" style="float:right!important;">Update</button>-->
+                            <!-- end widget content -->
+
+                        </div>
+                        <!-- end widget1 div -->
+
+                        <!-- widget2 div-->
+                        <div role="content" ng-if="avgDtl==true">
+
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+
+                            </div>
+                            <!-- end widget edit box -->
+                            <!-- widget content -->
+                            <div class="widget-body no-padding">
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Emp Code</th>
+                                                <th>Total Complaint</th>
+                                                <th>Avg. Response Time (In Days)</th>
+                                            </tr>
+
+                                        </thead>
+
+
+                                        <tr ng-repeat="pt in  CCResponsiveReport">
+
+                                            <td><center>{{pt.EmpCode}}</center></td>
+                                            <td><center>{{pt.TotalComplaint}}</center></td>
+                                            <td><center>{{pt.avrg}}</center></td>
+
+                                        </tr>
+
+                                        <!--<tbody>
+                        <tr>
+
+                        </tr>
+                        <tr ng-repeat="pt in   FlowMatrixArray">
+
+                            <td> LOCAL </td>
+                            <td>
+                            <input type="text" ng-model="pt.RandD_LOCAL" /></td>
+                            <td><input type="text" ng-model="pt.Plant_LOCAL" /></td>
+                            <td><input type="text" ng-model="pt.Marketing_LOCAL" /></td>
+                            <td><input type="text" ng-model="pt.SCM_LOCAL" /></td>
+                         </tr>
+
+
+                        <tr ng-repeat="pt in  FlowMatrixArray" ng-if="pt.GroupAr_AR==1">
+
+
+                            <td>GROUP AR</td>
+                            <td><input type="text" ng-model="pt.RandD_AR" /></td>
+                            <td><input type="text" ng-model="pt.Plant_AR" /></td>
+                            <td><input type="text" ng-model="pt.Marketing_AR" /></td>
+                            <td><input type="text" ng-model="pt.SCM_AR" /></td>
+
+                        </tr>
+                        </tbody>-->
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--<button ng-click="Update()" class="btn btn-sm btn-info btn-flat pull-left">update</button>-->
+                            <!--<button ng-click="Update()" class="btn btn-sm btn-info btn-flat pull-left" ng-show="ShowSave == false" style="float:right!important;">Update</button>-->
+                            <!-- end widget content -->
+
+                        </div>
+                        <!-- end widget2 div -->
+
+
+                    </div>
+                    <button ng-click="Save()" class="btn btn-sm btn-primary" ng-show="ShowSave == true">Save</button>
+                    <button ng-click="Update()" class="btn btn-sm  btn-primary" ng-show="ShowSave == false">Update</button>
+                </article>
+
+            </div>
+
+            <!-- end row -->
+
+        </section>
+        <!-- end widget grid -->
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+</div>
+<!-- END MAIN PANEL -->

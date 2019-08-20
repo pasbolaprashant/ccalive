@@ -1,0 +1,667 @@
+﻿		<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip"
+                  data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning!
+                   This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Customer Complaint</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+
+        <!-- widget grid -->
+        <section id="widget-grid" class="">
+
+
+            <!-- row -->
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>Customer Complaint</h2>
+                            <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+
+                        </header>
+                    </div>
+                    <!-- widget div-->
+                    <div role="content">
+
+                        <!-- widget edit box -->
+                        <div class="jarviswidget-editbox">
+                            <!-- This area used as dropdown edit box -->
+
+                        </div>
+
+
+                        <!-- end widget edit box -->
+                        <!-- widget content -->
+                        <div class="widget-body no-padding">
+
+
+                            <div class="table-responsive">
+
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <center><td><label for="Customer Complaint Form">Customer Complaint Form</label></td></center>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <td><label for="Employee Code">Customer Information</label></td>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                   
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Complaint Name</label></td>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <td><label for="Complaint Designation">Complaint Designation</label></td>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                        </tr>
+                                    
+
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                   
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Employee Code</label></td>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <td><label for="Complaint Name">Complaint No</label></td>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                        </tr>
+                                   
+
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                               <tbody>
+                                        <tr>
+
+                                            <td><label for="Customer Complaint Form">Product Complaint</label></td>
+
+                                        </tr>
+                                  </tbody>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr>
+
+                                            <td><label for="Employee Code">Problem Description</label></td>
+
+                                        </tr>
+                                    </tbody>
+
+</table>
+                                <table class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <textarea class="form-control" rows="5"></textarea>
+
+
+                                        </tr>
+                                    </tbody>
+
+</table>
+
+                                <table class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><label for="Problem Photo">Problem Photo</label></td>
+                                        </tr>
+                                    </tbody>
+
+</table>
+                                <table class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="file" ng-model="" ></td>
+                                            <td><input type="file" ng-model="" ></td>
+                                            <td><input type="file" ng-model="" ></td>
+                                            <td><input type="file" ng-model="" ></td>
+                                        </tr>
+                                    </tbody>
+
+
+</table>
+
+                                <table class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr>
+
+                                            <td><label for="Customer Complaint Form">System Information(automatic as per info filled)</label></td>
+
+                                        </tr>
+                                    </tbody>
+
+</table>
+                                <table class="table table-bordered table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td><label for="Complaint Name">Base</label></td>
+
+                                            <td><label for="Complaint Name">Hardner</label></td>
+                                            <td><label for="Complaint Name">Mixing Ratio</label></td>
+                                        </tr>
+
+
+
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Cleaner</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model=""  ></td>
+                                            <td><input type="text" ng-model=""  ></td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Polyster Bodyfiller</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Primer</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Primer Surface/Hardener</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Basecoat/Reducer</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Clearcoat/Hardener</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">2K Topcoat/Hardener</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+
+
+
+                                        <tr>
+
+                                            <td><label for="Complaint Name">Substrate</label></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+                                            <td><input type="text" ng-model="" ></td>
+
+                                        </tr>
+                                    </tbody>
+</table>
+                                <table class="table table-bordered table-hover">
+                                    
+                                        <tr>
+
+                                            <td><label for="Customer Complaint Form">Local Investigation Team(pre filled)</label></td>
+
+                                        </tr>
+                                 
+
+                                </table>
+                                <!--<table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th><label for="Customer Complaint Form">Complaint Handler(the deciding point)</label></th>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th> Date of visit to customer site</th>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Is the application process replicated by technical team </th>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </p>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </p>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Report on reapplication</th>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>System followed?</th>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </p>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </p>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Application Report</th>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Mixing ratio comments</th>
+
+                                        </tr>
+                                    </thead>
+
+
+
+                                </table>
+                                <table>
+                                    <thead>
+                                        <tr>
+
+                                            <th><label for="Complaint Name">Primer</label></th>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <th><label for="Complaint Designation">BaseCoat</label></th>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <th><label for="Complaint Designation">ClearCoat</label></th>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <th><label for="Complaint Designation">Application Comments</label></th>
+
+                                            <th class="form-group">
+
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th><label for="Upload Photo">Upload Photo</label></th>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <td><input type="text" ng-model="" readonly></td>
+                                            <td><input type="text" ng-model="" readonly></td>
+
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Does the product exhibit the complaint observed?</th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Is the technical manager informed of the product complaint?</th>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </p>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </p>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Approved complaint by  technical manager </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Informed customer of course of action </th>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </p>
+                                            <p>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </p>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Is customer complaint closed with customer ?</th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Dealer Name</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th> Technical manager Comments </th>
+                                            <td>
+                                                <div class="form-group">
+
+                                                    <textarea class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Approved local field report </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Recommend for quarantine</th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Fileed by Complaint Handler</th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Acceptance of complete batch by production</th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Date of Production</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>New Production Batch</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Any further comments?</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Invoice Date</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>EP no</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Material replacement?</th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="Yes">&nbsp;Yes</label>
+                                            </th>
+                                            <th>
+                                                <label class="radio-inline"><input type="radio" ng-model="satisfied" value="No">&nbsp;No</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Replacement Invoice No</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Compensation-Monestry</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Additional Compensation</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Buisness Manager Approval</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>-->
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </article>
+            </div>
+
+
+
+            <!-- end widget content -->
+
+
+<!-- end row -->
+        </section>
+<!-- end widget grid -->
+    </div>
+<!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->

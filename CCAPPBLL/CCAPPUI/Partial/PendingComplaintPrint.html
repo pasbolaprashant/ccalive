@@ -1,0 +1,3218 @@
+﻿<div id="main" role="main">
+
+    <!-- RIBBON -->           <!--margin-top: 1px;-->
+    <div id="ribbon">
+        <div>
+            <ol class="breadcrumb">
+                <li>Home</li>
+                <li>Approved Request Detail</li>
+            </ol>
+
+            <button class="btn btn-warning" style="size: 11px;float:right;margin-right: 23px;-webkit-margin-before: 5px;" ng-click="Print()"><i class="fa fa-print">Print</i></button>
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div id="PrintDiv" style="padding: 45px;">
+            <!--<div id="printSection" style="padding: 45px;">-->
+
+
+
+            <style>
+                @media print {
+                    body {
+                        -webkit-print-color-adjust: exact;
+                    }
+                }
+
+                .space {
+                    font-size: 10px !important;
+                }
+            </style>
+            <table style="border:solid;" width="100%">
+                <tr style="border:1px">
+                    <td colspan="1" style="background-color:#14448A !important;border:1px">
+                        <img width="120" style="background: #09428f !important;  margin-bottom:5px;" src="../img/nippon-logo2.png" />
+
+                    </td>
+                    <td colspan="3" style="background-color:#14448A !important;border:1px">
+
+                        <label style="color:white">COMPLAINT DETAIL</label>
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+
+
+            <!-----------open   print functionality  ======================================================    ---------------------------------->
+
+
+            <section class="">
+
+                <div class="row">
+                    <article>
+                        <div>
+                            <header role="heading">
+                                <h2>Complaint Number : {{ComplaintNumber}}</h2>
+                            </header>
+                        </div>
+
+                        <div>
+                            <div id="s1">
+                                <!----------------------------------------MAin Request--------------------------------------->
+                                <div id="Div1">
+
+
+                                    <!--start Widget-->
+                                    <!-----------------------------------Section A- customer information----------------------------------------------------------------------------------------------->
+
+                                    <h5>Employee Details</h5>
+                                    <form>
+
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Request Number</th>
+                                                        <th>Employee Code</th>
+                                                        <th>Name</th>
+                                                        <th>Department</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><center>{{EmployeeDetails.CreationDate  | date:'dd/MM/yyyy'}}
+</center></td>
+                                                        <td><center> {{EmployeeDetails.ComplaintNumber}}</center> </td>
+                                                        <td><center>{{EmployeeDetails.EMP_CODE}}</center></td>
+                                                        <td><center>{{EmployeeDetails.Emp_First_name}}</center></td>
+                                                        <td> <center>{{EmployeeDetails.Dept_name}}</center></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </form>
+
+
+                                    <h5>Complaint Details</h5>
+                                    <form name="CustomerInformation" id="Form1">
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>Customer Name </td>
+                                                    <td><label>{{Request.CustomerName}}</label></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Contact No. </td>
+                                                    <td><label>{{Request.CustomerNo}}</label></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Customer Address </td>
+                                                    <td><label>{{Request.CustomerAddress}}</label></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Email </td>
+                                                    <td><label>{{Request.CustomerEmail}}</label></td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>Dealer Code</td>
+                                                    <td>
+                                                        {{Request.DealerCode}}
+
+                                                        <!--<label ng-repeat="b in DealerDetails">
+                                                            <label ng-if="b.DealerID == Request.DealerID">
+                                                                {{b.DealerCode}}
+                                                            </label>
+                                                        </label>-->
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td> Dealer Name </td>
+                                                    <td>
+                                                        {{Request.DealerName}}
+
+                                                        <!--<label ng-repeat="b in DealerDetails">
+                                                            <label ng-if="b.DealerID == Request.DealerID">
+                                                                {{b.DealerName}}
+                                                            </label>
+                                                        </label>-->
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>Depot </td>
+                                                    <td><label>{{Request.SalesOffice}}</label></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Date of vehicle repair </td>
+                                                    <td><label>{{Request.DateOfvehicleRepair}}</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </form>
+                                    <!--./end widget-->
+                                    <!----------------------------------Complaint Information----------------------------------------->
+
+                                    <h5>Complaint Information</h5>
+                                    <form id="Form2">
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>Product Code </td>
+                                                    <td>
+                                                        {{Complaint.ProductCode}}
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Brand </td>
+                                                    <td><label>{{Complaint.BrandName}}</label></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Product Description </td>
+                                                    <td>
+                                                        {{Complaint.ProductDescription}}
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Batch Number </td>
+                                                    <td>
+                                                        <label ng-if="Complaint.BatchNumber!=0" ng-repeat="b in Batch">
+                                                            {{Complaint.BatchNumber}}
+                                                        </label>
+                                                        <label ng-if="Complaint.BatchNumber==0">
+                                                            {{Complaint.BatchNumber1}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Date & Month of Manufacture</td>
+                                                    <td>
+                                                        {{Complaint.ManuFactureDate}}
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>  Shelf Life </td>
+                                                    <td>
+                                                        <label>{{Complaint.ShelfLife}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Quantity of Complaint Stock </td>
+                                                    <td><label>{{Complaint.Quantity}}</label></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Select the unit(L/KG/Pieces) </td>
+                                                    <td>
+                                                        <label>{{Complaint.QtyOfComplaintStock}}</label>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+                                    </form>
+
+
+
+                                    <!----------------------------------Complaint Type-------------------------------------------------------->
+
+
+                                    <h5>Complaint Type </h5>
+                                    <form id="Form3">
+                                        <fieldset>
+                                            <div ng-repeat="item in AddRowArray" style="font-size: 10px !important;">
+                                                <section ng-repeat="ct in item.ComplaintLst">
+                                                    <lable ng-if="ct.IsSelected==true">
+                                                        {{ct.ComplaintType}}
+                                                    </lable>
+                                                </section>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+
+                                    <!---------------------------------System Info Panel----------------------------------------------------------------------------------------------->
+
+
+
+                                    <h5 ng-if="IsSystemRelated==true">System Info </h5>
+                                    <form ng-if="IsSystemRelated==true" id="Form4">
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>Substrate </td>
+                                                    <td>
+                                                        <label class="input" ng-repeat="op in SubstrateMaster">
+                                                            <label ng-if="op.Substrate_ID == Substrate">
+                                                                {{op.SubstrateDesc}}
+                                                            </label>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <!------------------------------------------Underbody--------------------------------------->
+
+                                                <tr>
+                                                    <td>Underbody </td>
+                                                    <td>
+                                                        <label>{{Underbody.UnderbodySelect}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Underbody.UnderbodySelect == 'Bodyfiller'">
+                                                    <td>Bodyfiller </td>
+                                                    <td>
+                                                        <label>
+                                                            {{Underbody.BodyFillerInput}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Underbody.UnderbodySelect == 'Putty'">
+                                                    <td>Putty </td>
+                                                    <td>
+                                                        <label>
+                                                            {{Underbody.UnderbodySelectChild}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Underbody.UnderbodySelectChild=='Polyester putty'||Underbody.UnderbodySelectChild=='NC Putty'||Underbody.UnderbodySelectChild=='Spot Putty'">
+
+                                                    <td>Putty Details</td>
+                                                    <td>
+                                                        <label>{{Underbody.UnderbodySelectChildInput}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <!------------------------------------------Undercoat--------------------------------------->
+
+                                                <tr>
+                                                    <td> Undercoat </td>
+                                                    <td>
+                                                        <label>{{Undercoat.UndercoatSelect}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Primer </td>
+                                                    <td>
+                                                        <label>{{Undercoat.UndercoatSelectChildInput}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Undercoat.UndercoatSelect == 'PU Primer White'||Undercoat.UndercoatSelect =='PU Primer Grey'||Undercoat.UndercoatSelect =='Epoxy Primer'">
+
+                                                    <td>Hardener </td>
+                                                    <td>
+                                                        <label>{{Undercoat.Hardener}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Undercoat.UndercoatSelect == 'PU Primer White'||Undercoat.UndercoatSelect =='PU Primer Grey'||Undercoat.UndercoatSelect =='Epoxy Primer'">
+
+                                                    <td>Ratio </td>
+                                                    <td>
+                                                        <label>
+
+
+                                                            {{Undercoat.Ratio1}} :
+                                                            <!--<input type="text" class="col col-col-4" disabled maxlength="2" numbers-only ng-model="Undercoat.Ratio1" />-->
+                                                            {{Undercoat.Ratio2}}
+                                                            <!--<input type="text" disabled maxlength="2" numbers-only ng-model="Undercoat.Ratio2" />-->
+
+
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <!------------------------------------------Basecoat--------------------------------------->
+                                                <tr>
+                                                    <td> Basecoat </td>
+                                                    <td>
+                                                        <label>{{Basecoat.BasecoatSelect}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Metallic Basecoat </td>
+                                                    <td>
+                                                        <label>{{Basecoat.MetallicBasecoat}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Basecoat.BasecoatSelect == 'Solid basecoat system'||Basecoat.BasecoatSelect == 'Epoxy'">
+
+                                                    <td>Hardener </td>
+                                                    <td>
+                                                        <label>{{Basecoat.Hardener}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Basecoat.BasecoatSelect == 'Solid basecoat system'||Basecoat.BasecoatSelect == 'Epoxy'">
+
+                                                    <td>Ratio </td>
+                                                    <td>
+                                                        <label>
+
+
+                                                            {{Basecoat.Ratio1}}  :
+                                                            <!--<section class="col col-4"><input type="text" disabled maxlength="2" numbers-only ng-model="Basecoat.Ratio2" /></section>-->
+                                                            {{Basecoat.Ratio2}}
+                                                            <!--<section class="col col-4"><input type="text" disabled maxlength="2" numbers-only ng-model="Basecoat.Ratio2" /></section>-->
+
+
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <!-----------------------------------------Clearcoat---------------------------------------->
+
+                                                <tr>
+                                                    <td> Clearcoat </td>
+                                                    <td>
+                                                        <label>{{Clearcoat.ClearcoatSelect}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Clear</td>
+                                                    <td>
+                                                        <label>{{Clearcoat.Clear}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Clearcoat.ClearcoatSelect =='NC Clear'||Clearcoat.ClearcoatSelect =='PU Clear'||Clearcoat.ClearcoatSelect =='Alkyd Clear'||Clearcoat.ClearcoatSelect =='Polyester Clear' ">
+
+                                                    <td>
+                                                        <lable> No. of coats </lable>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{Clearcoat.ClearcoatSelectNoOfCost}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Clearcoat.ClearcoatSelect =='PU Clear'||Clearcoat.ClearcoatSelect =='Polyester Clear' ">
+
+                                                    <td>Hardener </td>
+                                                    <td>
+                                                        <label>
+                                                            {{Clearcoat.Hardener}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Clearcoat.ClearcoatSelect =='PU Clear'||Clearcoat.ClearcoatSelect =='Polyester Clear' ">
+
+                                                    <td>Ratio </td>
+                                                    <td>
+                                                        <label>
+
+
+                                                            {{Clearcoat.Ratio1}}
+                                                            <!--<input type="text" class="col col-col-4" disabled maxlength="2" numbers-only ng-model="Clearcoat.Ratio1" />-->
+                                                            {{Clearcoat.Ratio2}}
+                                                            <!--<section class="col col-4"><input type="text" disabled maxlength="2" numbers-only ng-model="Clearcoat.Ratio2" /></section>-->
+
+
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <!-----------------------------------------Thinner---------------------------------------->
+
+                                                <tr>
+                                                    <td> Thinner </td>
+                                                    <td>
+                                                        <label>{{Thinner.ThinnerSelect}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thinner.ThinnerSelect =='NC Thinner'||Thinner.ThinnerSelect =='PU Thinner'||Thinner.ThinnerSelect =='Epoxy Thinner'">
+                                                    <td>Thinner Details</td>
+                                                    <td>
+                                                        <label>{{Thinner.ThinnerSelectChildInput}}</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thinner.ThinnerSelect =='NC Thinner'||Thinner.ThinnerSelect =='PU Thinner'||Thinner.ThinnerSelect =='Epoxy Thinner'">
+
+
+                                                    <td>Mixing Ratio(%) </td>
+                                                    <td>
+                                                        <label>
+                                                            {{Thinner.MixingRatio1}}
+                                                            <!--<input type="text" class="col col-col-4" disabled maxlength="2" numbers-only ng-model="Thinner.MixingRatio1" />-->
+                                                            {{Thinner.MixingRatio2}}
+                                                            <!--<section style="display:none" class="col col-2"><input type="text" disabled maxlength="2" numbers-only ng-model="Thinner.MixingRatio2" /></section>-->
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <!-----------------------------------Tempreature / Humidity(%)--------------------------------------->
+                                                <tr>
+
+                                                    <td>Tempreature(Degree C) </td>
+                                                    <td>
+                                                        <label>
+                                                            {{Tempreature}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>Humidity(%) </td>
+                                                    <td>
+                                                        <label>
+                                                            {{Humidity}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </form>
+
+
+                                    <form>
+                                        <fieldset>
+
+                                            <P style="font-size: 10px !important;">Problem Description :</P>
+
+                                            <p style="font-size: 10px !important;">{{ProblemDescription}}</p>
+                                            <!--<textarea rows="3" cols="44" disabled ng-model="ProblemDescription"></textarea>-->
+                                        </fieldset>
+                                    </form>
+
+                                    <!---------------------------------Photo Uploaded----------------------------------------------------------------------------------------------->
+                                    <!--<form>
+                                        <h5>Photos Uploaded :</h5>
+                                        <fieldset>
+                                            <section ng-repeat="item in PhotoURL" style="font-size: 10px !important;">
+                                                <div>-->
+                                    {{item.PhotoUrl}}
+                                    <!--<a href="{{item.PhotoUrl}}" target="_blank">{{item.PhotoUrl}}</a>-->
+                                    <!--</div>
+                                            </section>
+                                        </fieldset>
+
+                                    </form>-->
+                                    <!--------------------------------- Approval Details----------------------------------------------------------------------------------------------->
+                                    <br />
+
+                                    <form>
+                                        <h5>Approval Details</h5>
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Role</th>
+                                                        <th>Employee Details</th>
+                                                        <th>Status</th>
+                                                        <th>Date</th>
+                                                        <th>Remark</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng:repeat="item in PendingStatusData">
+                                                        <td>{{item.RoleName}}</td>
+                                                        <td>{{item.EmpName}} </td>
+                                                        <td>{{item.StatusName}}</td>
+                                                        <td>{{item.CreationDate | date:'dd/MM/yyyy'}}</td>
+                                                        <td ng-if="$index!=0">{{item.Remarks}}</td>
+                                                        <td ng-if="$index==0">{{ProblemDescription}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </form>
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- end s1 tab pane -->
+                            <!-- new tab: Default -->
+                            <div ng-if="ComplaintHandler==true" id="s2">
+                                <!--start Widget-->
+                                <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+
+                                <h5>Complaint Handler</h5>
+
+                                <form name="CustomerInformation" id="Form5">
+
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    Is the application process replicated by technical person?</l
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.ProcessReplicated==true">Yes</label>
+                                                    <label ng-if="Thead.ProcessReplicated==false">No</label>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+
+                                </form>
+                                <!------------------------------------------------------------------------------------------------------>
+
+                                <form name="Reapplication" id="Form6"
+                                      ng-if="Thead.ProcessReplicated==false">
+
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    Reason for non application :
+
+                                                </td>
+                                                <td>
+                                                    {{Thead.NonApplicationReason}}
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Reapplication Date
+
+                                                </td>
+                                                <td>
+                                                    {{Thead.ReApplicationDate}}
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td>
+                                                    Reapplication not required ?
+
+                                                </td>
+                                                <td>
+                                                    {{Thead.ReApplicationReqd}}
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td>
+                                                    Recommended for Closure  :
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.ClosureRecomended==true">Yes</label>
+                                                    <label ng-if="Thead.ClosureRecomended==false">No</label>
+
+                                                </td>
+                                            </tr>
+
+
+
+
+                                            <tr>
+                                                <td>
+                                                    Customer Communication :
+
+                                                </td>
+                                                <td>
+                                                    {{Thead.CustomerCommunication}}
+                                                </td>
+                                            </tr>
+
+
+
+                                        </table>
+                                    </div>
+                                </form>
+
+                                <!---------------------------------------------Report on Reapplication----------------------------------------------------->
+                                <!--<h5 ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true" class="hidden-xs hidden-sm">Report on Reapplication</h5>-->
+                                <form name="Reapplication" id="Form7" ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true">
+                                    <h5 ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true">Report on Reapplication</h5>
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    <label>System Followed ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.SystemFollowed==true">Yes</label>
+                                                    <label ng-if="Thead.SystemFollowed==false">No</label>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+
+
+                                </form>
+
+                                <!---------------------------On System followed option 'No'-------------------------------------->
+
+                                <h5 ng-if="IsInCan==true && Thead.ProcessReplicated==true">Questionaire </h5>
+                                <form ng-if="IsInCan==true && Thead.ProcessReplicated==true" id="Form8">
+
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    <label>Does the evidence available show the mentioned problem ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.EvidenceAvailable==true">Yes</label>
+                                                    <label ng-if="Thead.EvidenceAvailable==false">No</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>Have you cross-verified the problem in the same batch ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.VerifiedInSameBatch==true">Yes</label>
+                                                    <label ng-if="Thead.Thead.VerifiedInSameBatch==false">No</label>
+                                                </td>
+                                            </tr>
+                                            <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                <td>
+                                                    <label>Cross verfication has been conducted by  ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.IsSelf==true">Self</label>
+                                                    <label ng-if="Thead.IsSelf==false">On your Behalf</label>
+                                                </td>
+                                            </tr>
+                                            <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                <td>
+                                                    <label>Is the evidence (pictures/video) of cross verification available for future reference  ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.AvailableForFutureEvidence==true">Yes</label>
+                                                    <label ng-if="Thead.AvailableForFutureEvidence==false">No</label>
+                                                </td>
+                                            </tr>
+                                            <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                <td>
+                                                    <label>Is sufficient evidence available to validate the Complaint  ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.SufficientEvidence==true">Yes</label>
+                                                    <label ng-if="Thead.SufficientEvidence==false">No</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>Remarks</label>
+
+                                                </td>
+                                                <td>
+                                                    {{Thead.RemarksForQuetsionaire}}
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+
+                                </form>
+
+                                <h5 ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true && Thead.SystemFollowed==false">System Info </h5>
+                                <form ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true && Thead.SystemFollowed==false" id="Form9">
+
+                                    <fieldset>
+
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <label>Substrate</label>
+                                                <label>
+                                                    {{ReappSubstrate}}
+
+                                                    <!--<select name="state" ng-disabled="CHLogin==false"
+                                                            ng-options="op.Substrate_ID as op.SubstrateDesc for op in SubstrateMaster"
+                                                            ng-model="ReappSubstrate"></select>-->
+                                                </label>
+                                            </section>
+                                            <hr style="margin-bottom: 10px;">
+                                        </div>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-2">
+                                                <label>Underbody</label>
+                                                <lable>
+                                                    {{ReappUnderbody.UnderbodySelect}}
+                                                </lable>
+                                                <!--<select name="state" ng-disabled="CHLogin==false" class="form-control selectpicker" ng-model="ReappUnderbody.UnderbodySelect">
+                                                    <option value="Bodyfiller">Bodyfiller</option>
+                                                    <option value="Putty">Putty</option>
+                                                </select>-->
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappUnderbody.UnderbodySelect == 'Bodyfiller'">
+                                                    <label>Bodyfiller</label>
+                                                    <label>
+                                                        {{ReappUnderbody.BodyFillerInput}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" ng-model="ReappUnderbody.BodyFillerInput" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappUnderbody.UnderbodySelect == 'Putty'">
+                                                    <label>Putty</label>
+                                                    <lable>{{ReappUnderbody.UnderbodySelectChild}}</lable>
+
+                                                    <!--<select name="state" ng-disabled="CHLogin==false" ng-model="ReappUnderbody.UnderbodySelectChild">
+                                                        <option>Polyester putty</option>
+                                                        <option>NC Putty</option>
+                                                        <option>Spot Putty</option>
+                                                    </select>-->
+                                                </div>
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappUnderbody.UnderbodySelectChild=='Polyester putty'||ReappUnderbody.UnderbodySelectChild=='NC Putty'||ReappUnderbody.UnderbodySelectChild=='Spot Putty'">
+                                                    <label>Putty Details</label>
+                                                    <label>
+                                                        {{ReappUnderbody.UnderbodySelectChildInput}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" ng-model="ReappUnderbody.UnderbodySelectChildInput" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <!------------------------------------------Undercoat--------------------------------------->
+
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-2">
+                                                <label>Undercoat</label>
+                                                <lable>{{ReappUndercoat.UndercoatSelect}}</lable>
+
+                                                <!--<select name="state" ng-disabled="CHLogin==false" class="form-control selectpicker" ng-model="ReappUndercoat.UndercoatSelect">
+                                                    <option value="NC Primer White">NC Primer White</option>
+                                                    <option value="NC Primer Grey">NC Primer Grey</option>
+                                                    <option value="PU Primer White">PU Primer White</option>
+                                                    <option value="PU Primer Grey">PU Primer Grey</option>
+                                                    <option value="Epoxy Primer">Epoxy Primer</option>
+                                                    <option value="Oil Primer">Oil Primer</option>
+                                                </select>-->
+                                            </section>
+                                            <section class="col col-2">
+                                                <div>
+                                                    <label>Primer</label>
+                                                    <label>
+                                                        {{Undercoat.UndercoatSelectChildInput}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" ng-disabled="CHLogin==false" ng-model="Undercoat.UndercoatSelectChildInput" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                    <label>Hardener</label>
+                                                    <label>
+                                                        {{ReappUndercoat.Hardener}}
+
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" ng-model="ReappUndercoat.Hardener" />-->
+                                                    </label>
+                                                </div>
+
+                                            </section>
+                                            <section class="col col-6">
+                                                <div ng-if="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+                                                    <label>Ratio</label>
+
+                                                    <label>
+                                                        {{ReappUndercoat.Ratio1}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" class="col col-col-4" maxlength="2" numbers-only ng-model="ReappUndercoat.Ratio1" />-->
+
+                                                        <label>:</label>
+                                                        {{ReappUndercoat.Ratio2}}
+                                                        <!--<section class="col col-4"><input ng-disabled="CHLogin==false" type="text" maxlength="2" numbers-only ng-model="ReappUndercoat.Ratio2" /></section>-->
+
+
+
+                                                    </label>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <!--Basecoat-->
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-2">
+                                                <label>Basecoat</label>
+                                                {{ReappBasecoat.BasecoatSelect}}
+                                                <!--<select name="state" ng-disabled="CHLogin==false" class="form-control selectpicker" ng-model="ReappBasecoat.BasecoatSelect">
+                                                    <option value="Metallic basecoat system">Metallic basecoat system</option>
+                                                    <option value="Solid basecoat system">Solid basecoat system</option>
+                                                    <option value="Epoxy">Epoxy</option>
+                                                </select>-->
+                                            </section>
+                                            <section class="col col-2">
+                                                <div>
+                                                    <label>Basecoat</label>
+                                                    <label>
+                                                        {{ReappBasecoat.MetallicBasecoat}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" width="50" ng-model="ReappBasecoat.MetallicBasecoat" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                    <label>Hardener :</label>
+                                                    <label>
+                                                        {{ReappBasecoat.Hardener}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" width="50" ng-model="ReappBasecoat.Hardener" />-->
+                                                    </label>
+                                                </div>
+
+                                            </section>
+                                            <section class="col col-6">
+                                                <div ng-if="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                    <label>Ratio</label>
+
+                                                    <label>
+                                                        {{ReappBasecoat.Ratio1}}
+                                                        <label>:</label>
+                                                        {{ReappBasecoat.Ratio2}}
+
+                                                        <!--<div class="row">
+                                                            <section class="col col-4">
+                                                                <input type="text" ng-disabled="CHLogin==false" class="col col-col-4" maxlength="2" numbers-only ng-model="ReappBasecoat.Ratio1" />
+                                                            </section>
+                                                            <section class="col col-1"><label>:</label></section>
+                                                            <section class="col col-4"><input ng-disabled="CHLogin==false" type="text" maxlength="2" numbers-only ng-model="ReappBasecoat.Ratio2" /></section>
+
+                                                        </div>-->
+
+                                                    </label>
+                                                </div>
+                                            </section>
+                                        </div>
+
+
+                                        <!--Clearcoat-->
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-2">
+                                                <label>Clearcoat</label>
+                                                <lable>{{ReappClearcoat.ClearcoatSelect}}</lable>
+
+                                                <!--<select name="state" ng-disabled="CHLogin==false" class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelect">
+                                                    <option value="NC Clear">NC Clear</option>
+                                                    <option value="PU Clear">PU Clear</option>
+                                                    <option value="Alkyd Clear">Alkyd Clear</option>
+                                                    <option value="Polyester Clear">Polyester Clear</option>
+                                                </select>-->
+                                            </section>
+                                            <section class="col col-2">
+                                                <div>
+                                                    <label>Clear</label>
+                                                    <label>
+                                                        {{ReappClearcoat.Clear}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" width="50" ng-model="ReappClearcoat.Clear" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappClearcoat.ClearcoatSelect =='NC Clear'||ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Alkyd Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                    <label>No. of coats</label>
+                                                    <lable>{{ReappClearcoat.ClearcoatSelectNoOfCost}}</lable>
+
+                                                    <!--<select name="state" ng-disabled="CHLogin==false" class="form-control selectpicker" ng-model="ReappClearcoat.ClearcoatSelectNoOfCost">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>-->
+                                                </div>
+
+                                            </section>
+                                            <section class="col col-2">
+                                                <div ng-if="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                    <label>Hardener</label>
+                                                    <label>
+                                                        {{ReappClearcoat.Hardener}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" ng-model="ReappClearcoat.Hardener" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="col col-6">
+                                                <div ng-if="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                    <label>Ratio</label>
+
+                                                    <label>
+                                                        {{ReappClearcoat.Ratio1}}
+                                                        <label>:</label>
+                                                        {{ReappClearcoat.Ratio2}}
+
+                                                        <!--<div class="row">
+                                                            <section class="col col-4">
+                                                                <input type="text" ng-disabled="CHLogin==false" class="col col-col-4" maxlength="2" numbers-only ng-model="ReappClearcoat.Ratio1" />
+                                                            </section>
+                                                            <section class="col col-1"><label>:</label></section>
+                                                            <section class="col col-4"><input ng-disabled="CHLogin==false" type="text" maxlength="2" numbers-only ng-model="ReappClearcoat.Ratio2" /></section>
+
+                                                        </div>-->
+
+                                                    </label>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <!--Thinner-->
+
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-2">
+                                                <label>Thinner</label>
+                                                <lable>{{ReappThinner.ThinnerSelect}}</lable>
+
+                                                <!--<select name="state" ng-disabled="CHLogin==false" class="form-control selectpicker" ng-model="ReappThinner.ThinnerSelect">
+                                                    <option value="NC Thinner">NC Thinner</option>
+                                                    <option value="PU Thinner">PU Thinner</option>
+                                                    <option value="Epoxy Thinner">Epoxy Thinner</option>
+                                                </select>-->
+                                            </section>
+
+                                            <section class="col col-2">
+                                                <div ng-if="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                    <label>Thinner Details</label>
+                                                    <label>
+                                                        {{ReappThinner.ThinnerSelectChildInput}}
+                                                        <!--<input type="text" ng-disabled="CHLogin==false" ng-model="ReappThinner.ThinnerSelectChildInput" />-->
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="col col-6">
+                                                <div ng-if="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+                                                    <label> Mixing Ratio(%):</label>
+
+                                                    <label>
+                                                        {{ReappThinner.MixingRatio1}}
+                                                        <label>:</label>
+                                                        {{ReappThinner.MixingRatio2}}
+
+                                                        <!--<div class="row">
+                                                            <section class="col col-4">
+                                                                <input type="text" class="col col-col-2" maxlength="4" ng-disabled="CHLogin==false" numbers-only ng-model="ReappThinner.MixingRatio1" />
+                                                            </section>
+                                                            <section style="display:none" class="col col-1"><label>:</label></section>
+                                                            <section style="display:none" class="col col-4"><input type="text" maxlength="2" ng-disabled="CHLogin==false" numbers-only ng-model="ReappThinner.MixingRatio2" /></section>
+
+                                                        </div>-->
+
+                                                    </label>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <div class="row" ng-if="Thead.SystemFollowed==false" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <label>Application Comments</label>
+                                                <lable>{{Thead.ApplicationComments}}</lable>
+                                                <!--<textarea rows="3" cols="44" ng-disabled="CHLogin==false" ng-model="Thead.ApplicationComments"></textarea>-->
+                                            </section>
+
+                                        </div>
+
+
+                                    </fieldset>
+                                    <hr style="margin-bottom: 10px;">
+                                </form>
+
+                                <!--<form ng-if="CHLogin==false">
+                                    <h5 class="hidden-xs hidden-sm">Photos Uploaded</h5>
+                                    <fieldset>
+                                        <section class="col col-2" ng-repeat="item in Thead.PhotoURL" style="font-size: 10px !important;">
+                                            <div>
+                                                <a href="{{item.PhotoUrl}}" target="_blank">{{item.PhotoUrl}}</a>
+                                            </div>
+                                        </section>
+                                    </fieldset>
+                                </form>-->
+                                <form ng-if="CHLogin==true" name="Reapplication" id="Form10" class="smart-form" novalidate="novalidate" ng-if="Thead.ProcessReplicated==true">
+                                    <h5 class="hidden-xs hidden-sm">Upload Photos</h5>
+                                    <fieldset>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <input type="file" name="img1" file-model="Reappimg1" />
+                                            </section>
+                                            <section class="col col-4">
+                                                <input type="file" name="img2" file-model="Reappimg2" />
+                                            </section>
+                                            <section class="col col-4">
+                                                <input type="file" name="img3" file-model="Reappimg3" />
+                                            </section>
+
+                                        </div>
+
+                                        <div class="row">
+
+                                        </div>
+                                    </fieldset>
+                                    <hr style="margin-bottom: 10px;">
+                                </form>
+
+                                <form name="Reapplication" id="Form11" class="smart-form" novalidate="novalidate"
+                                      ng-if="Thead.ProcessReplicated==true">
+                                    <h2 class="hidden-xs hidden-sm"></h2>
+                                    <fieldset>
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        Does the product exhibit the complaint observed?
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.ComplaintObserved==true">Yes</label>
+                                                        <label ng-if="Thead.ComplaintObserved==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        Is the technical manager informed of the product complaint?
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.TMInformed==true">Yes</label>
+                                                        <label ng-if="Thead.TMInformed==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.TMInformed==true">
+                                                    <td>
+                                                        Is the technical manager informed of the product complaint?
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.TMApproved==true">Yes</label>
+                                                        <label ng-if="Thead.TMApproved==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.TMInformed==true">
+                                                    <td>
+                                                        Informed customer of course of action
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.CourseOfAction==true">Yes</label>
+                                                        <label ng-if="Thead.CourseOfAction==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.CourseOfAction==true">
+                                                    <td>
+                                                        Is customer complaint closed with customer?
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.CustomerComplaintClosed==true">Yes</label>
+                                                        <label ng-if="Thead.CustomerComplaintClosed==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.ProcessReplicated==true">
+                                                    <td>
+                                                        Customer communication
+
+                                                    </td>
+                                                    <td>
+                                                        {{ProblemDescription}}
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+
+                                <form name="Reapplication" id="Form12" ng-if="CHLogin==true && (Thead.SystemFollowed==false || Thead.ProcessReplicated==false)" class="smart-form" novalidate="novalidate">
+                                    <h2 class="hidden-xs hidden-sm"></h2>
+                                    <fieldset>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <label>Assign TSE </label>
+                                                <lable>{{TSECode}}</lable>
+                                                <!--<select name="TSEInfo" ng-disabled="CHLogin==false" class="form-control selectpicker"
+                                                        ng-model="TSECode"
+                                                        ng-options="pt.EMP_CODE as pt.EmpName for pt in TSEList"></select>-->
+                                            </section>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <form ng-if="CHLogin==true">
+                                    <h5 class="hidden-xs hidden-sm">Remarks</h5>
+                                    <fieldset>
+                                        {{CHRemarks}}
+                                        <!--<section class="col col-2" style="font-size: 10px !important;">
+
+                                            <textarea ng-model="CHRemarks" cols="44" rows="3"></textarea>
+                                        </section>-->
+                                    </fieldset>
+                                </form>
+                                <!--<footer ng-if="CHLogin==true">
+
+                                    <button class="btn btn-warning" ng-if="Thead.SystemFollowed==false || Thead.ProcessReplicated==false" ng-click="AssignTSE()">Assign TSE</button>
+                                    <button class="btn btn-primary" ng-click="Reconsider()">Reconsider</button>
+                                    <button class="btn btn-warning" ng-click="RecommendForClosure()">Assign to Complaint Manager</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+
+                                </footer>-->
+
+                            </div>
+
+
+
+                            <div ng-if="ComplaintManager==true" id="s3">
+                                <h5>Complaint Manager</h5>
+
+                                <!--start Widget-->
+                                <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                <form name="CustomerInformation" id="Form13">
+
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    <label>Is the application process replicated by technical person?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.ProcessReplicated==true">Yes</label>
+                                                    <label ng-if="Thead.ProcessReplicated==false">No</label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+
+                                </form>
+                                <!------------------------------------------------------->
+                                <form name="Reapplication" id="Form14" class="smart-form" novalidate="novalidate"
+                                      ng-if="Thead.ProcessReplicated==false">
+                                    <fieldset>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <label>    Reason for non application</label>
+                                                <label>{{Thead.NonApplicationReason}}</label>
+
+                                                <!--<textarea rows="3" disabled cols="45" ng-model="Thead.NonApplicationReason"></textarea>-->
+                                            </section>
+                                            <!--<section class="col col-4"></section>-->
+                                            <section class="col col-4">
+                                                <label>Reapplication Date</label>
+                                                <label>
+                                                    {{Thead.ReApplicationDate}}
+                                                    <!--<i class="icon-append fa fa-ellipsis-v"></i>
+                                                    <input v="" disabled name="DateOfVehicleRepair" id="emaild"
+                                                           ng-model="Thead.ReApplicationDate">-->
+                                                </label>
+                                            </section>
+                                        </div>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <label> Reapplication not required ?</label>
+
+                                                <label>{{Thead.ReApplicationReqd}}</label>
+                                                <!--<input type="checkbox" disabled id="1" ng-model="Thead.ReApplicationReqd" ng-value="true">-->
+
+                                            </section>
+
+
+                                        </div>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4" ng-if="Thead.ReApplicationReqd==true">
+                                                <div>
+                                                    <table border="1">
+
+                                                        <tr>
+                                                            <td>
+                                                                <label>Recommended for Closure</label>
+
+                                                            </td>
+                                                            <td>
+                                                                <label ng-if="Thead.ClosureRecomended==true">Yes</label>
+                                                                <label ng-if="Thead.ClosureRecomended==false">No</label>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </section>
+
+
+                                        </div>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+
+                                                <label>Customer Communication :</label>
+                                                <label>
+                                                    {{Thead.CustomerCommunication}}
+                                                    <!--<i class="icon-append fa fa-ellipsis-v"></i>
+                                                    <textarea rows="3" cols="44s" disabled ng-model="Thead.CustomerCommunication"></textarea>-->
+                                                </label>
+
+                                            </section>
+
+                                        </div>
+                                    </fieldset>
+                                    <hr />
+                                </form>
+
+                                <h5 ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true" class="hidden-xs hidden-sm">Report on Reapplication</h5>
+                                <form name="Reapplication" id="Form15" class="smart-form" novalidate="novalidate" ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true" ">
+                                    <fieldset>
+
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label>System Followed ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.SystemFollowed==true">Yes</label>
+                                                        <label ng-if="Thead.SystemFollowed==false">No</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                    <hr />
+                                </form>
+
+                                <!---------------------------On System followed option 'No'-------------------------------------->
+
+                                <h5 ng-if="IsInCan==true && Thead.ProcessReplicated==true" class="hidden-xs hidden-sm">Questionaire </h5>
+                                <form ng-if="IsInCan==true && Thead.ProcessReplicated==true" id="Form16" class="smart-form" novalidate="novalidate">
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    <label>Does the evidence available show the mentioned problem ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.EvidenceAvailable==true">Yes</label>
+                                                    <label ng-if="Thead.EvidenceAvailable==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <label>Have you cross-verified the problem in the same batch ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.VerifiedInSameBatch==true">Yes</label>
+                                                    <label ng-if="Thead.VerifiedInSameBatch==false">No</label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                <td>
+                                                    <label>Cross verfication has been conducted by  ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.IsSelf==true">Self</label>
+                                                    <label ng-if="Thead.IsSelf==false">On your Behalf</label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                <td>
+                                                    <label>Is the evidence (pictures/video) of cross verification available for future reference  ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.AvailableForFutureEvidence==true">Yes</label>
+                                                    <label ng-if="Thead.AvailableForFutureEvidence==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                <td>
+                                                    <label>Is sufficient evidence available to validate the Complaint  ?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.SufficientEvidence==true">Yes</label>
+                                                    <label ng-if="Thead.SufficientEvidence==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <label>Remarks</label>
+
+                                                </td>
+                                                <td>
+                                                    <label>{{Thead.RemarksForQuetsionaire}}</label>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+
+
+                                </form>
+
+
+                                <h5 ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true && Thead.SystemFollowed==false" class="hidden-xs hidden-sm">System Info </h5>
+                                <form ng-if="Thead.ProcessReplicated==true && IsSystemRelated==true && Thead.SystemFollowed==false" id="Form17" class="smart-form" novalidate="novalidate">
+
+
+
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+                                            <tr>
+                                                <td>Substrate </td>
+                                                <td>
+                                                    <label class="input" ng-repeat="op in SubstrateMaster">
+                                                        <label ng-if="op.Substrate_ID == ReappSubstrate">
+                                                            {{op.SubstrateDesc}}
+                                                        </label>
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Underbody </td>
+                                                <td>
+
+                                                    <label>
+                                                        {{ReappUnderbody.UnderbodySelect}}
+                                                    </label>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="ReappUnderbody.UnderbodySelect == 'Bodyfiller'">
+                                                <td>Bodyfiller </td>
+                                                <td>
+                                                    <label>{{ReappUnderbody.BodyFillerInput}}                                                                            </label>
+                                                </td>
+                                            </tr>
+                                            <tr ng-if="ReappUnderbody.UnderbodySelect == 'Putty'">
+                                                <td>Putty </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappUnderbody.UnderbodySelectChild}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="ReappUnderbody.UnderbodySelectChild=='Polyester putty'||ReappUnderbody.UnderbodySelectChild=='NC Putty'||ReappUnderbody.UnderbodySelectChild=='Spot Putty'">
+
+                                                <td>Putty Details </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappUnderbody.UnderbodySelectChildInput}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+                                            <!------------------------------------------Undercoat--------------------------------------->
+
+
+
+
+                                            <tr>
+                                                <td>Undercoat </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappUndercoat.UndercoatSelect}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Primer </td>
+                                                <td>
+                                                    <label>
+                                                        {{Undercoat.UndercoatSelectChildInput}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr ng-if="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+
+                                                <td>Hardener </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappUndercoat.Hardener}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr ng-if="ReappUndercoat.UndercoatSelect == 'PU Primer White'||ReappUndercoat.UndercoatSelect =='PU Primer Grey'||ReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+
+                                                <td>Ratio </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappUndercoat.Ratio1}}
+                                                    </label>
+                                                    <label>
+                                                        :
+                                                    </label>
+                                                    <label>
+                                                        {{ReappUndercoat.Ratio2}}
+                                                    </label>
+
+                                                </td>
+                                            </tr>
+
+                                            <!------------------------------------------Basecoat--------------------------------------->
+
+                                            <tr>
+                                                <td>Basecoat </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappBasecoat.BasecoatSelect}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Metallic Basecoat </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappBasecoat.MetallicBasecoat}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr ng-if="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                <td>Hardener </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappUndercoat.Hardener}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="ReappBasecoat.BasecoatSelect == 'Solid basecoat system'||ReappBasecoat.BasecoatSelect == 'Epoxy'">
+
+                                                <td>Ratio </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappBasecoat.Ratio1}}
+                                                    </label>
+                                                    <label>
+                                                        :
+                                                    </label>
+                                                    <label>
+                                                        {{ReappBasecoat.Ratio2}}
+                                                    </label>
+
+                                                </td>
+                                            </tr>
+
+                                            <!------------------------------------------Clearcoat--------------------------------------->
+
+
+                                            <tr>
+                                                <td>Clearcoat </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappClearcoat.ClearcoatSelect}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Clear</td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappClearcoat.Clear}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr ng-if="ReappClearcoat.ClearcoatSelect =='NC Clear'||ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Alkyd Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                <td>No. of coats </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappClearcoat.ClearcoatSelectNoOfCost}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                <td>Hardener </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappClearcoat.Hardener}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="ReappClearcoat.ClearcoatSelect =='PU Clear'||ReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+
+                                                <td>Ratio </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappClearcoat.Ratio1}}
+                                                    </label>
+                                                    <label>
+                                                        :
+                                                    </label>
+                                                    <label>
+                                                        {{ReappClearcoat.Ratio2}}
+                                                    </label>
+
+                                                </td>
+                                            </tr>
+
+
+
+                                            <!------------------------------------------Thinner--------------------------------------->
+
+
+                                            <tr>
+                                                <td>Thinner </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappThinner.ThinnerSelect}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+
+                                                <td>Thinner Details</td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappThinner.ThinnerSelectChildInput}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr ng-if="ReappThinner.ThinnerSelect =='NC Thinner'||ReappThinner.ThinnerSelect =='PU Thinner'||ReappThinner.ThinnerSelect =='Epoxy Thinner'">
+
+                                                <td> Mixing Ratio(%) </td>
+                                                <td>
+                                                    <label>
+                                                        {{ReappThinner.MixingRatio1}}
+                                                    </label>
+                                                    <label>
+                                                        :
+                                                    </label>
+                                                    <label>
+                                                        {{ReappThinner.MixingRatio2}}
+                                                    </label>
+
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr ng-if="Thead.SystemFollowed==false">
+                                                <td>Application Comments </td>
+                                                <td>
+                                                    <label>
+                                                        {{Thead.ApplicationComments}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+
+                                </form>
+                                <!--<form>
+
+
+                                    <h2 class="hidden-xs hidden-sm">Photos Uploaded</h2>
+                                    <fieldset>
+                                        <section class="col col-2" ng-repeat="item in Thead.PhotoURL" style="font-size: 10px !important;">
+                                            <div>
+                                                <a href="{{item.PhotoUrl}}" target="_blank">{{item.PhotoUrl}}</a>
+                                            </div>
+                                        </section>
+                                    </fieldset>
+                                </form>-->
+
+
+                                <form name="Reapplication" ng-if="Thead.ProcessReplicated==true" id="Form18" class="smart-form" novalidate="novalidate">
+
+
+
+                                    <div>
+                                        <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                            <tr>
+                                                <td>
+                                                    <label>Does the product exhibit the complaint observed?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.ComplaintObserved==true">Yes</label>
+                                                    <label ng-if="Thead.ComplaintObserved==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <label> Is the technical manager informed of the product complaint?</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.TMInformed==true">Yes</label>
+                                                    <label ng-if="Thead.TMInformed==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="Thead.TMInformed==true">
+                                                <td>
+                                                    <label> Approved complaint by technical manager</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.TMApproved==true">Yes</label>
+                                                    <label ng-if="Thead.TMApproved==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="Thead.TMInformed==true">
+                                                <td>
+                                                    <label>Informed customer of course of action</label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.CourseOfAction==true">Yes</label>
+                                                    <label ng-if="Thead.CourseOfAction==false">No</label>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr ng-if="Thead.CourseOfAction==true">
+                                                <td>
+                                                    <label>
+                                                        Is customer complaint closed with customer?
+                                                    </label>
+
+                                                </td>
+                                                <td>
+                                                    <label ng-if="Thead.CustomerComplaintClosed==true">Yes</label>
+                                                    <label ng-if="Thead.CustomerComplaintClosed==false">No</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr ng-if="Thead.ProcessReplicated==true">
+                                                <td>Customer communication </td>
+                                                <td>
+                                                    <label>
+                                                        {{Thead.ProblemDescription}}
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+
+                                </form>
+                                <form name="Reapplication" id="Form19" class="smart-form" novalidate="novalidate">
+                                    <fieldset>
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label>RCA to be done at</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.RCAtoBeDone==true">Local</label>
+                                                        <label ng-if="Thead.RCAtoBeDone==false">Group AR</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label> Remarks</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{CMRemarks}}</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+
+
+                            </div>
+
+
+
+                            <!-- start s4 tab pane -->
+                            <div class="tab-pane clearfix fade active in" ng-if="TSEManager==true" id="s4">
+                                <!--start Widget-->
+                                <h5 class="hidden-xs hidden-sm">TSE</h5>
+                                <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                <form name="CustomerInformation" id="Form20" class="smart-form" novalidate="novalidate">
+
+                                    <fieldset>
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Is the application process replicated by technical person?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.ProcessReplicated==true">Yes</label>
+                                                        <label ng-if="TSE.ProcessReplicated==false">No</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+
+                                    </fieldset>
+                                </form>
+                                <!------------------------------------------------------->
+                                <form name="Reapplication" ng-if="TSE.ProcessReplicated==false" id="Form21" class="smart-form" novalidate="novalidate">
+                                    <fieldset>
+
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Reason for non application</label>
+
+                                                    </td>
+                                                    <td>{{TSE.NonApplicationReason}} </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Reapplication Date</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.ProcessReplicated==true">
+
+                                                            <label ng-if="CHApprovalAction==true">{{TSE.ReApplicationDate}}</label>
+
+                                                            <label ng-hide="CHApprovalAction==true" ng-if="Complaint.BatchNumber==0">{{TSE.ReApplicationDate | date}}</label>
+
+
+
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Reapplication not required ?</label>
+
+                                                    </td>
+                                                    <td>{{TSE.ReApplicationReqd}} </td>
+                                                </tr>
+
+                                                <tr ng-if="TSE.ReApplicationReqd==true">
+                                                    <td>
+                                                        <label>Recommended for Closure</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.ClosureRecomended==true">Yes</label>
+                                                        <label ng-if="TSE.ClosureRecomended==false">No</label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Customer Communication</label>
+
+                                                    </td>
+                                                    <td>{{TSE.CustomerCommunication}} </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+
+                                <h5 ng-if="TSE.ProcessReplicated==true && IsSystemRelated==true" class="hidden-xs hidden-sm">Report on Reapplication</h5>
+                                <form name="Reapplication" ng-if="TSE.ProcessReplicated==true && IsSystemRelated==true" id="Form22" class="smart-form" novalidate="novalidate">
+                                    <fieldset>
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr ng-if="TSE.ReApplicationReqd==true">
+                                                    <td>
+                                                        <label>System Followed ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.SystemFollowed==true">Yes</label>
+                                                        <label ng-if="TSE.SystemFollowed==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+                                    </fieldset>
+
+                                </form>
+                                <!---------------------------On System followed option 'No'-------------------------------------->
+
+                                <h5 ng-if="IsInCan==true && Thead.ProcessReplicated==true" class="hidden-xs hidden-sm">Questionaire </h5>
+                                <form ng-if="IsInCan==true && Thead.ProcessReplicated==true" id="Form23" class="smart-form" novalidate="novalidate">
+                                    <fieldset>
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>
+                                                        <label>Does the evidence available show the mentioned problem ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.EvidenceAvailable==true">Yes</label>
+                                                        <label ng-if="Thead.EvidenceAvailable==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Have you cross-verified the problem in the same batch ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.VerifiedInSameBatch==true">Yes</label>
+                                                        <label ng-if="Thead.VerifiedInSameBatch==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                    <td>
+                                                        <label>Cross verfication has been conducted by  ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.IsSelf==true">Self</label>
+                                                        <label ng-if="Thead.IsSelf==false">On your Behalf</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                    <td>
+                                                        <label>Is the evidence (pictures/video) of cross verification available for future reference  ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.AvailableForFutureEvidence==true">Yes</label>
+                                                        <label ng-if="Thead.AvailableForFutureEvidence==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Thead.VerifiedInSameBatch==true">
+                                                    <td>
+                                                        <label>Is sufficient evidence available to validate the Complaint  ?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Thead.SufficientEvidence==true">Yes</label>
+                                                        <label ng-if="Thead.SufficientEvidence==false">No</label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Remarks</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{Thead.RemarksForQuetsionaire}}</label>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+                                <h5 ng-if="IsSystemRelated==true  && TSE.ProcessReplicated==true && TSE.SystemFollowed==false" class="hidden-xs hidden-sm">System Info </h5>
+                                <form ng-if="IsSystemRelated==true && TSE.ProcessReplicated==true && TSE.SystemFollowed==false" id="Form24" class="smart-form" novalidate="novalidate">
+                                    <fieldset>
+
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>Substrate </td>
+                                                    <td>
+                                                        <label class="input" ng-repeat="op in SubstrateMaster">
+                                                            <label ng-if="op.Substrate_ID == TSEReappSubstrate">
+                                                                {{op.SubstrateDesc}}
+                                                            </label>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Underbody </td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{TSEReappUnderbody.UnderbodySelect}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappUnderbody.UnderbodySelect == 'Bodyfiller'">
+                                                    <td>Bodyfiller </td>
+                                                    <td>
+                                                        <label>{{TSEReappUnderbody.BodyFillerInput}}                                                                            </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappUnderbody.UnderbodySelect == 'Putty'">
+                                                    <td>Putty </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappUnderbody.UnderbodySelectChild}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappUnderbody.UnderbodySelectChild=='Polyester putty'||TSEReappUnderbody.UnderbodySelectChild=='NC Putty'||TSEReappUnderbody.UnderbodySelectChild=='Spot Putty'">
+
+                                                    <td>Putty Details </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappUnderbody.UnderbodySelectChildInput}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <!--------------------------------------------------------------Undercoat--------------------------------------->
+
+
+                                                <tr>
+                                                    <td>Undercoat </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappUndercoat.UndercoatSelect}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Primer </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEUndercoat.UndercoatSelectChildInput}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappUndercoat.UndercoatSelect == 'PU Primer White'||TSEReappUndercoat.UndercoatSelect =='PU Primer Grey'||TSEReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+
+                                                    <td>Hardener </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappUndercoat.Hardener}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappUndercoat.UndercoatSelect == 'PU Primer White'||TSEReappUndercoat.UndercoatSelect =='PU Primer Grey'||TSEReappUndercoat.UndercoatSelect =='Epoxy Primer'">
+
+                                                    <td>Ratio </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappUndercoat.Ratio1}}
+                                                        </label>
+                                                        <label>
+                                                            :
+                                                        </label>
+                                                        <label>
+                                                            {{TSEReappUndercoat.Ratio2}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <!-----------------------------------------------------------------Basecoat--------------------------------------->
+
+                                                <tr>
+                                                    <td>Basecoat </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappBasecoat.BasecoatSelect}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Metallic Basecoat </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappBasecoat.MetallicBasecoat}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappBasecoat.BasecoatSelect == 'Solid basecoat system'||TSEReappBasecoat.BasecoatSelect == 'Epoxy'">
+                                                    <td>Hardener </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappBasecoat.Hardener}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappBasecoat.BasecoatSelect == 'Solid basecoat system'||TSEReappBasecoat.BasecoatSelect == 'Epoxy'">
+
+                                                    <td>Ratio </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappBasecoat.Ratio1}}
+                                                        </label>
+                                                        <label>
+                                                            :
+                                                        </label>
+                                                        <label>
+                                                            {{TSEReappBasecoat.Ratio2}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <!--------------------------------------------------------------------Clearcoat--------------------------------------->
+
+
+                                                <tr>
+                                                    <td>Clearcoat </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappClearcoat.ClearcoatSelect}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Clear</td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappClearcoat.Clear}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappClearcoat.ClearcoatSelect =='NC Clear'||TSEReappClearcoat.ClearcoatSelect =='PU Clear'||TSEReappClearcoat.ClearcoatSelect =='Alkyd Clear'||TSEReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                    <td>No. of coats </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappClearcoat.ClearcoatSelectNoOfCost}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappClearcoat.ClearcoatSelect =='PU Clear'||TSEReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+                                                    <td>Hardener </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappClearcoat.Hardener}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappClearcoat.ClearcoatSelect =='PU Clear'||TSEReappClearcoat.ClearcoatSelect =='Polyester Clear' ">
+
+                                                    <td>Ratio </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappClearcoat.Ratio1}}
+                                                        </label>
+                                                        <label>
+                                                            :
+                                                        </label>
+                                                        <label>
+                                                            {{TSEReappClearcoat.Ratio1}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <!------------------------------------------------------------------------Thinner--------------------------------------->
+
+
+                                                <tr>
+                                                    <td>Thinner </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappThinner.ThinnerSelect}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSEReappThinner.ThinnerSelect =='NC Thinner'||TSEReappThinner.ThinnerSelect =='PU Thinner'||TSEReappThinner.ThinnerSelect =='Epoxy Thinner'">
+
+                                                    <td>Thinner Details</td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappThinner.ThinnerSelectChildInput}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="TSEReappThinner.ThinnerSelect =='NC Thinner'||TSEReappThinner.ThinnerSelect =='PU Thinner'||TSEReappThinner.ThinnerSelect =='Epoxy Thinner'">
+
+                                                    <td> Mixing Ratio(%) </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSEReappThinner.MixingRatio1}}
+                                                        </label>
+                                                        <label>
+                                                            :
+                                                        </label>
+                                                        <label>
+                                                            {{TSEReappThinner.MixingRatio2}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="TSE.SystemFollowed==false">
+                                                    <td>Application Comments </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSE.ApplicationComments}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </fieldset>
+
+                                </form>
+
+
+                                <!--<form ng-if="CHApprovalAction==true">
+                                    <h2 class="hidden-xs hidden-sm">Photos Uploaded</h2>
+                                    <fieldset>
+                                        <section class="col col-2" ng-repeat="item in TSE.PhotoURL" style="font-size: 10px !important;">
+                                            <div>
+                                                <a href="{{item.PhotoUrl}}" target="_blank">{{item.PhotoUrl}}</a>
+                                            </div>
+                                        </section>
+                                    </fieldset>
+                                </form>-->
+
+                                <form name="Reapplication" ng-if="CHApprovalAction==false && TSE.ProcessReplicated==true" id="Form25" class="smart-form" novalidate="novalidate">
+
+                                    <h5 class="hidden-xs hidden-sm">Upload Photos</h5>
+                                    <fieldset>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <input type="file" name="img1" file-model="TSEimg1" />
+                                            </section>
+                                            <section class="col col-4">
+                                                <input type="file" name="img2" file-model="TSEimg2" />
+                                            </section>
+                                            <section class="col col-4">
+                                                <input type="file" name="img3" file-model="TSEimg3" />
+                                            </section>
+
+                                        </div>
+
+                                        <div class="row">
+
+                                        </div>
+                                    </fieldset>
+
+                                </form>
+
+                                <form name="Reapplication" id="Form26" class="smart-form" novalidate="novalidate" ng-if="TSE.ProcessReplicated==true">
+                                    <h2 class="hidden-xs hidden-sm"></h2>
+                                    <fieldset>
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Does the product exhibit the complaint observed?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.ComplaintObserved==true">Yes</label>
+                                                        <label ng-if="TSE.ComplaintObserved==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label> Is the technical manager informed of the product complaint?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.TMInformed==true">Yes</label>
+                                                        <label ng-if="TSE.TMInformed==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSE.TMInformed==true">
+                                                    <td>
+                                                        <label> Approved complaint by technical manager</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.TMApproved==true">Yes</label>
+                                                        <label ng-if="TSE.TMApproved==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSE.TMInformed==true">
+                                                    <td>
+                                                        <label>Informed customer of course of action</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.CourseOfAction==true">Yes</label>
+                                                        <label ng-if="TSE.CourseOfAction==false">No</label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="TSE.CourseOfAction==true">
+                                                    <td>
+                                                        <label>
+                                                            Is customer complaint closed with customer?
+                                                        </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="TSE.CustomerComplaintClosed==true">Yes</label>
+                                                        <label ng-if="TSE.CustomerComplaintClosed==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="TSE.ProcessReplicated==true">
+                                                    <td>Customer communication </td>
+                                                    <td>
+                                                        <label>
+                                                            {{TSE.ProblemDescription}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+
+                                <form name="Reapplication" id="Form27" ng-if="(PedingApprovalCM==true)" class="smart-form" novalidate="novalidate">
+                                    <h2 class="hidden-xs hidden-sm"></h2>
+                                    <fieldset>
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label>RCA to be done at</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="RCAtoBeDone==true">Local</label>
+                                                        <label ng-if="RCAtoBeDone==false">Group AR</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label> Remarks</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{CMRemarks}}</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </fieldset>
+
+                                </form>
+
+                                <form name="Reapplication" id="Form28" class="smart-form" novalidate="novalidate">
+                                    <fieldset>
+                                        <div class="row" style="font-size: 10px !important;">
+                                            <section class="col col-4">
+                                                <label>Remarks</label>
+                                                <textarea ng-model="TSERemarks" cols="52" rows="2"></textarea>
+                                            </section>
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+                                <!--<footer ng-if="PedingApprovalCH==false && PedingApprovalCM==false && RCA==false">
+
+                                    <button class="btn btn-warning" ng-click="AssignCH()">Assign To Complaint Handler</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+
+                                </footer>
+                                <footer ng-if="PedingApprovalCH==true &&  RCA==false">
+
+                                    <button class="btn btn-warning" ng-click="CHRecommendComplaintForRCA()">Assign to CM</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>
+                                <footer ng-if="PedingApprovalCM==true && RCA==false">
+
+                                    <button class="btn btn-warning" ng-click="ApproveComplaintForTSERCA()">Approve Complaint</button>
+                                    <button class="btn btn-primary" ng-click="RejectComplaintForTSERCA()">Reject Complaint</button>
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>-->
+
+                            </div>
+                            <!-- end s4 tab pane -->
+                            <!-- start s5 tab pane -->
+                            <div class="tab-pane clearfix fade active in" ng-if="RCAPlant==true" id="s5">
+                                <h5 class="hidden-xs hidden-sm">Plant Manager</h5>
+                                <!--start Widget-->
+                                <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                <form name="CustomerInformation" id="Form29" class="smart-form" novalidate="novalidate">
+
+                                    <fieldset>
+
+                                        <div>
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+
+                                                <tr>
+                                                    <td>
+                                                        <label> RCA Comments</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.RCAComments}}
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Is the problem rectifiable?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.RCAComments}}
+                                                        <label ng-if="Plnt.IsRectifiable==true">Yes</label>
+                                                        <label ng-if="Plnt.IsRectifiable==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true">
+                                                    <td>
+                                                        <label>Does it need reprocessing?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.RCAComments}}
+                                                        <label ng-if="Plnt.IsReprocessing==true">Yes</label>
+                                                        <label ng-if="Plnt.IsReprocessing==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Rectification/Reprocessing Method Plant</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.ReprocessingComments}}
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Closure comments Plant</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.ClosureComments}}
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Total Vol of Affected Products</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.AffectedProductVol}}
+
+
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Total Vol of Affected Product Unit</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.AffectedProductUnit}}
+
+
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Stock from SAP in system</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.StockSAPProductVol}}
+
+
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Stock from SAP in system /unit  </label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.StockSAPProductUnit}}
+
+
+
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Value in system</label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.SysValueProductVol}}
+
+
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Value in system /unit  </label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.SysValueProductUnit}}
+
+
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Site of Reprocessing  </label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.SiteReprocessing}}
+
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Expected cost of reprocessing </label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.ReprocessingCost}}
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Expected cost of reprocessing / Currency </label>
+
+                                                    </td>
+                                                    <td>
+                                                        {{Plnt.ReprocessingCostCurrency}}
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true">
+                                                    <td>
+                                                        <label>Expected Date of Closure </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="PlantSubmit==true">{{Plnt.DateOfExpectedClosure}}</label>
+
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="(BMPlantApproval==true || BHPlantApproval==true || PlantSubmit==false)">
+                                                    <td>
+                                                        <label>Expected Date of Closure </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{Plnt.Remarks}}</label>
+
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="StockReceipt==true">
+                                                    <td>
+                                                        <label>Stock Received?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Recv.StockReceived==true">Yes</label>
+                                                        <label ng-if="Recv.StockReceived==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="StockReceipt==true">
+                                                    <td>
+                                                        <label>Reprocessing Complete?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="Recv.ReproccessingComplete==true">Yes</label>
+                                                        <label ng-if="Recv.ReproccessingComplete==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="StockReceipt==true">
+                                                    <td>
+                                                        <label>Please enter the New Batch number (reprocessed) </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{Recv.BatchNumber}}</label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="StockReceipt==true">
+                                                    <td>
+                                                        <label>Remarks </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label>{{Recv.Remarks}}</label>
+
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+
+                                    </fieldset>
+                                </form>
+                                <!--<footer ng-if="PlantSubmit==false">
+
+                                    <button class="btn btn-warning" ng-if="Plnt.IsRectifiable==true && Plnt.IsReprocessing==true" ng-click="PlntAssignBM()">Assign To Business Manager</button>
+                                    <button class="btn btn-warning" ng-if="Plnt.IsRectifiable==false || Plnt.IsReprocessing==false" ng-click="PlntAssignRD()">Assign To R&D</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+
+                                </footer>-->
+                                <!--<footer ng-if="BMPlantApproval==true">
+
+                                    <button class="btn btn-success" ng-click="BMApprove()">Approve</button>
+                                    <button class="btn btn-info" ng-click="BMReject()">Reject</button>
+                                    <button class="btn btn-warning" ng-click="BMReconsider()">Reconsider</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+
+                                </footer>-->
+                                <!--<footer ng-if="BHPlantApproval==true">
+
+                                    <button class="btn btn-success" ng-click="BHApprove()">Approve</button>
+                                    <button class="btn btn-info" ng-click="BHReject()">Reject</button>
+                                    <button class="btn btn-warning" ng-click="BHReconsider()">Reconsider</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+
+                                </footer>-->
+                                <!--<footer ng-if="StockReceipt==true">
+
+                                    <button class="btn btn-warning" ng-click="StockReceived()">Stock Received</button>
+
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+
+                                </footer>-->
+
+
+                            </div>
+                            <!-- end s5 tab pane -->
+                            <!-- start s6 tab pane -->
+                            <div class="tab-pane clearfix fade active in" ng-if="RCARD==true" id="s6">
+                                <h5 class="hidden-xs hidden-sm">R & D</h5>
+                                <!--start Widget-->
+                                <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                <form name="CustomerInformation" id="Form30" class="smart-form" novalidate="novalidate">
+
+                                    <fieldset>
+
+
+                                        <div class="table-responsive">
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>RCA Comments </td>
+                                                    <td>
+                                                        <label>
+                                                            {{RD.RCAComments}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <label>Is the problem rectifiable? </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="RD.IsRectifiable==true">Yes</label>
+                                                        <label ng-if="RD.IsRectifiable==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true">
+                                                    <td>
+                                                        <label>Does it need reprocessing?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="RD.IsReprocessing==true">Yes</label>
+                                                        <label ng-if="RD.IsReprocessing==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Is the problem rectifiable?</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.ReprocessingComments}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Rectification/Reprocessing Method Plant</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.ReprocessingComments}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Rectification/Reprocessing Method Plant</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.ClosureComments}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Total Vol of Affected Products</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.AffectedProductVol}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Total Vol of Affected Product Unit</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.AffectedProductUnit}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Stock from SAP in system</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.StockSAPProductVol}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Stock from SAP in system / unit </td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.StockSAPProductUnit}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Value in system </td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.SysValueProductVol}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Value in system / unit</td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.SysValueProductUnit}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Site of Reprocessing </td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.SiteReprocessing}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Expected cost of reprocessing </td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.ReprocessingCost}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Expected cost of reprocessing currency </td>
+                                                    <td>
+
+                                                        <label>
+                                                            {{RD.ReprocessingCostCurrency}}
+                                                        </label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true">
+                                                    <td>Expected Date of Closure </td>
+                                                    <td>
+
+                                                        <<label ng-if="RDSubmit==true">{{RD.DateOfExpectedClosure}}</label>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RDStockReceipt==false">
+                                                    <td>Remarks</td>
+                                                    <td>
+
+                                                        {{RD.Remarks}}
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RDStockReceipt==false">
+                                                    <td>
+                                                        <label>Stock Received?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="RecvRD.StockReceived==true">Yes</label>
+                                                        <label ng-if="RecvRD.StockReceived==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RDStockReceipt==false">
+                                                    <td>
+                                                        <label>Reprocessing Complete?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="RecvRD.ReproccessingComplete==true">Yes</label>
+                                                        <label ng-if="RecvRD.ReproccessingComplete==false">No</label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="RDStockReceipt==false">
+                                                    <td>Please enter the New Batch number (reprocessed)</td>
+                                                    <td>
+
+                                                        {{RecvRD.BatchNumber}}
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="RDStockReceipt==false">
+                                                    <td>Remarks</td>
+                                                    <td>
+
+                                                        {{RecvRD.Remarks}}
+
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <!--<footer ng-if="RDSubmit==false">
+
+                                    <button class="btn btn-warning" ng-if="RD.IsRectifiable==true && RD.IsReprocessing==true" ng-click="RDAssignBM()">Assign To Business Manager</button>
+                                    <button class="btn btn-warning" ng-if="RD.IsRectifiable==false || RD.IsReprocessing==false " ng-click="Quartine()">Quarantine</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>
+                                <footer ng-if="RDBMApproval==true">
+
+                                    <button class="btn btn-success" ng-click="BMApproveRD()">Approve</button>
+                                    <button class="btn btn-info" ng-click="BMRejectRD()">Reject</button>
+                                    <button class="btn btn-warning" ng-click="BMReconsiderRD()">Reconsider</button>
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>
+                                <footer ng-if="RDBHApproval==true">
+
+                                    <button class="btn btn-success" ng-click="BHApproveRD()">Approve</button>
+                                    <button class="btn btn-info" ng-click="BHRejectRD()">Reject</button>
+                                    <button class="btn btn-warning" ng-click="BHReconsiderRD()">Reconsider</button>
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>
+                                <footer ng-if="RDStockReceipt==true">
+
+                                    <button class="btn btn-warning" ng-click="StockReceivedRD()">Stock Received</button>
+
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>-->
+
+
+                            </div>
+                            <!-- end s6 tab pane -->
+                            <!-- start s7 tab pane -->
+                            <div class="tab-pane clearfix fade active in" ng-if="Quarantine==true" id="s7">
+                                <!--start Widget-->
+                                <!----------------------------------------------------Technical head----------------------------------------------------------------------------------------------->
+
+                                <form name="CustomerInformation" id="Form31" class="smart-form" novalidate="novalidate">
+
+                                    <fieldset>
+                                        <div class="table-responsive">
+                                            <table border="1" style="width:100%;font-size: 10px !important;">
+                                                <tr>
+                                                    <td>Stock from SAP in system </td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.StockSAPProductVol}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stock from SAP in system / unit </td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.StockSAPProductUnit}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>Value in system</td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.SysValueProductVol}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stock from SAP in system / unit </td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.SysValueProductUnit}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Affected Batch Numbers </td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.AffectedBatchNumbers}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>Expected cost of quarantine</td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.ExpectedCostOfQuartine}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stock from SAP in system / currency </td>
+                                                    <td>
+                                                        <label>
+                                                            {{CM.ExpectedCostOfQuartineCurr}}
+                                                        </label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>Expected Date of Closure</td>
+                                                    <td>
+                                                        <label ng-if="CMSubmit==true">{{CM.DateOfExpectedClosure}}</label>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr ng-if="CMStockReceipt==false">
+                                                    <td>Remarks</td>
+                                                    <td>
+                                                        <label>{{CM.Remarks}}</label>
+                                                    </td>
+                                                </tr>
+
+
+
+                                                <tr ng-if="CMStockReceipt==true">
+                                                    <td>
+                                                        <label>Is the problem rectifiable? </label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="CM.StockReceived==true">Yes</label>
+                                                        <label ng-if="CM.StockReceived==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="CMStockReceipt==true && CM.StockReceived==true">
+                                                    <td>
+                                                        <label>Disposal/quarantine Complete?</label>
+
+                                                    </td>
+                                                    <td>
+                                                        <label ng-if="CM.DisposalComplete==true">Yes</label>
+                                                        <label ng-if="CM.DisposalComplete==false">No</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr ng-if="CMStockReceipt==true">
+                                                    <td>Remarks</td>
+                                                    <td>
+                                                        <label>{{CM.Remarks}}</label>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+
+
+                                    </fieldset>
+                                </form>
+                                <!--<footer ng-if="CMSubmit==false">
+
+                                    <button class="btn btn-warning" ng-click="CMQuartineSubmit()">Assign To Business Manager</button>
+
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>-->
+                                <!--<footer ng-if="CMBMApproval==true">
+
+                                    <button class="btn btn-warning" ng-click="BMApprovesQuartine()">Approve</button>
+                                    <button class="btn btn-warning" ng-click="BMRejectsQuartine()">Reject</button>
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>
+
+                                <footer ng-if="CMStockReceipt==true">
+
+                                    <button class="btn btn-warning" ng-click="PlntQurantineReceipt()">Stock Received</button>
+
+
+                                    <button class="btn btn-primary" ng-click="init()">Back</button>
+
+                                </footer>-->
+
+
+                            </div>
+                            <!-- end s7 tab pane -->
+
+                        </div>
+
+
+                    </article>
+                </div>
+
+            </section>
+
+
+
+
+
+
+            <!----------- close     print functionality  ======================================================    ---------------------------------->
+
+        </div>
+
+        <footer>
+            <!--<button class="btn btn-primary" style="float:right" ng-print print-element-id="printSection"><i class="fa fa-print"></i> Print</button>-->
+            <!--<button class="btn btn-warning" style="float:right;margin-right:38px;" ng-click="Print()"><i class="fa fa-print">Print</i></button>-->
+            <button class="btn btn-primary" style="float:right;margin-right:38px;" ng-click="Back()">Back</button>
+        </footer>
+        <br /><br />
+    </div>
+</div>
+
+
+

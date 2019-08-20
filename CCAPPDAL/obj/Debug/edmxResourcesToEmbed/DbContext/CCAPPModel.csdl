@@ -1,0 +1,1545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomerComplaintModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CustomerComplaintEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblBrandMasters" EntityType="CustomerComplaintModel.tblBrandMaster" />
+    <EntitySet Name="tblComplaintCategoryMasters" EntityType="CustomerComplaintModel.tblComplaintCategoryMaster" />
+    <EntitySet Name="tblComplaintTypeMasters" EntityType="CustomerComplaintModel.tblComplaintTypeMaster" />
+    <EntitySet Name="tblSubstrateMasters" EntityType="CustomerComplaintModel.tblSubstrateMaster" />
+    <EntitySet Name="TblComplaintRequestDtls" EntityType="CustomerComplaintModel.TblComplaintRequestDtl" />
+    <AssociationSet Name="FK_TblComplaintRequestDtl_tblComplaintCategoryMaster" Association="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintCategoryMaster">
+      <End Role="tblComplaintCategoryMaster" EntitySet="tblComplaintCategoryMasters" />
+      <End Role="TblComplaintRequestDtl" EntitySet="TblComplaintRequestDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestDtl_tblComplaintTypeMaster" Association="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintTypeMaster">
+      <End Role="tblComplaintTypeMaster" EntitySet="tblComplaintTypeMasters" />
+      <End Role="TblComplaintRequestDtl" EntitySet="TblComplaintRequestDtls" />
+    </AssociationSet>
+    <EntitySet Name="TblRoleMasters" EntityType="CustomerComplaintModel.TblRoleMaster" />
+    <EntitySet Name="tblStatusMasters" EntityType="CustomerComplaintModel.tblStatusMaster" />
+    <EntitySet Name="tblApprovalDetails" EntityType="CustomerComplaintModel.tblApprovalDetail" />
+    <EntitySet Name="TblComplaintReapplicationSystemInfoDtls" EntityType="CustomerComplaintModel.TblComplaintReapplicationSystemInfoDtl" />
+    <AssociationSet Name="FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster" Association="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster">
+      <End Role="tblSubstrateMaster" EntitySet="tblSubstrateMasters" />
+      <End Role="TblComplaintReapplicationSystemInfoDtl" EntitySet="TblComplaintReapplicationSystemInfoDtls" />
+    </AssociationSet>
+    <EntitySet Name="tblComplaintReappPhotoDtls" EntityType="CustomerComplaintModel.tblComplaintReappPhotoDtl" />
+    <EntitySet Name="tblComplaintPlantReprocesses" EntityType="CustomerComplaintModel.tblComplaintPlantReprocess" />
+    <EntitySet Name="tblApprovalHeaders" EntityType="CustomerComplaintModel.tblApprovalHeader" />
+    <EntitySet Name="tblFutureStatus" EntityType="CustomerComplaintModel.tblFutureStatu" />
+    <EntitySet Name="TblComplaintRequestPhotoDtls" EntityType="CustomerComplaintModel.TblComplaintRequestPhotoDtl" />
+    <EntitySet Name="tblCompensationDetailsTypeMasters" EntityType="CustomerComplaintModel.tblCompensationDetailsTypeMaster" />
+    <EntitySet Name="tblComplaintCompensationDtls" EntityType="CustomerComplaintModel.tblComplaintCompensationDtl" />
+    <EntitySet Name="tblAdminMatrices" EntityType="CustomerComplaintModel.tblAdminMatrix" />
+    <EntitySet Name="tblComplaintSettlementDtls" EntityType="CustomerComplaintModel.tblComplaintSettlementDtl" />
+    <EntitySet Name="tblComplaintCompensations" EntityType="CustomerComplaintModel.tblComplaintCompensation" />
+    <AssociationSet Name="FK_tblComplaintCompensationDtl_tblComplaintCompensation" Association="CustomerComplaintModel.FK_tblComplaintCompensationDtl_tblComplaintCompensation">
+      <End Role="tblComplaintCompensation" EntitySet="tblComplaintCompensations" />
+      <End Role="tblComplaintCompensationDtl" EntitySet="tblComplaintCompensationDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblComplaintSettlementDtl_tblComplaintCompensation" Association="CustomerComplaintModel.FK_tblComplaintSettlementDtl_tblComplaintCompensation">
+      <End Role="tblComplaintCompensation" EntitySet="tblComplaintCompensations" />
+      <End Role="tblComplaintSettlementDtl" EntitySet="tblComplaintSettlementDtls" />
+    </AssociationSet>
+    <EntitySet Name="TblTemplateMasters" EntityType="CustomerComplaintModel.TblTemplateMaster" />
+    <EntitySet Name="tblTSEMasters" EntityType="CustomerComplaintModel.tblTSEMaster" />
+    <EntitySet Name="tblProductBatches" EntityType="CustomerComplaintModel.tblProductBatch" />
+    <EntitySet Name="tblProductMasters" EntityType="CustomerComplaintModel.tblProductMaster" />
+    <AssociationSet Name="FK_tblProductMaster_tblBrandMaster" Association="CustomerComplaintModel.FK_tblProductMaster_tblBrandMaster">
+      <End Role="tblBrandMaster" EntitySet="tblBrandMasters" />
+      <End Role="tblProductMaster" EntitySet="tblProductMasters" />
+    </AssociationSet>
+    <EntitySet Name="TblProductManufacturerLocations" EntityType="CustomerComplaintModel.TblProductManufacturerLocation" />
+    <EntitySet Name="TblComplaintReapplications" EntityType="CustomerComplaintModel.TblComplaintReapplication" />
+    <EntitySet Name="tblComplaintReapplicationInfoes" EntityType="CustomerComplaintModel.tblComplaintReapplicationInfo" />
+    <EntitySet Name="tblComplaintQuarantines" EntityType="CustomerComplaintModel.tblComplaintQuarantine" />
+    <EntitySet Name="tblComplaintStakeHolders" EntityType="CustomerComplaintModel.tblComplaintStakeHolder" />
+    <EntitySet Name="tblComplaintSystemInfoDtls" EntityType="CustomerComplaintModel.tblComplaintSystemInfoDtl" />
+    <AssociationSet Name="FK_tblComplaintSystemInfoDtl_tblSubstrateMaster" Association="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_tblSubstrateMaster">
+      <End Role="tblSubstrateMaster" EntitySet="tblSubstrateMasters" />
+      <End Role="tblComplaintSystemInfoDtl" EntitySet="tblComplaintSystemInfoDtls" />
+    </AssociationSet>
+    <EntitySet Name="tblComplaintRCAs" EntityType="CustomerComplaintModel.tblComplaintRCA" />
+    <EntitySet Name="tblDealerMasters" EntityType="CustomerComplaintModel.tblDealerMaster" />
+    <EntitySet Name="tblDepotMasters" EntityType="CustomerComplaintModel.tblDepotMaster" />
+    <EntitySet Name="tblFlowMatrices" EntityType="CustomerComplaintModel.tblFlowMatrix" />
+    <EntitySet Name="TblComplaintRequestHdrs" EntityType="CustomerComplaintModel.TblComplaintRequestHdr" />
+    <AssociationSet Name="FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr" Association="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdrs" />
+      <End Role="TblComplaintReapplicationSystemInfoDtl" EntitySet="TblComplaintReapplicationSystemInfoDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestDtl_TblComplaintRequestHdr" Association="CustomerComplaintModel.FK_TblComplaintRequestDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdrs" />
+      <End Role="TblComplaintRequestDtl" EntitySet="TblComplaintRequestDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestHdr_tblDealerMaster" Association="CustomerComplaintModel.FK_TblComplaintRequestHdr_tblDealerMaster">
+      <End Role="tblDealerMaster" EntitySet="tblDealerMasters" />
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdrs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr" Association="CustomerComplaintModel.FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdrs" />
+      <End Role="TblComplaintRequestPhotoDtl" EntitySet="TblComplaintRequestPhotoDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr" Association="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdrs" />
+      <End Role="tblComplaintSystemInfoDtl" EntitySet="tblComplaintSystemInfoDtls" />
+    </AssociationSet>
+    <FunctionImport Name="Get_ProductBatchInfo" ReturnType="Collection(CustomerComplaintModel.Get_ProductBatchInfo_Result)">
+      <Parameter Name="ProductId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="getCategoryList" ReturnType="Collection(CustomerComplaintModel.getCategoryList_Result)" />
+    <FunctionImport Name="GetLFGUserDetails" ReturnType="Collection(CustomerComplaintModel.GetLFGUserDetails_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="getProductList" ReturnType="Collection(CustomerComplaintModel.getProductList_Result)" />
+    <FunctionImport Name="SP_ComplaintCompensationDtl" ReturnType="Collection(CustomerComplaintModel.SP_ComplaintCompensationDtl_Result)">
+      <Parameter Name="ComplaintCompensation_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ComplaintSettlementDtl" ReturnType="Collection(CustomerComplaintModel.SP_ComplaintSettlementDtl_Result)">
+      <Parameter Name="ComplaintCompensation_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetALLComplaintRecord" ReturnType="Collection(CustomerComplaintModel.Sp_GetALLComplaintRecord_Result)" />
+    <FunctionImport Name="SP_GetApprovedCompRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetApprovedCompRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetApproveProcessCountRCA" ReturnType="Collection(CustomerComplaintModel.SP_GetApproveProcessCountRCA_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetBU_type" ReturnType="Collection(CustomerComplaintModel.Sp_GetBU_type_Result)" />
+    <FunctionImport Name="SP_GetBusinessManager" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_GetBusinessManagerForUser" ReturnType="Collection(String)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetCompensationFutureStatusDetails" ReturnType="Collection(CustomerComplaintModel.SP_GetCompensationFutureStatusDetails_Result)">
+      <Parameter Name="ComplaintId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetCompensationRequestStatusDetails" ReturnType="Collection(CustomerComplaintModel.SP_GetCompensationRequestStatusDetails_Result)">
+      <Parameter Name="ComplaintId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetComplaintDetailForEmail" ReturnType="Collection(CustomerComplaintModel.Sp_GetComplaintDetailForEmail_Result)">
+      <Parameter Name="ComplaintId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetDealerList" ReturnType="Collection(CustomerComplaintModel.SP_GetDealerList_Result)" />
+    <FunctionImport Name="SP_GetEmployeeRequestDetails" ReturnType="Collection(CustomerComplaintModel.SP_GetEmployeeRequestDetails_Result)">
+      <Parameter Name="Complaint_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetInProcessCompRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetInProcessCompRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GETName" ReturnType="Collection(CustomerComplaintModel.Sp_GETName_Result)">
+      <Parameter Name="emp_code" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetPendingCompRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetPendingCompRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetPendingCompRequestForApproval" ReturnType="Collection(CustomerComplaintModel.SP_GetPendingCompRequestForApproval_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetPendingRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetPendingRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetPendingRequestForApproval" ReturnType="Collection(CustomerComplaintModel.SP_GetPendingRequestForApproval_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRejectedCompRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetRejectedCompRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRequesterDetails" ReturnType="Collection(CustomerComplaintModel.SP_GetRequesterDetails_Result)">
+      <Parameter Name="Emp_Code" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRequestFutureStatusDetails" ReturnType="Collection(CustomerComplaintModel.SP_GetRequestFutureStatusDetails_Result)">
+      <Parameter Name="ComplaintId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRequestStatusDetails" ReturnType="Collection(CustomerComplaintModel.SP_GetRequestStatusDetails_Result)">
+      <Parameter Name="ComplaintId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetTotalRCACompCount" ReturnType="Collection(CustomerComplaintModel.Sp_GetTotalRCACompCount_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetTSE" ReturnType="Collection(CustomerComplaintModel.SP_GetTSE_Result)" />
+    <FunctionImport Name="SP_GetUserClosedRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetUserClosedRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetUserRejectedRequest" ReturnType="Collection(CustomerComplaintModel.SP_GetUserRejectedRequest_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalApprovedCompRequest" ReturnType="Collection(Int32)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalInProcessCompRequest" ReturnType="Collection(Int32)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalPendingRequestForApproval" ReturnType="Collection(Int32)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRCARjectCount" ReturnType="Collection(Int32)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRejectedCompRequest" ReturnType="Collection(Int32)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRequestApproved" ReturnType="Collection(CustomerComplaintModel.SP_TotalRequestApproved_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRequestCount" ReturnType="Collection(CustomerComplaintModel.SP_TotalRequestCount_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRequestInProcess" ReturnType="Collection(CustomerComplaintModel.SP_TotalRequestInProcess_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRequestRejected" ReturnType="Collection(CustomerComplaintModel.SP_TotalRequestRejected_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ValidateBusinessManager" ReturnType="Collection(String)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spSelectComplaintType" ReturnType="Collection(String)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GenerateCCReport" ReturnType="Collection(CustomerComplaintModel.SP_GenerateCCReport_Result)" />
+    <FunctionImport Name="SP_TotalRequestApproved_CH" ReturnType="Collection(CustomerComplaintModel.SP_TotalRequestApproved_CH_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_TotalRequestApproved_TSE" ReturnType="Collection(CustomerComplaintModel.SP_TotalRequestApproved_TSE_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Manufacturing_productStream_ApprovedComplaint" ReturnType="Collection(CustomerComplaintModel.Sp_Manufacturing_productStream_ApprovedComplaint_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Brand_productStream_ApprovedComplaint" ReturnType="Collection(CustomerComplaintModel.Sp_Brand_productStream_ApprovedComplaint_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Segment_productStream_ApprovedComplaint" ReturnType="Collection(CustomerComplaintModel.Sp_Segment_productStream_ApprovedComplaint_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Get_Responsive_deatil" ReturnType="Collection(CustomerComplaintModel.Sp_Get_Responsive_deatil_Result)">
+      <Parameter Name="Emp_Code" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Get_AllEmp_Details" ReturnType="Collection(CustomerComplaintModel.Sp_Get_AllEmp_Details_Result)" />
+    <FunctionImport Name="Sp_GetEmployess_Avrg_Response" ReturnType="Collection(CustomerComplaintModel.Sp_GetEmployess_Avrg_Response_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetEmployess_Avrg_Response_DETAIL" ReturnType="Collection(CustomerComplaintModel.Sp_GetEmployess_Avrg_Response_DETAIL_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="TblResponses" EntityType="CustomerComplaintModel.TblResponse" />
+    <FunctionImport Name="Sp_Get_all_Request_Response_avrg" ReturnType="Collection(CustomerComplaintModel.Sp_Get_all_Request_Response_avrg_Result)" />
+    <FunctionImport Name="GetValidateAccess" ReturnType="Collection(CustomerComplaintModel.GetValidateAccess_Result)">
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="tblBrandMaster">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BrandName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblProductMasters" Relationship="CustomerComplaintModel.FK_tblProductMaster_tblBrandMaster" FromRole="tblBrandMaster" ToRole="tblProductMaster" />
+  </EntityType>
+  <EntityType Name="tblComplaintCategoryMaster">
+    <Key>
+      <PropertyRef Name="ComplaintCategory_ID" />
+    </Key>
+    <Property Name="ComplaintCategory_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CaomplaintCategory" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TblComplaintRequestDtls" Relationship="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintCategoryMaster" FromRole="tblComplaintCategoryMaster" ToRole="TblComplaintRequestDtl" />
+  </EntityType>
+  <EntityType Name="tblComplaintTypeMaster">
+    <Key>
+      <PropertyRef Name="ComplaintType_ID" />
+    </Key>
+    <Property Name="ComplaintType_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintCategory_ID" Type="Int64" Nullable="false" />
+    <Property Name="ComplaintType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TblComplaintRequestDtls" Relationship="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintTypeMaster" FromRole="tblComplaintTypeMaster" ToRole="TblComplaintRequestDtl" />
+  </EntityType>
+  <EntityType Name="tblSubstrateMaster">
+    <Key>
+      <PropertyRef Name="Substrate_ID" />
+    </Key>
+    <Property Name="Substrate_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubstrateDesc" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TblComplaintReapplicationSystemInfoDtls" Relationship="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster" FromRole="tblSubstrateMaster" ToRole="TblComplaintReapplicationSystemInfoDtl" />
+    <NavigationProperty Name="tblComplaintSystemInfoDtls" Relationship="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_tblSubstrateMaster" FromRole="tblSubstrateMaster" ToRole="tblComplaintSystemInfoDtl" />
+  </EntityType>
+  <EntityType Name="TblComplaintRequestDtl">
+    <Key>
+      <PropertyRef Name="ComplaintDtl_ID" />
+    </Key>
+    <Property Name="ComplaintDtl_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int64" />
+    <Property Name="ComplaintCategory_ID" Type="Int64" />
+    <Property Name="ComplaintType_ID" Type="Int64" />
+    <Property Name="CreatedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblComplaintCategoryMaster" Relationship="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintCategoryMaster" FromRole="TblComplaintRequestDtl" ToRole="tblComplaintCategoryMaster" />
+    <NavigationProperty Name="tblComplaintTypeMaster" Relationship="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintTypeMaster" FromRole="TblComplaintRequestDtl" ToRole="tblComplaintTypeMaster" />
+    <NavigationProperty Name="TblComplaintRequestHdr" Relationship="CustomerComplaintModel.FK_TblComplaintRequestDtl_TblComplaintRequestHdr" FromRole="TblComplaintRequestDtl" ToRole="TblComplaintRequestHdr" />
+  </EntityType>
+  <Association Name="FK_TblComplaintRequestDtl_tblComplaintCategoryMaster">
+    <End Type="CustomerComplaintModel.tblComplaintCategoryMaster" Role="tblComplaintCategoryMaster" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.TblComplaintRequestDtl" Role="TblComplaintRequestDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintCategoryMaster">
+        <PropertyRef Name="ComplaintCategory_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestDtl">
+        <PropertyRef Name="ComplaintCategory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestDtl_tblComplaintTypeMaster">
+    <End Type="CustomerComplaintModel.tblComplaintTypeMaster" Role="tblComplaintTypeMaster" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.TblComplaintRequestDtl" Role="TblComplaintRequestDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintTypeMaster">
+        <PropertyRef Name="ComplaintType_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestDtl">
+        <PropertyRef Name="ComplaintType_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TblRoleMaster">
+    <Key>
+      <PropertyRef Name="RoleMaster_Id" />
+    </Key>
+    <Property Name="RoleMaster_Id" Type="Int64" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblStatusMaster">
+    <Key>
+      <PropertyRef Name="Status_ID" />
+    </Key>
+    <Property Name="Status_ID" Type="Int32" Nullable="false" />
+    <Property Name="StatusName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Sequence" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblApprovalDetail">
+    <Key>
+      <PropertyRef Name="ApprovalDetail_ID" />
+    </Key>
+    <Property Name="ApprovalDetail_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApprovalHeader_ID" Type="Int32" Nullable="false" />
+    <Property Name="Status_ID" Type="Int32" Nullable="false" />
+    <Property Name="Role_Id" Type="Int32" Nullable="false" />
+    <Property Name="Employee_Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TblComplaintReapplicationSystemInfoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintSystemInfo_ID" />
+    </Key>
+    <Property Name="ComplaintSystemInfo_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int64" />
+    <Property Name="Substrate_ID" Type="Int64" />
+    <Property Name="ComplaintHandler_Id" Type="Int64" />
+    <Property Name="CoatType_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationTypeValue" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value4" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value5" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value6" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value7" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value8" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblSubstrateMaster" Relationship="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster" FromRole="TblComplaintReapplicationSystemInfoDtl" ToRole="tblSubstrateMaster" />
+    <NavigationProperty Name="TblComplaintRequestHdr" Relationship="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr" FromRole="TblComplaintReapplicationSystemInfoDtl" ToRole="TblComplaintRequestHdr" />
+  </EntityType>
+  <Association Name="FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster">
+    <End Type="CustomerComplaintModel.tblSubstrateMaster" Role="tblSubstrateMaster" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.TblComplaintReapplicationSystemInfoDtl" Role="TblComplaintReapplicationSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubstrateMaster">
+        <PropertyRef Name="Substrate_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintReapplicationSystemInfoDtl">
+        <PropertyRef Name="Substrate_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tblComplaintReappPhotoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintReappPhoto_Id" />
+    </Key>
+    <Property Name="ComplaintReappPhoto_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintHandler_Id" Type="Int64" Nullable="false" />
+    <Property Name="Complaint_ID" Type="Int64" />
+    <Property Name="PhotoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintPlantReprocess">
+    <Key>
+      <PropertyRef Name="ComplaintReprocess_Id" />
+    </Key>
+    <Property Name="ComplaintReprocess_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_Id" Type="Int32" Nullable="false" />
+    <Property Name="Department_Id" Type="Int32" />
+    <Property Name="StockReceived" Type="Boolean" />
+    <Property Name="ReproccessingComplete" Type="Boolean" />
+    <Property Name="BatchNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblApprovalHeader">
+    <Key>
+      <PropertyRef Name="ApprovalHeader_ID" />
+    </Key>
+    <Property Name="ApprovalHeader_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int32" />
+    <Property Name="Compensation_Id" Type="Int32" />
+    <Property Name="Status_ID" Type="Int32" Nullable="false" />
+    <Property Name="AssignTo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Role_Id" Type="Int32" Nullable="false" />
+    <Property Name="AssignedRole_Id" Type="Int32" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblFutureStatu">
+    <Key>
+      <PropertyRef Name="FutureStatus_ID" />
+    </Key>
+    <Property Name="FutureStatus_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_Id" Type="Int32" />
+    <Property Name="Compensation_Id" Type="Int32" />
+    <Property Name="Status_ID" Type="Int32" Nullable="false" />
+    <Property Name="AssignedTo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Role_Id" Type="Int32" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TblComplaintRequestPhotoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintPhoto_ID" />
+    </Key>
+    <Property Name="ComplaintPhoto_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int64" Nullable="false" />
+    <Property Name="PhotoUrl" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TblComplaintRequestHdr" Relationship="CustomerComplaintModel.FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr" FromRole="TblComplaintRequestPhotoDtl" ToRole="TblComplaintRequestHdr" />
+  </EntityType>
+  <EntityType Name="tblCompensationDetailsTypeMaster">
+    <Key>
+      <PropertyRef Name="CompensationDetailsType_ID" />
+    </Key>
+    <Property Name="CompensationDetailsType_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Compensation_TypeID" Type="Int32" />
+    <Property Name="Compensation_TypeName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ModifedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintCompensationDtl">
+    <Key>
+      <PropertyRef Name="ComplaintCompensationDtl_Id" />
+    </Key>
+    <Property Name="ComplaintCompensationDtl_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintCompensation_Id" Type="Int32" />
+    <Property Name="CompensationDetailsType_ID" Type="Int32" />
+    <Property Name="CompensationType" Type="Int32" />
+    <Property Name="CompensationValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="CompensationUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DamageValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="DamageUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="GoodwillValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="GoodwillUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="tblComplaintCompensation" Relationship="CustomerComplaintModel.FK_tblComplaintCompensationDtl_tblComplaintCompensation" FromRole="tblComplaintCompensationDtl" ToRole="tblComplaintCompensation" />
+  </EntityType>
+  <EntityType Name="tblAdminMatrix">
+    <Key>
+      <PropertyRef Name="Admin_ID" />
+    </Key>
+    <Property Name="Admin_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdminName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmpCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintSettlementDtl">
+    <Key>
+      <PropertyRef Name="ComplaintSettlementDtl_Id" />
+    </Key>
+    <Property Name="ComplaintSettlementDtl_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintCompensation_Id" Type="Int32" />
+    <Property Name="CompensationDetailsType_ID" Type="Int32" />
+    <Property Name="SettlementModeId" Type="Int32" />
+    <Property Name="CreditNoteValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="CreditNoteUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FOCValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="FOCProduct_ID" Type="Int32" />
+    <Property Name="FOCProductQty" Type="Int32" />
+    <Property Name="FOCBatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReplacementValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ReplacementProduct_ID" Type="Int32" />
+    <Property Name="ReplacementProductQty" Type="Int32" />
+    <Property Name="ReplacementProductBatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="tblComplaintCompensation" Relationship="CustomerComplaintModel.FK_tblComplaintSettlementDtl_tblComplaintCompensation" FromRole="tblComplaintSettlementDtl" ToRole="tblComplaintCompensation" />
+  </EntityType>
+  <EntityType Name="tblComplaintCompensation">
+    <Key>
+      <PropertyRef Name="ComplaintCompensation_Id" />
+    </Key>
+    <Property Name="ComplaintCompensation_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Department_Id" Type="Int32" Nullable="false" />
+    <Property Name="Complaint_Id" Type="Int32" Nullable="false" />
+    <Property Name="CompensationType" Type="Int32" Nullable="false" />
+    <Property Name="CompensationValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="CompensationUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DamageValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="DamageUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="GoodwillValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="GoodwillUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SettlementMode" Type="Int32" />
+    <Property Name="CreditNoteValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="CreditNoteUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FOCValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="FOCProduct_ID" Type="Int32" />
+    <Property Name="FOCProductQty" Type="Int32" />
+    <Property Name="FOCBatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReplacementValue" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ReplacementProduct_ID" Type="Int32" />
+    <Property Name="ReplacementProductQty" Type="Int32" />
+    <Property Name="ReplacementProductBatchNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SettlementEPNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MaterialBillingDate" Type="DateTime" Precision="3" />
+    <Property Name="CNIssuesDate" Type="DateTime" Precision="3" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompensationURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tblComplaintCompensationDtls" Relationship="CustomerComplaintModel.FK_tblComplaintCompensationDtl_tblComplaintCompensation" FromRole="tblComplaintCompensation" ToRole="tblComplaintCompensationDtl" />
+    <NavigationProperty Name="tblComplaintSettlementDtls" Relationship="CustomerComplaintModel.FK_tblComplaintSettlementDtl_tblComplaintCompensation" FromRole="tblComplaintCompensation" ToRole="tblComplaintSettlementDtl" />
+  </EntityType>
+  <Association Name="FK_tblComplaintCompensationDtl_tblComplaintCompensation">
+    <End Type="CustomerComplaintModel.tblComplaintCompensation" Role="tblComplaintCompensation" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.tblComplaintCompensationDtl" Role="tblComplaintCompensationDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintCompensation">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Principal>
+      <Dependent Role="tblComplaintCompensationDtl">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblComplaintSettlementDtl_tblComplaintCompensation">
+    <End Type="CustomerComplaintModel.tblComplaintCompensation" Role="tblComplaintCompensation" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.tblComplaintSettlementDtl" Role="tblComplaintSettlementDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintCompensation">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Principal>
+      <Dependent Role="tblComplaintSettlementDtl">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TblTemplateMaster">
+    <Key>
+      <PropertyRef Name="Template_Id" />
+    </Key>
+    <Property Name="Template_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Templat_Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template_Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="templete_For" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblTSEMaster">
+    <Key>
+      <PropertyRef Name="TSE_Id" />
+    </Key>
+    <Property Name="TSE_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Area" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EmpCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblProductBatch">
+    <Key>
+      <PropertyRef Name="ProductBatch_ID" />
+    </Key>
+    <Property Name="ProductBatch_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="BatchNumber" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ManufactureDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ShelfLife" Type="Int32" />
+    <Property Name="ShelfLifeDate" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblProductMaster">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ProductDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ProductShelfLife" Type="Int32" />
+    <Property Name="Segment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Stream" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Brand_ID" Type="Int64" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblBrandMaster" Relationship="CustomerComplaintModel.FK_tblProductMaster_tblBrandMaster" FromRole="tblProductMaster" ToRole="tblBrandMaster" />
+  </EntityType>
+  <Association Name="FK_tblProductMaster_tblBrandMaster">
+    <End Type="CustomerComplaintModel.tblBrandMaster" Role="tblBrandMaster" Multiplicity="1" />
+    <End Type="CustomerComplaintModel.tblProductMaster" Role="tblProductMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBrandMaster">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="tblProductMaster">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TblProductManufacturerLocation">
+    <Key>
+      <PropertyRef Name="Location_Id" />
+    </Key>
+    <Property Name="Location_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ManufacturingLocation" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TblComplaintReapplication">
+    <Key>
+      <PropertyRef Name="ComplaintHandler_ID" />
+    </Key>
+    <Property Name="ComplaintHandler_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int64" />
+    <Property Name="Department_ID" Type="Int64" />
+    <Property Name="Location_Id" Type="Int32" />
+    <Property Name="IsQCretainAvailable" Type="Boolean" />
+    <Property Name="IsQCretailSample" Type="Boolean" />
+    <Property Name="ProcessReplicated" Type="Boolean" Nullable="false" />
+    <Property Name="NonApplicationReason" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReApplicationDate" Type="DateTime" Precision="3" />
+    <Property Name="ReApplicationReqd" Type="Boolean" />
+    <Property Name="ClosureRecomended" Type="Boolean" />
+    <Property Name="CustomerCommunication" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SystemFollowed" Type="Boolean" />
+    <Property Name="ApplicationComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ComplaintObserved" Type="Boolean" />
+    <Property Name="TMInformed" Type="Boolean" />
+    <Property Name="TMApproved" Type="Boolean" />
+    <Property Name="CourseOfAction" Type="Boolean" />
+    <Property Name="CustomerComplaintClosed" Type="Boolean" />
+    <Property Name="EvidenceAvailable" Type="Boolean" />
+    <Property Name="VerifiedInSameBatch" Type="Boolean" />
+    <Property Name="IsSelf" Type="Boolean" />
+    <Property Name="SufficientEvidence" Type="Boolean" />
+    <Property Name="AvailableForFutureEvidence" Type="Boolean" />
+    <Property Name="RemarksForQuetsionaire" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintReapplicationInfo">
+    <Key>
+      <PropertyRef Name="ComplaintManager_ID" />
+    </Key>
+    <Property Name="ComplaintManager_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int64" />
+    <Property Name="Department_ID" Type="Int64" />
+    <Property Name="IsCompensationRequire" Type="Boolean" />
+    <Property Name="IsComplaintValid" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintQuarantine">
+    <Key>
+      <PropertyRef Name="ComplaintQuartine_Id" />
+    </Key>
+    <Property Name="ComplaintQuartine_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_Id" Type="Int32" Nullable="false" />
+    <Property Name="IsSelected" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="StockSAPProductVol" Type="Int32" Nullable="false" />
+    <Property Name="StockSAPProductUnit" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SysValueProductVol" Type="Int32" />
+    <Property Name="SysValueProductUnit" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AffectedBatchNumbers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ExpectedCostOfQuartine" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ExpectedCostOfQuartineCurr" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfExpectedClosure" Type="DateTime" Precision="3" />
+    <Property Name="StockReceived" Type="Boolean" />
+    <Property Name="DisposalComplete" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintStakeHolder">
+    <Key>
+      <PropertyRef Name="ComplaintStakeHolders_ID" />
+    </Key>
+    <Property Name="ComplaintStakeHolders_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SBU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Catalyst" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ComplaintHandler" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ComplaintManager" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocalTechnical" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Manager" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblComplaintSystemInfoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintSystemInfo_ID" />
+    </Key>
+    <Property Name="ComplaintSystemInfo_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int64" />
+    <Property Name="Substrate_ID" Type="Int64" Nullable="false" />
+    <Property Name="SubstrateRelated" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CoatType_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationTypeValue" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value4" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value5" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value6" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value7" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value8" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value9" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Value10" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblSubstrateMaster" Relationship="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_tblSubstrateMaster" FromRole="tblComplaintSystemInfoDtl" ToRole="tblSubstrateMaster" />
+    <NavigationProperty Name="TblComplaintRequestHdr" Relationship="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr" FromRole="tblComplaintSystemInfoDtl" ToRole="TblComplaintRequestHdr" />
+  </EntityType>
+  <Association Name="FK_tblComplaintSystemInfoDtl_tblSubstrateMaster">
+    <End Type="CustomerComplaintModel.tblSubstrateMaster" Role="tblSubstrateMaster" Multiplicity="1" />
+    <End Type="CustomerComplaintModel.tblComplaintSystemInfoDtl" Role="tblComplaintSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubstrateMaster">
+        <PropertyRef Name="Substrate_ID" />
+      </Principal>
+      <Dependent Role="tblComplaintSystemInfoDtl">
+        <PropertyRef Name="Substrate_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tblComplaintRCA">
+    <Key>
+      <PropertyRef Name="RCA_Id" />
+    </Key>
+    <Property Name="RCA_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Complaint_ID" Type="Int32" Nullable="false" />
+    <Property Name="Department_ID" Type="Int32" Nullable="false" />
+    <Property Name="RCAComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsRectifiable" Type="Boolean" />
+    <Property Name="IsReprocessing" Type="Boolean" />
+    <Property Name="IsValidate" Type="Boolean" />
+    <Property Name="Isconfirmed" Type="Boolean" />
+    <Property Name="IsSelected" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsRelated" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ImmediateAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CorrectiveAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PreventiveAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentUpload" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReprocessingComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClosureComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AffectedProductVol" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="AffectedProductUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="StockSAPProductVol" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="StockSAPProductUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SysValueProductVol" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="SysValueProductUnit" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SiteReprocessing" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ReprocessingCost" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ReprocessingCostCurrency" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfExpectedClosure" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblDealerMaster">
+    <Key>
+      <PropertyRef Name="Dealer_ID" />
+    </Key>
+    <Property Name="Dealer_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DealerCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DealerName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DealerAddress" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Territory" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Area" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ASM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="RM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DepotId" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TblComplaintRequestHdrs" Relationship="CustomerComplaintModel.FK_TblComplaintRequestHdr_tblDealerMaster" FromRole="tblDealerMaster" ToRole="TblComplaintRequestHdr" />
+  </EntityType>
+  <EntityType Name="tblDepotMaster">
+    <Key>
+      <PropertyRef Name="DepotId" />
+    </Key>
+    <Property Name="DepotId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepotName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DepotCode" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="DepotAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EmailAdress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ZLO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+    <Property Name="UpdatedBy" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFlowMatrix">
+    <Key>
+      <PropertyRef Name="FlowMatrix_ID" />
+    </Key>
+    <Property Name="FlowMatrix_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SBU_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Plant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OutSourced" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Marketing" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SCM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="R_And_D" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BMLimit" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MOdifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TblComplaintRequestHdr">
+    <Key>
+      <PropertyRef Name="Complaint_ID" />
+    </Key>
+    <Property Name="Complaint_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintNumber" Type="Int32" Nullable="false" />
+    <Property Name="VehicleRepairDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Dealer_ID" Type="Int64" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerAccountName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerPhone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerEmailID" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerAddress" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CatalystTicketNumber" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Product_ID" Type="Int64" />
+    <Property Name="Batch_Id" Type="Int64" />
+    <Property Name="ComplaintQty" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="ComplaintQtyType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ComplaintDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RequestRCA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RequestRCAOutType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EvidenceAvailable" Type="Boolean" />
+    <Property Name="VerifiedInSameBatch" Type="Boolean" />
+    <Property Name="IsSelf" Type="Boolean" />
+    <Property Name="AvailableForFutureEvidence" Type="Boolean" />
+    <Property Name="SufficientEvidence" Type="Boolean" />
+    <Property Name="RemarksForQuetsionaire" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tempreature" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="Humidity" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="BatchNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ManifactureDate" Type="DateTime" Precision="3" />
+    <Property Name="ShelfLife" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TblComplaintReapplicationSystemInfoDtls" Relationship="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr" FromRole="TblComplaintRequestHdr" ToRole="TblComplaintReapplicationSystemInfoDtl" />
+    <NavigationProperty Name="TblComplaintRequestDtls" Relationship="CustomerComplaintModel.FK_TblComplaintRequestDtl_TblComplaintRequestHdr" FromRole="TblComplaintRequestHdr" ToRole="TblComplaintRequestDtl" />
+    <NavigationProperty Name="tblDealerMaster" Relationship="CustomerComplaintModel.FK_TblComplaintRequestHdr_tblDealerMaster" FromRole="TblComplaintRequestHdr" ToRole="tblDealerMaster" />
+    <NavigationProperty Name="TblComplaintRequestPhotoDtls" Relationship="CustomerComplaintModel.FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr" FromRole="TblComplaintRequestHdr" ToRole="TblComplaintRequestPhotoDtl" />
+    <NavigationProperty Name="tblComplaintSystemInfoDtls" Relationship="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr" FromRole="TblComplaintRequestHdr" ToRole="tblComplaintSystemInfoDtl" />
+  </EntityType>
+  <Association Name="FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr">
+    <End Type="CustomerComplaintModel.TblComplaintRequestHdr" Role="TblComplaintRequestHdr" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.TblComplaintReapplicationSystemInfoDtl" Role="TblComplaintReapplicationSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintReapplicationSystemInfoDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestDtl_TblComplaintRequestHdr">
+    <End Type="CustomerComplaintModel.TblComplaintRequestHdr" Role="TblComplaintRequestHdr" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.TblComplaintRequestDtl" Role="TblComplaintRequestDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestHdr_tblDealerMaster">
+    <End Type="CustomerComplaintModel.tblDealerMaster" Role="tblDealerMaster" Multiplicity="1" />
+    <End Type="CustomerComplaintModel.TblComplaintRequestHdr" Role="TblComplaintRequestHdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDealerMaster">
+        <PropertyRef Name="Dealer_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Dealer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr">
+    <End Type="CustomerComplaintModel.TblComplaintRequestHdr" Role="TblComplaintRequestHdr" Multiplicity="1" />
+    <End Type="CustomerComplaintModel.TblComplaintRequestPhotoDtl" Role="TblComplaintRequestPhotoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestPhotoDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr">
+    <End Type="CustomerComplaintModel.TblComplaintRequestHdr" Role="TblComplaintRequestHdr" Multiplicity="0..1" />
+    <End Type="CustomerComplaintModel.tblComplaintSystemInfoDtl" Role="tblComplaintSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="tblComplaintSystemInfoDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="Get_ProductBatchInfo_Result">
+    <Property Type="Int32" Name="ProductBatch_ID" Nullable="false" />
+    <Property Type="String" Name="BatchNumber" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="ShelfLife" Nullable="true" />
+    <Property Type="DateTime" Name="ShelfLifeDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="ProductCode" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="ProductShelfLife" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="getCategoryList_Result">
+    <Property Type="Int64" Name="ComplaintType_ID" Nullable="false" />
+    <Property Type="String" Name="ComplaintType" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="GetLFGUserDetails_Result">
+    <Property Type="String" Name="EMP_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_First_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Middle_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Last_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Desg_Desc" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Dept_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Region_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="email_id" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Mobile_no" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="RM1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="RM2" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="doj" Nullable="true" Precision="23" />
+    <Property Type="String" Name="SubDepartment_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="dept_id" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="NewCost_Center" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Zone" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Status" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SBU_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Locn_desc" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="grade_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Seg_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="division" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DivHead" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="President_Code" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Regional_Head" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Area" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Marketing_Manager" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Country_Head" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Group_Marketing" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="getProductList_Result">
+    <Property Type="Int64" Name="Product_ID" Nullable="false" />
+    <Property Type="String" Name="ProductCode" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="ProductShelfLife" Nullable="true" />
+    <Property Type="String" Name="Stream" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Segment" Nullable="true" MaxLength="200" />
+    <Property Type="Int64" Name="Brand_ID" Nullable="true" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_ComplaintCompensationDtl_Result">
+    <Property Type="Int32" Name="ComplaintCompensationDtl_Id" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintCompensation_Id" Nullable="true" />
+    <Property Type="Int32" Name="CompensationDetailsType_ID" Nullable="true" />
+    <Property Type="Int32" Name="CompensationType" Nullable="true" />
+    <Property Type="Decimal" Name="CompensationValue" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="String" Name="CompensationUnit" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="DamageValue" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="String" Name="DamageUnit" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="GoodwillValue" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="String" Name="GoodwillUnit" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ModifiedBy" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+    <Property Type="String" Name="TypeName" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_ComplaintSettlementDtl_Result">
+    <Property Type="Int32" Name="ComplaintSettlementDtl_Id" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintCompensation_Id" Nullable="true" />
+    <Property Type="Int32" Name="CompensationDetailsType_ID" Nullable="true" />
+    <Property Type="Int32" Name="SettlementModeId" Nullable="true" />
+    <Property Type="Decimal" Name="CreditNoteValue" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="String" Name="CreditNoteUnit" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="FOCValue" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="Int32" Name="FOCProduct_ID" Nullable="true" />
+    <Property Type="Int32" Name="FOCProductQty" Nullable="true" />
+    <Property Type="String" Name="FOCBatchNumber" Nullable="true" />
+    <Property Type="Decimal" Name="ReplacementValue" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="Int32" Name="ReplacementProduct_ID" Nullable="true" />
+    <Property Type="Int32" Name="ReplacementProductQty" Nullable="true" />
+    <Property Type="String" Name="ReplacementProductBatchNumber" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ModifiedBy" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+    <Property Type="String" Name="TypeName" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetALLComplaintRecord_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Status_ID" Nullable="false" />
+    <Property Type="String" Name="CurrentStatus" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="true" />
+    <Property Type="Int32" Name="FutStatusId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetApprovedCompRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CompensationURL" Nullable="true" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetApproveProcessCountRCA_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="Status_ID" Nullable="false" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CurrentStatus" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetCompensationFutureStatusDetails_Result">
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Remarks" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="511" />
+    <Property Type="String" Name="seq" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SP_GetCompensationRequestStatusDetails_Result">
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Remarks" Nullable="true" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="511" />
+    <Property Type="String" Name="seq" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetComplaintDetailForEmail_Result">
+    <Property Type="String" Name="ComplaintNumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="BatchNumber" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="BatchNumber1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DealerName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DealerCode" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="Product_ID" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ComplaintQty" Nullable="true" />
+    <Property Type="String" Name="ComplaintQtyType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ComplaintDesc" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="ComplaintType_ID" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_GetDealerList_Result">
+    <Property Type="Int64" Name="Dealer_ID" Nullable="false" />
+    <Property Type="String" Name="DealerCode" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="DealerName" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="DepotCode" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DepotAddress" Nullable="true" />
+    <Property Type="Int64" Name="DepotId" Nullable="true" />
+    <Property Type="String" Name="DepotName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="DealerAddress" Nullable="false" />
+    <Property Type="String" Name="Territory" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="SO" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Area" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ASM" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Region" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="RM" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="10" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_GetEmployeeRequestDetails_Result">
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="EMP_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_First_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Dept_name" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="SBU_Name" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="SP_GetInProcessCompRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CustomerAccountName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="CurrentStatusId" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CompensationURL" Nullable="true" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Sp_GETName_Result">
+    <Property Type="String" Name="EMP_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_First_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Middle_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Last_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Desg_Desc" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Dept_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Region_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="email_id" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Mobile_no" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="RM1" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="RM2" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="doj" Nullable="true" Precision="23" />
+    <Property Type="String" Name="SubDepartment_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="dept_id" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="NewCost_Center" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Zone" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Status" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SBU_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Locn_desc" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="grade_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Seg_Name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="division" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="DivHead" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="President_Code" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Regional_Head" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Area" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Marketing_Manager" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Country_Head" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Group_Marketing" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="SP_GetPendingCompRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CustomerAccountName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="IsCompensationRequire" Nullable="true" />
+    <Property Type="Boolean" Name="IsComplaintValid" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_GetPendingCompRequestForApproval_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CustomerAccountName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetPendingRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Status_ID" Nullable="false" />
+    <Property Type="String" Name="CurrentStatus" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="true" />
+    <Property Type="Int32" Name="FutStatusId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetPendingRequestForApproval_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Status_ID" Nullable="false" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRejectedCompRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRequesterDetails_Result">
+    <Property Type="String" Name="EMP_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_First_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Emp_Last_name" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Desg_Desc" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRequestFutureStatusDetails_Result">
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Remarks" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="511" />
+    <Property Type="String" Name="seq" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRequestStatusDetails_Result">
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Remarks" Nullable="true" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="511" />
+    <Property Type="String" Name="seq" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetTotalRCACompCount_Result">
+    <Property Type="Int32" Name="TotalCount" Nullable="false" />
+    <Property Type="Int32" Name="RCACount" Nullable="false" />
+    <Property Type="Int32" Name="CompCount" Nullable="false" />
+    <Property Type="Int32" Name="Month" Nullable="false" />
+    <Property Type="String" Name="monthName" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="SP_GetTSE_Result">
+    <Property Type="String" Name="EMP_CODE" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="511" />
+  </ComplexType>
+  <ComplexType Name="SP_GetUserClosedRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="IsCompensationRequire" Nullable="true" />
+    <Property Type="Boolean" Name="IsComplaintValid" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Status_ID" Nullable="false" />
+    <Property Type="String" Name="CurrentStatus" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+    <Property Type="String" Name="Res" Nullable="true" MaxLength="1024" />
+  </ComplexType>
+  <ComplexType Name="SP_GetUserRejectedRequest_Result">
+    <Property Type="Int64" Name="Complaint_ID" Nullable="false" />
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="511" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Status_ID" Nullable="false" />
+    <Property Type="String" Name="CurrentStatus" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Dealer" Nullable="false" MaxLength="523" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ComplaintCategory_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_TotalRequestCount_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_TotalRequestInProcess_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_TotalRequestApproved_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_TotalRequestRejected_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetBU_type_Result">
+    <Property Type="String" Name="SBU_Name" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="SP_GenerateCCReport_Result">
+    <Property Type="Int32" Name="ComplaintNumber" Nullable="false" />
+    <Property Type="String" Name="DealerCode" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Segment" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Stream" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="Location_Id" Nullable="true" />
+    <Property Type="String" Name="ManufacturingLocation" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="ManufactureDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DepotName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="ComplaintDesc" Nullable="true" />
+    <Property Type="Boolean" Name="IsQCretainAvailable" Nullable="true" />
+    <Property Type="Boolean" Name="IsQCretailSample" Nullable="true" />
+    <Property Type="Boolean" Name="IsComplaintValid" Nullable="false" />
+    <Property Type="String" Name="RequestRCA" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="RequestRCAOutType" Nullable="true" MaxLength="20" />
+    <Property Type="Int64" Name="TSE_Avalable" Nullable="false" />
+    <Property Type="String" Name="TSE_Remarks" Nullable="true" />
+    <Property Type="String" Name="Re_Qua_Sell_Close" Nullable="true" MaxLength="30" />
+    <Property Type="DateTime" Name="Re_Qua_Sell_Close_creationDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="RCApprovalForCM" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="RCApprovalForCM_SubmittedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="BatchNumber" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CaomplaintCategory" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="ComplaintQty" Nullable="true" Precision="18" Scale="5" />
+    <Property Type="String" Name="ComplaintQtyType" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="111" />
+    <Property Type="DateTime" Name="CReationDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Approved_Reject" Nullable="false" MaxLength="8" />
+    <Property Type="DateTime" Name="Approval_rejectionDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="PlantRemarks" Nullable="true" />
+    <Property Type="DateTime" Name="RCAPlantDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="RDRemarks" Nullable="true" />
+    <Property Type="DateTime" Name="RCARDRemarks" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ClosedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="QUARRemarks" Nullable="true" />
+    <Property Type="String" Name="Reprocess_Quar" Nullable="false" MaxLength="9" />
+    <Property Type="String" Name="SKUCode" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Analysis_Details" Nullable="true" />
+    <Property Type="DateTime" Name="Analysis_Date" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_TotalRequestApproved_CH_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_TotalRequestApproved_TSE_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_Manufacturing_productStream_ApprovedComplaint_Result">
+    <Property Type="String" Name="ManufacturingLocation" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Concate" Nullable="true" MaxLength="213" />
+    <Property Type="Int32" Name="complaint_Count" Nullable="true" />
+    <Property Type="String" Name="Stream" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="Sp_Brand_productStream_ApprovedComplaint_Result">
+    <Property Type="String" Name="BrandName" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="Complaint_Count" Nullable="false" />
+    <Property Type="String" Name="Stream" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="Sp_Segment_productStream_ApprovedComplaint_Result">
+    <Property Type="String" Name="Segment" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="Complaint_Count" Nullable="false" />
+    <Property Type="String" Name="Stream" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="Sp_Get_Responsive_deatil_Result">
+    <Property Type="Int32" Name="DetailID" Nullable="true" />
+    <Property Type="Int32" Name="CompliantId" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="EmpCode" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="CreationDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="StatusId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_Get_AllEmp_Details_Result">
+    <Property Type="String" Name="EMP_CODE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Emp_First_name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="9" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetEmployess_Avrg_Response_Result">
+    <Property Type="Int32" Name="TotalComplaint" Nullable="true" />
+    <Property Type="Int32" Name="TotalResponseTime_Indays" Nullable="true" />
+    <Property Type="Int32" Name="avrg" Nullable="true" />
+    <Property Type="String" Name="EmpCode" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetEmployess_Avrg_Response_DETAIL_Result">
+    <Property Type="String" Name="EmpCode" Nullable="false" />
+    <Property Type="Int64" Name="Complaint" Nullable="false" />
+    <Property Type="Int32" Name="ResponseTime_Indays" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="TblResponse">
+    <Key>
+      <PropertyRef Name="ResponsiveId" />
+    </Key>
+    <Property Name="ResponsiveId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintId" Type="Int64" Nullable="false" />
+    <Property Name="EmpCode" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ResponseTime_InDay" Type="Int32" Nullable="false" />
+    <Property Name="ResponseMonth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="Sp_Get_all_Request_Response_avrg_Result">
+    <Property Type="String" Name="EmpCode" Nullable="false" />
+    <Property Type="Int32" Name="StatusId" Nullable="false" />
+    <Property Type="Int32" Name="Total_No_Complaint" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+    <Property Type="String" Name="Month_Name" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Avrage" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetValidateAccess_Result">
+    <Property Type="Int32" Name="AccessManagement_Id" Nullable="false" />
+    <Property Type="String" Name="EmpCode" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Project_Id" Nullable="false" />
+    <Property Type="Boolean" Name="ProjectStatus" Nullable="false" />
+    <Property Type="String" Name="ProjectName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Sequence" Nullable="false" />
+  </ComplexType>
+</Schema>

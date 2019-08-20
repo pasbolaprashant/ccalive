@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomerComplaintModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAdminMatrix">
+    <Key>
+      <PropertyRef Name="Admin_ID" />
+    </Key>
+    <Property Name="Admin_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblApprovalDetail">
+    <Key>
+      <PropertyRef Name="ApprovalDetail_ID" />
+    </Key>
+    <Property Name="ApprovalDetail_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ApprovalHeader_ID" Type="int" Nullable="false" />
+    <Property Name="Status_ID" Type="int" Nullable="false" />
+    <Property Name="Role_Id" Type="int" Nullable="false" />
+    <Property Name="Employee_Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remarks" Type="varchar(max)" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblApprovalHeader">
+    <Key>
+      <PropertyRef Name="ApprovalHeader_ID" />
+    </Key>
+    <Property Name="ApprovalHeader_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="int" />
+    <Property Name="Compensation_Id" Type="int" />
+    <Property Name="Status_ID" Type="int" Nullable="false" />
+    <Property Name="AssignTo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role_Id" Type="int" Nullable="false" />
+    <Property Name="AssignedRole_Id" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblBrandMaster">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BrandName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCompensationDetailsTypeMaster">
+    <Key>
+      <PropertyRef Name="CompensationDetailsType_ID" />
+    </Key>
+    <Property Name="CompensationDetailsType_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="int" />
+    <Property Name="TypeName" Type="varchar" MaxLength="50" />
+    <Property Name="Compensation_TypeID" Type="int" />
+    <Property Name="Compensation_TypeName" Type="varchar(max)" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintCategoryMaster">
+    <Key>
+      <PropertyRef Name="ComplaintCategory_ID" />
+    </Key>
+    <Property Name="ComplaintCategory_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CaomplaintCategory" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintCompensation">
+    <Key>
+      <PropertyRef Name="ComplaintCompensation_Id" />
+    </Key>
+    <Property Name="ComplaintCompensation_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Department_Id" Type="int" Nullable="false" />
+    <Property Name="Complaint_Id" Type="int" Nullable="false" />
+    <Property Name="CompensationType" Type="int" Nullable="false" />
+    <Property Name="CompensationValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="CompensationUnit" Type="varchar" MaxLength="10" />
+    <Property Name="DamageValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="DamageUnit" Type="varchar" MaxLength="10" />
+    <Property Name="GoodwillValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="GoodwillUnit" Type="varchar" MaxLength="10" />
+    <Property Name="SettlementMode" Type="int" />
+    <Property Name="CreditNoteValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="CreditNoteUnit" Type="varchar" MaxLength="10" />
+    <Property Name="FOCValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="FOCProduct_ID" Type="int" />
+    <Property Name="FOCProductQty" Type="int" />
+    <Property Name="FOCBatchNumber" Type="varchar(max)" />
+    <Property Name="ReplacementValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ReplacementProduct_ID" Type="int" />
+    <Property Name="ReplacementProductQty" Type="int" />
+    <Property Name="ReplacementProductBatchNumber" Type="varchar(max)" />
+    <Property Name="SettlementEPNumber" Type="varchar" MaxLength="100" />
+    <Property Name="MaterialBillingDate" Type="datetime" />
+    <Property Name="CNIssuesDate" Type="datetime" />
+    <Property Name="Remark" Type="varchar(max)" />
+    <Property Name="CompensationURL" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblComplaintCompensationDtl">
+    <Key>
+      <PropertyRef Name="ComplaintCompensationDtl_Id" />
+    </Key>
+    <Property Name="ComplaintCompensationDtl_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComplaintCompensation_Id" Type="int" />
+    <Property Name="CompensationDetailsType_ID" Type="int" />
+    <Property Name="CompensationType" Type="int" />
+    <Property Name="CompensationValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="CompensationUnit" Type="varchar" MaxLength="10" />
+    <Property Name="DamageValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="DamageUnit" Type="varchar" MaxLength="10" />
+    <Property Name="GoodwillValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="GoodwillUnit" Type="varchar" MaxLength="10" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblComplaintPlantReprocess">
+    <Key>
+      <PropertyRef Name="ComplaintReprocess_Id" />
+    </Key>
+    <Property Name="ComplaintReprocess_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_Id" Type="int" Nullable="false" />
+    <Property Name="Department_Id" Type="int" />
+    <Property Name="StockReceived" Type="bit" />
+    <Property Name="ReproccessingComplete" Type="bit" />
+    <Property Name="BatchNumber" Type="varchar" MaxLength="20" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintQuarantine">
+    <Key>
+      <PropertyRef Name="ComplaintQuartine_Id" />
+    </Key>
+    <Property Name="ComplaintQuartine_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_Id" Type="int" Nullable="false" />
+    <Property Name="IsSelected" Type="varchar" MaxLength="20" />
+    <Property Name="StockSAPProductVol" Type="int" Nullable="false" />
+    <Property Name="StockSAPProductUnit" Type="varchar" MaxLength="20" />
+    <Property Name="SysValueProductVol" Type="int" />
+    <Property Name="SysValueProductUnit" Type="varchar" MaxLength="20" />
+    <Property Name="AffectedBatchNumbers" Type="varchar(max)" />
+    <Property Name="ExpectedCostOfQuartine" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ExpectedCostOfQuartineCurr" Type="varchar" MaxLength="20" />
+    <Property Name="DateOfExpectedClosure" Type="datetime" />
+    <Property Name="StockReceived" Type="bit" />
+    <Property Name="DisposalComplete" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintRCA">
+    <Key>
+      <PropertyRef Name="RCA_Id" />
+    </Key>
+    <Property Name="RCA_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="int" Nullable="false" />
+    <Property Name="Department_ID" Type="int" Nullable="false" />
+    <Property Name="RCAComments" Type="varchar(max)" />
+    <Property Name="IsRectifiable" Type="bit" />
+    <Property Name="IsReprocessing" Type="bit" />
+    <Property Name="IsValidate" Type="bit" />
+    <Property Name="Isconfirmed" Type="bit" />
+    <Property Name="IsSelected" Type="varchar" MaxLength="30" />
+    <Property Name="Reason" Type="varchar(max)" />
+    <Property Name="IsRelated" Type="varchar" MaxLength="30" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="ImmediateAction" Type="varchar(max)" />
+    <Property Name="CorrectiveAction" Type="varchar(max)" />
+    <Property Name="PreventiveAction" Type="varchar(max)" />
+    <Property Name="DocumentUpload" Type="varchar(max)" />
+    <Property Name="ReprocessingComments" Type="varchar(max)" />
+    <Property Name="ClosureComments" Type="varchar(max)" />
+    <Property Name="AffectedProductVol" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="AffectedProductUnit" Type="varchar" MaxLength="10" />
+    <Property Name="StockSAPProductVol" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="StockSAPProductUnit" Type="varchar" MaxLength="10" />
+    <Property Name="SysValueProductVol" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="SysValueProductUnit" Type="varchar" MaxLength="10" />
+    <Property Name="SiteReprocessing" Type="varchar" MaxLength="100" />
+    <Property Name="ReprocessingCost" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ReprocessingCostCurrency" Type="varchar" MaxLength="10" />
+    <Property Name="DateOfExpectedClosure" Type="datetime" />
+    <Property Name="Remarks" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblComplaintReapplication">
+    <Key>
+      <PropertyRef Name="ComplaintHandler_ID" />
+    </Key>
+    <Property Name="ComplaintHandler_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" />
+    <Property Name="Department_ID" Type="bigint" />
+    <Property Name="Location_Id" Type="int" />
+    <Property Name="IsQCretainAvailable" Type="bit" />
+    <Property Name="IsQCretailSample" Type="bit" />
+    <Property Name="ProcessReplicated" Type="bit" Nullable="false" />
+    <Property Name="NonApplicationReason" Type="varchar(max)" />
+    <Property Name="ReApplicationDate" Type="datetime" />
+    <Property Name="ReApplicationReqd" Type="bit" />
+    <Property Name="ClosureRecomended" Type="bit" />
+    <Property Name="CustomerCommunication" Type="varchar(max)" />
+    <Property Name="SystemFollowed" Type="bit" />
+    <Property Name="ApplicationComments" Type="varchar(max)" />
+    <Property Name="ComplaintObserved" Type="bit" />
+    <Property Name="TMInformed" Type="bit" />
+    <Property Name="TMApproved" Type="bit" />
+    <Property Name="CourseOfAction" Type="bit" />
+    <Property Name="CustomerComplaintClosed" Type="bit" />
+    <Property Name="EvidenceAvailable" Type="bit" />
+    <Property Name="VerifiedInSameBatch" Type="bit" />
+    <Property Name="IsSelf" Type="bit" />
+    <Property Name="SufficientEvidence" Type="bit" />
+    <Property Name="AvailableForFutureEvidence" Type="bit" />
+    <Property Name="RemarksForQuetsionaire" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintReapplicationInfo">
+    <Key>
+      <PropertyRef Name="ComplaintManager_ID" />
+    </Key>
+    <Property Name="ComplaintManager_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" />
+    <Property Name="Department_ID" Type="bigint" />
+    <Property Name="IsCompensationRequire" Type="bit" />
+    <Property Name="IsComplaintValid" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblComplaintReapplicationSystemInfoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintSystemInfo_ID" />
+    </Key>
+    <Property Name="ComplaintSystemInfo_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" />
+    <Property Name="Substrate_ID" Type="bigint" />
+    <Property Name="ComplaintHandler_Id" Type="bigint" />
+    <Property Name="CoatType_ID" Type="varchar" MaxLength="50" />
+    <Property Name="ApplicationType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApplicationTypeValue" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Value3" Type="varchar" MaxLength="100" />
+    <Property Name="Value4" Type="varchar" MaxLength="100" />
+    <Property Name="Value5" Type="varchar" MaxLength="100" />
+    <Property Name="Value6" Type="varchar" MaxLength="100" />
+    <Property Name="Value7" Type="varchar" MaxLength="100" />
+    <Property Name="Value8" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintReappPhotoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintReappPhoto_Id" />
+    </Key>
+    <Property Name="ComplaintReappPhoto_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComplaintHandler_Id" Type="bigint" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" />
+    <Property Name="PhotoUrl" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblComplaintRequestDtl">
+    <Key>
+      <PropertyRef Name="ComplaintDtl_ID" />
+    </Key>
+    <Property Name="ComplaintDtl_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" />
+    <Property Name="ComplaintCategory_ID" Type="bigint" />
+    <Property Name="ComplaintType_ID" Type="bigint" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblComplaintRequestHdr">
+    <Key>
+      <PropertyRef Name="Complaint_ID" />
+    </Key>
+    <Property Name="Complaint_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComplaintNumber" Type="int" Nullable="false" />
+    <Property Name="VehicleRepairDate" Type="datetime" Nullable="false" />
+    <Property Name="Dealer_ID" Type="bigint" Nullable="false" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="100" />
+    <Property Name="CustomerAccountName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CustomerPhone" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CustomerEmailID" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerAddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="CatalystTicketNumber" Type="varchar" MaxLength="150" />
+    <Property Name="Product_ID" Type="bigint" />
+    <Property Name="Batch_Id" Type="bigint" />
+    <Property Name="ComplaintQty" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ComplaintQtyType" Type="varchar" MaxLength="20" />
+    <Property Name="ComplaintDesc" Type="varchar(max)" />
+    <Property Name="RequestRCA" Type="varchar" MaxLength="20" />
+    <Property Name="RequestRCAOutType" Type="varchar" MaxLength="20" />
+    <Property Name="EvidenceAvailable" Type="bit" />
+    <Property Name="VerifiedInSameBatch" Type="bit" />
+    <Property Name="IsSelf" Type="bit" />
+    <Property Name="AvailableForFutureEvidence" Type="bit" />
+    <Property Name="SufficientEvidence" Type="bit" />
+    <Property Name="RemarksForQuetsionaire" Type="varchar(max)" />
+    <Property Name="Tempreature" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Humidity" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="BatchNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ManifactureDate" Type="datetime" />
+    <Property Name="ShelfLife" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblComplaintRequestPhotoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintPhoto_ID" />
+    </Key>
+    <Property Name="ComplaintPhoto_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblComplaintSettlementDtl">
+    <Key>
+      <PropertyRef Name="ComplaintSettlementDtl_Id" />
+    </Key>
+    <Property Name="ComplaintSettlementDtl_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComplaintCompensation_Id" Type="int" />
+    <Property Name="CompensationDetailsType_ID" Type="int" />
+    <Property Name="SettlementModeId" Type="int" />
+    <Property Name="CreditNoteValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="CreditNoteUnit" Type="varchar" MaxLength="10" />
+    <Property Name="FOCValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="FOCProduct_ID" Type="int" />
+    <Property Name="FOCProductQty" Type="int" />
+    <Property Name="FOCBatchNumber" Type="varchar(max)" />
+    <Property Name="ReplacementValue" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ReplacementProduct_ID" Type="int" />
+    <Property Name="ReplacementProductQty" Type="int" />
+    <Property Name="ReplacementProductBatchNumber" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblComplaintStakeHolders">
+    <Key>
+      <PropertyRef Name="ComplaintStakeHolders_ID" />
+    </Key>
+    <Property Name="ComplaintStakeHolders_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SBU_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Catalyst" Type="nvarchar" MaxLength="50" />
+    <Property Name="ComplaintHandler" Type="nvarchar" MaxLength="50" />
+    <Property Name="ComplaintManager" Type="nvarchar" MaxLength="50" />
+    <Property Name="LocalTechnical" Type="nvarchar" MaxLength="50" />
+    <Property Name="Manager" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintSystemInfoDtl">
+    <Key>
+      <PropertyRef Name="ComplaintSystemInfo_ID" />
+    </Key>
+    <Property Name="ComplaintSystemInfo_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_ID" Type="bigint" />
+    <Property Name="Substrate_ID" Type="bigint" Nullable="false" />
+    <Property Name="SubstrateRelated" Type="varchar" MaxLength="100" />
+    <Property Name="CoatType_ID" Type="varchar" MaxLength="50" />
+    <Property Name="ApplicationType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApplicationTypeValue" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Value3" Type="varchar" MaxLength="100" />
+    <Property Name="Value4" Type="varchar" MaxLength="100" />
+    <Property Name="Value5" Type="varchar" MaxLength="100" />
+    <Property Name="Value6" Type="varchar" MaxLength="100" />
+    <Property Name="Value7" Type="varchar" MaxLength="100" />
+    <Property Name="Value8" Type="varchar" MaxLength="100" />
+    <Property Name="Value9" Type="varchar" MaxLength="100" />
+    <Property Name="Value10" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblComplaintTypeMaster">
+    <Key>
+      <PropertyRef Name="ComplaintType_ID" />
+    </Key>
+    <Property Name="ComplaintType_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComplaintCategory_ID" Type="bigint" Nullable="false" />
+    <Property Name="ComplaintType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblDealerMaster">
+    <Key>
+      <PropertyRef Name="Dealer_ID" />
+    </Key>
+    <Property Name="Dealer_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DealerCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DealerName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="DealerAddress" Type="varchar(max)" Nullable="false" />
+    <Property Name="Territory" Type="varchar" MaxLength="200" />
+    <Property Name="SO" Type="varchar" MaxLength="50" />
+    <Property Name="Area" Type="varchar" MaxLength="200" />
+    <Property Name="ASM" Type="varchar" MaxLength="50" />
+    <Property Name="Region" Type="varchar" MaxLength="200" />
+    <Property Name="RM" Type="varchar" MaxLength="50" />
+    <Property Name="NH" Type="varchar" MaxLength="50" />
+    <Property Name="DepotId" Type="int" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblDepotMaster">
+    <Key>
+      <PropertyRef Name="DepotId" />
+    </Key>
+    <Property Name="DepotId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepotName" Type="varchar" MaxLength="250" />
+    <Property Name="DepotCode" Type="varchar" MaxLength="150" />
+    <Property Name="DepotAddress" Type="varchar(max)" />
+    <Property Name="EmailAdress" Type="varchar(max)" />
+    <Property Name="Mobile" Type="varchar" MaxLength="20" />
+    <Property Name="ZLO" Type="varchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+    <Property Name="UpdatedBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFlowMatrix">
+    <Key>
+      <PropertyRef Name="FlowMatrix_ID" />
+    </Key>
+    <Property Name="FlowMatrix_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SBU_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Plant" Type="nvarchar" MaxLength="50" />
+    <Property Name="OutSourced" Type="nvarchar" MaxLength="50" />
+    <Property Name="Marketing" Type="nvarchar" MaxLength="50" />
+    <Property Name="SCM" Type="nvarchar" MaxLength="50" />
+    <Property Name="R_And_D" Type="nvarchar" MaxLength="50" />
+    <Property Name="BM" Type="nvarchar" MaxLength="50" />
+    <Property Name="BMLimit" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="MOdifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblFutureStatus">
+    <Key>
+      <PropertyRef Name="FutureStatus_ID" />
+    </Key>
+    <Property Name="FutureStatus_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complaint_Id" Type="int" />
+    <Property Name="Compensation_Id" Type="int" />
+    <Property Name="Status_ID" Type="int" Nullable="false" />
+    <Property Name="AssignedTo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role_Id" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblProductBatch">
+    <Key>
+      <PropertyRef Name="ProductBatch_ID" />
+    </Key>
+    <Property Name="ProductBatch_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="BatchNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ManufactureDate" Type="datetime" Nullable="false" />
+    <Property Name="ShelfLife" Type="int" />
+    <Property Name="ShelfLifeDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblProductManufacturerLocation">
+    <Key>
+      <PropertyRef Name="Location_Id" />
+    </Key>
+    <Property Name="Location_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManufacturingLocation" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblProductMaster">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ProductDescription" Type="varchar" MaxLength="500" />
+    <Property Name="ProductShelfLife" Type="int" />
+    <Property Name="Segment" Type="varchar" MaxLength="200" />
+    <Property Name="Stream" Type="varchar" MaxLength="200" />
+    <Property Name="Brand_ID" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblResponse">
+    <Key>
+      <PropertyRef Name="ResponsiveId" />
+    </Key>
+    <Property Name="ResponsiveId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComplaintId" Type="bigint" Nullable="false" />
+    <Property Name="EmpCode" Type="varchar(max)" Nullable="false" />
+    <Property Name="ResponseTime_InDay" Type="int" Nullable="false" />
+    <Property Name="ResponseMonth" Type="datetime" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblRoleMaster">
+    <Key>
+      <PropertyRef Name="RoleMaster_Id" />
+    </Key>
+    <Property Name="RoleMaster_Id" Type="bigint" Nullable="false" />
+    <Property Name="RoleName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStatusMaster">
+    <Key>
+      <PropertyRef Name="Status_ID" />
+    </Key>
+    <Property Name="Status_ID" Type="int" Nullable="false" />
+    <Property Name="StatusName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Sequence" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblSubstrateMaster">
+    <Key>
+      <PropertyRef Name="Substrate_ID" />
+    </Key>
+    <Property Name="Substrate_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubstrateDesc" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblTemplateMaster">
+    <Key>
+      <PropertyRef Name="Template_Id" />
+    </Key>
+    <Property Name="Template_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Templat_Body" Type="nvarchar(max)" />
+    <Property Name="Template_Subject" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="templete_For" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblTSEMaster">
+    <Key>
+      <PropertyRef Name="TSE_Id" />
+    </Key>
+    <Property Name="TSE_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Area" Type="varchar" MaxLength="20" />
+    <Property Name="EmpCode" Type="varchar" MaxLength="20" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <Association Name="FK_tblComplaintCompensationDtl_tblComplaintCompensation">
+    <End Role="tblComplaintCompensation" Type="Self.tblComplaintCompensation" Multiplicity="0..1" />
+    <End Role="tblComplaintCompensationDtl" Type="Self.tblComplaintCompensationDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintCompensation">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Principal>
+      <Dependent Role="tblComplaintCompensationDtl">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr">
+    <End Role="TblComplaintRequestHdr" Type="Self.TblComplaintRequestHdr" Multiplicity="0..1" />
+    <End Role="TblComplaintReapplicationSystemInfoDtl" Type="Self.TblComplaintReapplicationSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintReapplicationSystemInfoDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster">
+    <End Role="tblSubstrateMaster" Type="Self.tblSubstrateMaster" Multiplicity="0..1" />
+    <End Role="TblComplaintReapplicationSystemInfoDtl" Type="Self.TblComplaintReapplicationSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubstrateMaster">
+        <PropertyRef Name="Substrate_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintReapplicationSystemInfoDtl">
+        <PropertyRef Name="Substrate_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestDtl_tblComplaintCategoryMaster">
+    <End Role="tblComplaintCategoryMaster" Type="Self.tblComplaintCategoryMaster" Multiplicity="0..1" />
+    <End Role="TblComplaintRequestDtl" Type="Self.TblComplaintRequestDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintCategoryMaster">
+        <PropertyRef Name="ComplaintCategory_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestDtl">
+        <PropertyRef Name="ComplaintCategory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestDtl_TblComplaintRequestHdr">
+    <End Role="TblComplaintRequestHdr" Type="Self.TblComplaintRequestHdr" Multiplicity="0..1" />
+    <End Role="TblComplaintRequestDtl" Type="Self.TblComplaintRequestDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestDtl_tblComplaintTypeMaster">
+    <End Role="tblComplaintTypeMaster" Type="Self.tblComplaintTypeMaster" Multiplicity="0..1" />
+    <End Role="TblComplaintRequestDtl" Type="Self.TblComplaintRequestDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintTypeMaster">
+        <PropertyRef Name="ComplaintType_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestDtl">
+        <PropertyRef Name="ComplaintType_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestHdr_tblDealerMaster">
+    <End Role="tblDealerMaster" Type="Self.tblDealerMaster" Multiplicity="1" />
+    <End Role="TblComplaintRequestHdr" Type="Self.TblComplaintRequestHdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDealerMaster">
+        <PropertyRef Name="Dealer_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Dealer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr">
+    <End Role="TblComplaintRequestHdr" Type="Self.TblComplaintRequestHdr" Multiplicity="1" />
+    <End Role="TblComplaintRequestPhotoDtl" Type="Self.TblComplaintRequestPhotoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="TblComplaintRequestPhotoDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblComplaintSettlementDtl_tblComplaintCompensation">
+    <End Role="tblComplaintCompensation" Type="Self.tblComplaintCompensation" Multiplicity="0..1" />
+    <End Role="tblComplaintSettlementDtl" Type="Self.tblComplaintSettlementDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblComplaintCompensation">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Principal>
+      <Dependent Role="tblComplaintSettlementDtl">
+        <PropertyRef Name="ComplaintCompensation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr">
+    <End Role="TblComplaintRequestHdr" Type="Self.TblComplaintRequestHdr" Multiplicity="0..1" />
+    <End Role="tblComplaintSystemInfoDtl" Type="Self.tblComplaintSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblComplaintRequestHdr">
+        <PropertyRef Name="Complaint_ID" />
+      </Principal>
+      <Dependent Role="tblComplaintSystemInfoDtl">
+        <PropertyRef Name="Complaint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblComplaintSystemInfoDtl_tblSubstrateMaster">
+    <End Role="tblSubstrateMaster" Type="Self.tblSubstrateMaster" Multiplicity="1" />
+    <End Role="tblComplaintSystemInfoDtl" Type="Self.tblComplaintSystemInfoDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubstrateMaster">
+        <PropertyRef Name="Substrate_ID" />
+      </Principal>
+      <Dependent Role="tblComplaintSystemInfoDtl">
+        <PropertyRef Name="Substrate_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProductMaster_tblBrandMaster">
+    <End Role="tblBrandMaster" Type="Self.tblBrandMaster" Multiplicity="1" />
+    <End Role="tblProductMaster" Type="Self.tblProductMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBrandMaster">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="tblProductMaster">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Get_ProductBatchInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductId" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="getCategoryList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetLFGUserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="getProductList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetValidateAccess" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_Brand_productStream_ApprovedComplaint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ComplaintCompensationDtl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintCompensation_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ComplaintSettlementDtl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintCompensation_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GenerateCCReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_Get_all_Request_Response_avrg" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_Get_AllEmp_Details" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_Get_Responsive_deatil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Emp_Code" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_GetALLComplaintRecord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GetApprovedCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetApproveProcessCountRCA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_GetBU_type" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GetBusinessManager" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GetBusinessManagerForUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetCompensationFutureStatusDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GetCompensationRequestStatusDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Sp_GetComplaintDetailForEmail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintId" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="SP_GetDealerList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GetEmployeeRequestDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Complaint_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Sp_GetEmployess_Avrg_Response" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_GetEmployess_Avrg_Response_DETAIL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetInProcessCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_GETName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_code" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetPendingCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetPendingCompRequestForApproval" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetPendingRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetPendingRequestForApproval" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetRejectedCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetRequesterDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Emp_Code" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetRequestFutureStatusDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GetRequestStatusDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ComplaintId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Sp_GetTotalRCACompCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetTSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GetUserClosedRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GetUserRejectedRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_Manufacturing_productStream_ApprovedComplaint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_Segment_productStream_ApprovedComplaint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalApprovedCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalInProcessCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalPendingRequestForApproval" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRCARjectCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRejectedCompRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRequestApproved" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRequestApproved_CH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRequestApproved_TSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRequestCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRequestInProcess" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TotalRequestRejected" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ValidateBusinessManager" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spSelectComplaintType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="CustomerComplaintModelStoreContainer">
+    <EntitySet Name="tblAdminMatrix" EntityType="Self.tblAdminMatrix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblApprovalDetail" EntityType="Self.tblApprovalDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblApprovalHeader" EntityType="Self.tblApprovalHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBrandMaster" EntityType="Self.tblBrandMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCompensationDetailsTypeMaster" EntityType="Self.tblCompensationDetailsTypeMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintCategoryMaster" EntityType="Self.tblComplaintCategoryMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintCompensation" EntityType="Self.tblComplaintCompensation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintCompensationDtl" EntityType="Self.tblComplaintCompensationDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintPlantReprocess" EntityType="Self.tblComplaintPlantReprocess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintQuarantine" EntityType="Self.tblComplaintQuarantine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintRCA" EntityType="Self.tblComplaintRCA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblComplaintReapplication" EntityType="Self.TblComplaintReapplication" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintReapplicationInfo" EntityType="Self.tblComplaintReapplicationInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblComplaintReapplicationSystemInfoDtl" EntityType="Self.TblComplaintReapplicationSystemInfoDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintReappPhotoDtl" EntityType="Self.tblComplaintReappPhotoDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblComplaintRequestDtl" EntityType="Self.TblComplaintRequestDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblComplaintRequestHdr" EntityType="Self.TblComplaintRequestHdr" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblComplaintRequestPhotoDtl" EntityType="Self.TblComplaintRequestPhotoDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintSettlementDtl" EntityType="Self.tblComplaintSettlementDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintStakeHolders" EntityType="Self.tblComplaintStakeHolders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintSystemInfoDtl" EntityType="Self.tblComplaintSystemInfoDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComplaintTypeMaster" EntityType="Self.tblComplaintTypeMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDealerMaster" EntityType="Self.tblDealerMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDepotMaster" EntityType="Self.tblDepotMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFlowMatrix" EntityType="Self.tblFlowMatrix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFutureStatus" EntityType="Self.tblFutureStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblProductBatch" EntityType="Self.tblProductBatch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblProductManufacturerLocation" EntityType="Self.TblProductManufacturerLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblProductMaster" EntityType="Self.tblProductMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblResponse" EntityType="Self.TblResponse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblRoleMaster" EntityType="Self.TblRoleMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStatusMaster" EntityType="Self.tblStatusMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSubstrateMaster" EntityType="Self.tblSubstrateMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblTemplateMaster" EntityType="Self.TblTemplateMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTSEMaster" EntityType="Self.tblTSEMaster" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblComplaintCompensationDtl_tblComplaintCompensation" Association="Self.FK_tblComplaintCompensationDtl_tblComplaintCompensation">
+      <End Role="tblComplaintCompensation" EntitySet="tblComplaintCompensation" />
+      <End Role="tblComplaintCompensationDtl" EntitySet="tblComplaintCompensationDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr" Association="Self.FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdr" />
+      <End Role="TblComplaintReapplicationSystemInfoDtl" EntitySet="TblComplaintReapplicationSystemInfoDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster" Association="Self.FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster">
+      <End Role="tblSubstrateMaster" EntitySet="tblSubstrateMaster" />
+      <End Role="TblComplaintReapplicationSystemInfoDtl" EntitySet="TblComplaintReapplicationSystemInfoDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestDtl_tblComplaintCategoryMaster" Association="Self.FK_TblComplaintRequestDtl_tblComplaintCategoryMaster">
+      <End Role="tblComplaintCategoryMaster" EntitySet="tblComplaintCategoryMaster" />
+      <End Role="TblComplaintRequestDtl" EntitySet="TblComplaintRequestDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestDtl_TblComplaintRequestHdr" Association="Self.FK_TblComplaintRequestDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdr" />
+      <End Role="TblComplaintRequestDtl" EntitySet="TblComplaintRequestDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestDtl_tblComplaintTypeMaster" Association="Self.FK_TblComplaintRequestDtl_tblComplaintTypeMaster">
+      <End Role="tblComplaintTypeMaster" EntitySet="tblComplaintTypeMaster" />
+      <End Role="TblComplaintRequestDtl" EntitySet="TblComplaintRequestDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestHdr_tblDealerMaster" Association="Self.FK_TblComplaintRequestHdr_tblDealerMaster">
+      <End Role="tblDealerMaster" EntitySet="tblDealerMaster" />
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr" Association="Self.FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdr" />
+      <End Role="TblComplaintRequestPhotoDtl" EntitySet="TblComplaintRequestPhotoDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblComplaintSettlementDtl_tblComplaintCompensation" Association="Self.FK_tblComplaintSettlementDtl_tblComplaintCompensation">
+      <End Role="tblComplaintCompensation" EntitySet="tblComplaintCompensation" />
+      <End Role="tblComplaintSettlementDtl" EntitySet="tblComplaintSettlementDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr" Association="Self.FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr">
+      <End Role="TblComplaintRequestHdr" EntitySet="TblComplaintRequestHdr" />
+      <End Role="tblComplaintSystemInfoDtl" EntitySet="tblComplaintSystemInfoDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblComplaintSystemInfoDtl_tblSubstrateMaster" Association="Self.FK_tblComplaintSystemInfoDtl_tblSubstrateMaster">
+      <End Role="tblSubstrateMaster" EntitySet="tblSubstrateMaster" />
+      <End Role="tblComplaintSystemInfoDtl" EntitySet="tblComplaintSystemInfoDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProductMaster_tblBrandMaster" Association="Self.FK_tblProductMaster_tblBrandMaster">
+      <End Role="tblBrandMaster" EntitySet="tblBrandMaster" />
+      <End Role="tblProductMaster" EntitySet="tblProductMaster" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

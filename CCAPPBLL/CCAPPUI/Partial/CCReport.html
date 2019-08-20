@@ -1,0 +1,217 @@
+﻿<!-- MAIN PANEL -->
+<div id="main" role="main">
+
+    <!-- RIBBON -->
+    <div id="ribbon">
+
+        <!--<span class="ribbon-button-alignment">
+            <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+                <i class="fa fa-refresh"></i>
+            </span>
+        </span>-->
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li>Consolidated Report</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below:
+
+        <span class="ribbon-button-alignment pull-right">
+        <span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+        <span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+        <span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+        </span> -->
+
+    </div>
+    <!-- END RIBBON -->
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+        <section id="widget-grid" class="" >
+
+
+            <!-- row -->
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+                    <div class="jarviswidget jarviswidget-color-darken jarviswidget-sortable" role="widget" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+
+                        <header role="heading">
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+                            <h2>CC Report</h2>
+                           
+                            <button class="btn-xs btn-success pull-right" style="margin-top:5px;margin-left:2px" ng-click="Export()">Export</button> &nbsp;&nbsp;
+                            <label class="input pull-right" style="margin-top:5px" >
+                                <input type="text" style="color:black" placeholder="Enter Text to Search" class="pull-right" ng-model="SearchText" />
+                                </label>
+
+</header>
+
+                        <!-- widget div-->
+                        <div role="content">
+
+                            <!-- widget edit box -->
+                            <div class="jarviswidget-editbox">
+                                <!-- This area used as dropdown edit box -->
+                              
+                            </div>
+                            <!-- end widget edit box -->
+                            <!-- widget content -->
+                            <div class="widget-body no-padding">
+
+
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>SNo.</th>
+                                                <th>Complaint Number</th>
+                                                <th>Customer Name</th>   
+                                                <th>Date of complaint</th>
+                                                <th>Segment</th>
+                                                <th>Brand</th>
+                                                <th>SKU</th>
+                                                <th>Batch Number</th>
+                                                <th>Product Name</th>
+                                                <th>Manufacturing Plant</th>
+                                                <th>Manufacturing date</th>
+                                                <th>Dealer Code</th>
+                                                <th>Depot</th>
+                                                <th>Created BY</th>                                   
+                                               
+                                               
+                                                <th>Complaint Category</th>
+                                                <th>Complaint Qty</th>                                                                                            
+                                                
+                                                <th>Complaint Description</th>
+
+                                                <th>QC Retain Sample available YES/NO</th>
+                                                <th>QC Retain Sample Evaluation status (OK/Not OK)</th>
+                                                <th>TSE Route (YES/NO)</th>
+                                                <th>TSE Remarks</th>
+
+                                                <th>Valid/Not Valid</th>
+                                                <th>Approved/Reject</th>
+
+                                             
+                                               
+                                                <th>Approved/Reject Date</th>
+                                                <th>RCA required if Valid, RCA sent to?(R&D, Plant, SMP, Non Paint</th>
+                                                <!--<th>smp/non smp</th>-->
+                                                <th>RCA Sent to CM Date</th>
+                                                <th>Resolution (Reprocess,Quarantine, Sell,Direct)</th>
+                                                <th>Resolution opted Date</th>
+
+                                                <!--<th>RCA Plant </th>
+                                                <th>Date </th>
+                                                <th>RCA R&D </th>
+                                                <th>Date </th>
+                                                <th>Reprocess/Qurantine</th>
+                                                <th>Quarantine</th>-->
+                                                <th>Closure Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="pt in PendingRequest | filter : SearchText">
+                                                <th>{{$index+1}}</th>
+                                                <td>{{pt.ComplaintNumber}}</td>
+                                                <td>{{pt.CustomerName}}</td>
+                                                <td>{{pt.CReationDate | date:'dd/MMM/yyyy'}}</td>
+                                                <td>{{pt.Segment}}</td>
+                                                <td>{{pt.BrandName}}</td>
+                                                <td>{{pt.ProductCode}}</td>
+                                                <td>{{pt.BatchNumber}}</td>
+                                                <td>{{pt.ProductName}}</td>
+                                                <td>{{pt.ManufacturingLocation}}</td>
+                                                <td>{{pt.ManufactureDate | date:'dd/MMM/yyyy'}}</td>
+                                                <td>{{pt.DealerCode}}</td>
+                                                <td>{{pt.DepotName}}</td>                                                
+                                                <td>{{pt.EmpName}}</td>
+                                               
+                                                <td>{{pt.CaomplaintCategory}}</td>
+                                                <td>{{pt.ComplaintQty}} {{pt.ComplaintQtyType}}</td>
+                                                <td>{{pt.ComplaintDesc}}</td>
+                                                <!--<td>{{pt.IsQCretainAvailable}}</td>
+                                                <td>{{pt.IsQCretailSample}}</td>-->
+
+
+                                                <td>
+                                                    <label ng-show="pt.IsQCretainAvailable == true">Yes</label>
+                                                    <label ng-show="pt.IsQCretainAvailable !=true">No</label>
+                                                </td>   
+                                                <td>
+                                                    <label ng-show="pt.IsQCretailSample == true">Yes</label>
+                                                    <label ng-show="pt.IsQCretailSample !=true">No</label>
+                                                </td>   
+
+
+                                               
+                                                <td>
+                                                    <label ng-show="pt.TSE_Avalable == 0">No</label>
+                                                    <label ng-show="pt.TSE_Avalable !=0">Yes</label>
+                                                </td>    
+
+
+                                                <td>{{pt.TSE_Remarks}}</td>
+                                                <!--<td>{{pt.IsComplaintValid}}</td>-->
+                                                <td>
+                                                    <label ng-show="pt.IsComplaintValid == true">Yes</label>
+                                                    <label ng-show="pt.IsComplaintValid !=true">No</label>
+                                                </td>                         
+                                           
+                                                <td>{{pt.Approved_Reject}}</td>
+                                                
+                                                <td>{{pt.Approval_rejectionDate | date:'dd/MMM/yyyy'}}</td>
+                                                
+                                                
+                                                <td ng-show="pt.RequestRCA=='Local'">Plant</td>
+                                                <td ng-show="pt.RequestRCA=='GroupAR'">Group AR</td>
+                                                <td ng-show="pt.RequestRCA=='OutSourced'">{{pt.RequestRCAOutType}}</td>
+                                                
+                                                <!--<th></th>-->
+                                                
+                                                <td>{{pt.RCApprovalForCM_SubmittedDate | date:'dd/MMM/yyyy'}}</td>
+
+
+                                                <td>{{pt.Re_Qua_Sell_Close}}</td>
+
+                                                <td>{{pt.Re_Qua_Sell_Close_creationDate | date:'dd/MMM/yyyy'}}</td>
+
+
+
+
+                                                <!--<td>{{pt.PlantRemarks}}</td>
+                                                <td>{{pt.RCAPlantDate | date:'dd/MMM/yyyy'}}</td>
+                                                <td>{{pt.RDRemarks}}</td>
+                                                <td>{{pt.RCARDRemarks | date:'dd/MMM/yyyy'}}</td>
+                                                <td>{{pt.Reprocess_Quar}}</td>
+                                                <td>{{pt.QUARRemarks}}</td>-->
+                                                <td>{{pt.ClosedDate | date:'dd/MMM/yyyy'}}</td>
+                                                                                           
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end widget content -->
+                        </div>
+                        <!-- end widget div -->
+                    </div>
+                </article>
+            </div>
+            <!-- end row -->
+        </section>
+
+       
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->

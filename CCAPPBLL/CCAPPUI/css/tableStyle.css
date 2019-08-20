@@ -1,0 +1,40 @@
+﻿table {
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td {
+    border: 1px solid black
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+tr {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+
+#bar-chart {
+    min-height: 100%;
+}
+
+
+#bar-chart1 {
+    min-height: 100%;
+}
+
+#bar-chart2 {
+    min-height: 100%;
+}
+
+.dashboardeffect {
+    background-color: #fbfbfb;
+    box-shadow: -4px 5px 17px #a5a5a5;
+    margin-bottom: 10px;
+}

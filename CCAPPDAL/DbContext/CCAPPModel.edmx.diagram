@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="463e0918159648e391165a91c6ca6154" Name="Diagram1" ZoomLevel="48">
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblBrandMaster" Width="1.5" PointX="0.75" PointY="6.125" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintCategoryMaster" Width="1.5" PointX="5.25" PointY="10.875" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintTypeMaster" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblSubstrateMaster" Width="1.5" PointX="8.25" PointY="2.375" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblComplaintRequestDtl" Width="1.5" PointX="7.5" PointY="5.875" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintCategoryMaster" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintRequestDtl_tblComplaintTypeMaster" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblRoleMaster" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblStatusMaster" Width="1.5" PointX="14.375" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblApprovalDetail" Width="1.5" PointX="10.375" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblComplaintReapplicationSystemInfoDtl" Width="1.875" PointX="14.5" PointY="4" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_tblSubstrateMaster" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintReappPhotoDtl" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintPlantReprocess" Width="1.5" PointX="16.375" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblApprovalHeader" Width="1.5" PointX="3.375" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblFutureStatu" Width="1.5" PointX="13.375" PointY="9.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblComplaintRequestPhotoDtl" Width="1.5" PointX="5.25" PointY="23.875" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblCompensationDetailsTypeMaster" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintCompensationDtl" Width="1.5" PointX="21" PointY="16.375" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblAdminMatrix" Width="1.5" PointX="5.375" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintSettlementDtl" Width="1.5" PointX="20.625" PointY="1.875" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintCompensation" Width="1.5" PointX="13.375" PointY="18.5" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_tblComplaintCompensationDtl_tblComplaintCompensation" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_tblComplaintSettlementDtl_tblComplaintCompensation" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblTemplateMaster" Width="1.5" PointX="7.375" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblTSEMaster" Width="1.5" PointX="12.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblProductBatch" Width="1.5" PointX="10.375" PointY="9.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblProductMaster" Width="1.5" PointX="3" PointY="5.5" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_tblProductMaster_tblBrandMaster" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblProductManufacturerLocation" Width="1.5" PointX="9.375" PointY="18.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblComplaintReapplication" Width="1.5" PointX="18.375" PointY="7.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintReapplicationInfo" Width="1.5" PointX="20.375" PointY="7.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintQuarantine" Width="1.5" PointX="17.375" PointY="15.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintStakeHolder" Width="1.5" PointX="20.375" PointY="11.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintSystemInfoDtl" Width="1.5" PointX="10.5" PointY="3.5" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_tblSubstrateMaster" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblComplaintRCA" Width="1.5" PointX="15.375" PointY="21.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblDealerMaster" Width="1.5" PointX="0.75" PointY="21.375" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblDepotMaster" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.tblFlowMatrix" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblComplaintRequestHdr" Width="1.5" PointX="3" PointY="19.5" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintReapplicationSystemInfoDtl_TblComplaintRequestHdr" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintRequestDtl_TblComplaintRequestHdr" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintRequestHdr_tblDealerMaster" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_TblComplaintRequestPhotoDtl_TblComplaintRequestHdr" />
+        <AssociationConnector Association="CustomerComplaintModel.FK_tblComplaintSystemInfoDtl_TblComplaintRequestHdr" />
+        <EntityTypeShape EntityType="CustomerComplaintModel.TblResponse" Width="1.5" PointX="7.375" PointY="10.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
